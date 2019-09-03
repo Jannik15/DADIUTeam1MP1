@@ -187,6 +187,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /MGP1_Team1
+  - /MGP1_Team1/Events
   - /MGP1_Team1/SoundBanks
   - /MGP1_Team1/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
