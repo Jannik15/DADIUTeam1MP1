@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{211CCABC-53A3-43CF-BE84-BA1D138041C2}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Music" ID="{211CCABC-53A3-43CF-BE84-BA1D138041C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music_TitleScreen" ID="{7F32B523-395B-4CAA-8005-FF04C30331B4}"/>
+				<Folder Name="General" ID="{AC1985B4-BADA-442E-8BCC-44F050117D51}" ShortID="533856595">
+					<ChildrenList>
+						<Event Name="Music_Region" ID="{01B3EF25-CE68-4C22-B7DC-3C6734697336}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

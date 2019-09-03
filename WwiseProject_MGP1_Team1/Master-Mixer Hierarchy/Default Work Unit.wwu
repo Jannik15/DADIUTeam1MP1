@@ -9,6 +9,15 @@
 							<ObjectRef Name="System" ID="{12CE9880-EC53-4B47-9EBA-C823438DC4AC}" WorkUnitID="{50BA4471-36CD-4D29-9162-D3FEF633D4FB}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Non-World" ID="{6728F71D-738F-4764-9F6C-64E3D640F331}">
+							<ChildrenList>
+								<Bus Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}"/>
+								<Bus Name="UI" ID="{D71DCFE4-E7E8-4B0C-B539-743D8C53BE0E}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="World" ID="{F398072D-F3D5-4CCF-B1F8-D829E4A116B5}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
