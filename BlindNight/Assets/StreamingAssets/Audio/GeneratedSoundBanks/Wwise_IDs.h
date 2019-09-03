@@ -11,6 +11,11 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID TEST = 3157003241U;
+    } // namespace EVENTS
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
@@ -29,6 +34,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MASTER = 4056684167U;
+        static const AkUniqueID TESTER = 3163537048U;
     } // namespace BANKS
 
     namespace BUSSES

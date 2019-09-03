@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{239AC835-5F08-401C-AD01-43EF1D5199A5}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{239AC835-5F08-401C-AD01-43EF1D5199A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Test" ID="{129F156D-3DAF-48A6-BFE5-8F10A7B0FA3E}" ShortID="595049158">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GS_MuteHorn_120-C" ID="{0D7248B9-F859-41DD-B2D3-014AD1CE484A}" ShortID="202795201">
+							<Language>SFX</Language>
+							<AudioFile>GS_MuteHorn_120-C.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GS_MuteHorn_120-C" ID="{0D7248B9-F859-41DD-B2D3-014AD1CE484A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
