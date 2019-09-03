@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\jonas\Documents\WwiseProjects\MGP1_Team1\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\jonas\Documents\WwiseProjects\MGP1_Team1\.cache\Android\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\jonas\Documents\WwiseProjects\MGP1_Team1\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\GeneratedSoundBanks\Android\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\jonas\Documents\WwiseProjects\MGP1_Team1\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -15,20 +15,6 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3163537048" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Tester</ObjectPath>
-			<ShortName>Tester</ShortName>
-			<Path>Tester.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3157003241" Name="test" ObjectPath="\Events\Default Work Unit\test" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="202795201" Language="SFX">
-					<ShortName>GS_MuteHorn_120-C.wav</ShortName>
-					<Path>SFX\GS_MuteHorn_120-C_10C4C929.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="4056684167" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
