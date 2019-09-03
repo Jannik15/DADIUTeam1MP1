@@ -59,8 +59,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\test
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4
+      minDuration: 4
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -188,6 +188,7 @@ MonoBehaviour:
   ExpandedItems:
   - /MGP1_Team1
   - /MGP1_Team1/Events
+  - /MGP1_Team1/Events/Default Work Unit
   - /MGP1_Team1/SoundBanks
   - /MGP1_Team1/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
