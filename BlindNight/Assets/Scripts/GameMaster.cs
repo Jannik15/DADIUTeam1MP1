@@ -40,7 +40,7 @@ public class GameMaster : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             GameObject filenamefld = null;
-            Transform[] trans = GameObject.Find("Canvas").GetComponentsInChildren<Transform>(true);
+            Transform[] trans = GameObject.Find("MainCanvas").GetComponentsInChildren<Transform>(true);
             foreach (Transform t in trans)
             {
                 if (t.gameObject.name == "MainMenu")
