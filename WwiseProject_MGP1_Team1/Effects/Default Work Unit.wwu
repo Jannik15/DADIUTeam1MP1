@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1C83658B-0744-4296-897D-25B37961CAB6}" SchemaVersion="94">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{1C83658B-0744-4296-897D-25B37961CAB6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1C83658B-0744-4296-897D-25B37961CAB6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Reverbs" ID="{11C0636B-2C92-4F33-B01F-485F4CE8174A}" ShortID="38015551"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
