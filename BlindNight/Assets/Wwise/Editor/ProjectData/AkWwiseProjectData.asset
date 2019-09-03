@@ -47,8 +47,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586341064586962856
-    List: []
+    m_lastTime: -8586340975784970724
+    List:
+    - name: test
+      guid: 3b85880b26740f449c5aaf3597534a4a
+      id: 3157003241
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: test
+        ObjectType: 3
+      Path: Default Work Unit\test
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
