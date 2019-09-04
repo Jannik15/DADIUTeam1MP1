@@ -24,8 +24,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340080037426479
+    m_lastTime: -8586340026362994319
     List:
+    - name: Player_Flashlight_Reverb
+      guid: 578fb64a3a0740438c92e537c9eecc4b
+      id: 737812310
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: Player_Flashlight_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Player\Player_Flashlight_Reverb
     - name: Player_Footstep_Reverb
       guid: 5128347f32ab854bbe10337b8f44a7a3
       id: 3916004666
@@ -36,11 +51,11 @@ MonoBehaviour:
         ObjectType: 2
       - ElementName: World
         ObjectType: 2
-      - ElementName: Ambient
+      - ElementName: Player
         ObjectType: 2
       - ElementName: Player_Footstep_Reverb
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\World\Ambient\Player_Footstep_Reverb
+      Path: Default Work Unit\Master Audio Bus\World\Player\Player_Footstep_Reverb
     - name: Presence_Reverb
       guid: 4e5200e7a384d54397a0d1cfaa9915fc
       id: 3562591321
@@ -76,7 +91,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340083001675541
+    m_lastTime: -8586340021665580321
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -92,7 +107,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340083001765305
+    m_lastTime: -8586340021665739800
     List:
     - name: Play_Button1_Mellow
       guid: 6615e22321682e4fa1232613e3372de7
@@ -100,9 +115,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Play_Button1_Mellow
         ObjectType: 3
-      Path: Default Work Unit\Play_Button1_Mellow
+      Path: Default Work Unit\UI\Play_Button1_Mellow
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -112,9 +129,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Play_Button2_Tone
         ObjectType: 3
-      Path: Default Work Unit\Play_Button2_Tone
+      Path: Default Work Unit\UI\Play_Button2_Tone
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -124,21 +143,67 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Play_Button3_Click
         ObjectType: 3
-      Path: Default Work Unit\Play_Button3_Click
+      Path: Default Work Unit\UI\Play_Button3_Click
       maxAttenuation: 0
       maxDuration: 0.507227
       minDuration: 0.46486
+    - name: Play_Door_Open
+      guid: a1772980d041434482eb5701fa5dd305
+      id: 1660008929
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Play_Door_Open
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_Door_Open
+      maxAttenuation: 0
+      maxDuration: 3.492301
+      minDuration: 3.492301
+    - name: Play_Flashlight_On_Off
+      guid: a7da93d59f7c4c49a0843f7f54cd2fcc
+      id: 4064524182
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Flashlight_On_Off
+        ObjectType: 3
+      Path: Default Work Unit\Player\Play_Flashlight_On_Off
+      maxAttenuation: 0
+      maxDuration: 0.900915
+      minDuration: 0.790204
+    - name: Play_Flashlight_Switch
+      guid: 4e9de9fc72a1644fafac708883e78b04
+      id: 784840363
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Flashlight_Switch
+        ObjectType: 3
+      Path: Default Work Unit\Player\Play_Flashlight_Switch
+      maxAttenuation: 0
+      maxDuration: 0.374821
+      minDuration: 0.32876
     - name: Play_Footstep_Surface
       guid: e404ba7db155db41bb6d965d45a2d045
       id: 709824872
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
       - ElementName: Play_Footstep_Surface
         ObjectType: 3
-      Path: Default Work Unit\Play_Footstep_Surface
+      Path: Default Work Unit\Player\Play_Footstep_Surface
       maxAttenuation: 0
       maxDuration: 0.402056
       minDuration: 0.232926
@@ -148,9 +213,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
       - ElementName: Play_Presence
         ObjectType: 3
-      Path: Default Work Unit\Play_Presence
+      Path: Default Work Unit\Ambience\Play_Presence
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -370,7 +437,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586340081056434078
+    m_lastTime: -8586340022680185457
     List:
     - name: Surface_Type
       guid: da5061335875a745896d2f33a17fe9c2
@@ -408,6 +475,7 @@ MonoBehaviour:
   - /MGP1_Team1
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
-  - /MGP1_Team1/Events/Default Work Unit/Ambience
+  - /MGP1_Team1/Events/Default Work Unit/Player
+  - /MGP1_Team1/Events/Default Work Unit/UI
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
