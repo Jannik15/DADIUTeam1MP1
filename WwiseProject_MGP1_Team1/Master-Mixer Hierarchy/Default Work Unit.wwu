@@ -77,6 +77,23 @@
 											</RTPCList>
 										</Property>
 									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<AuxBus Name="Reverb" ID="{23A1CB7A-79F1-445F-898F-206071A03E47}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-21</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
 								</Bus>
 							</ChildrenList>
 						</Bus>

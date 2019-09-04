@@ -11,13 +11,23 @@
 
 namespace AK
 {
-    namespace EVENTS
+    namespace STATES
     {
-        static const AkUniqueID TEST = 3157003241U;
-    } // namespace EVENTS
+        namespace MUSIC_REGIONS
+        {
+            static const AkUniqueID GROUP = 2106907484U;
+
+            namespace STATE
+            {
+            } // namespace STATE
+        } // namespace MUSIC_REGIONS
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MENUSLIDER_VOLUME_MUSIC = 3910238084U;
+        static const AkUniqueID MENUSLIDER_VOLUME_SOUNDFX = 1058246790U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
@@ -34,12 +44,16 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MASTER = 4056684167U;
-        static const AkUniqueID TESTER = 3163537048U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENT = 77978275U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID NON_WORLD = 838047381U;
+        static const AkUniqueID UI = 1551306167U;
+        static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

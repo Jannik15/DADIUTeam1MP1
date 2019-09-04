@@ -20,9 +20,6 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3157003241" Name="test" ObjectPath="\Events\Default Work Unit\test" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000"/>
-			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="202795201" Language="SFX">
 					<ShortName>GS_MuteHorn_120-C.wav</ShortName>

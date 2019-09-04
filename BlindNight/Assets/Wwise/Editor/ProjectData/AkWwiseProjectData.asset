@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3d05971feb405c41b3dd1718adbd3311
     GuidInternal: 
-    m_lastTime: -8586340906730622372
+    m_lastTime: -8586340899813803350
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340906736628919
+    m_lastTime: -8586340223118622559
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340906730652367
+    m_lastTime: -8586340898289078981
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -42,22 +42,27 @@ MonoBehaviour:
       - ElementName: Master
         ObjectType: 7
       Path: Default Work Unit\Master
-    - name: Tester
-      guid: e32ebf5d4bac3d4b83a811a4ef8b2590
-      id: 3163537048
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Tester
-        ObjectType: 7
-      Path: Default Work Unit\Tester
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340906737091436
+    m_lastTime: -8586340221695109463
     List:
+    - name: Play_Wind_Howling
+      guid: 598a0ad0a987aa4cae77858586003073
+      id: 187470227
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Play_Wind_Howling
+        ObjectType: 3
+      Path: Default Work Unit\Ambience\Play_Wind_Howling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: test
       guid: 3b85880b26740f449c5aaf3597534a4a
       id: 3157003241
@@ -70,18 +75,50 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4
       minDuration: 4
+  - PhysicalPath: Events\Music.wwu
+    ParentPhysicalPath: 
+    guid: bcca1c21a353cf43be84ba1d138041c2
+    GuidInternal: 
+    m_lastTime: -8586340868792108409
+    List:
+    - name: Music_Region
+      guid: 25efb30168ce224cb7dc3c6734697336
+      id: 3741135221
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: General
+        ObjectType: 4
+      - ElementName: Music_Region
+        ObjectType: 3
+      Path: Music\General\Music_Region
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_TitleScreen
+      guid: 23b5327f5b39aa4c8005ff04c30331b4
+      id: 1532327793
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Music_TitleScreen
+        ObjectType: 3
+      Path: Music\Music_TitleScreen
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c4c42834edf7314b8c300b5d103ef982
     GuidInternal: 
-    m_lastTime: -8586340906737091436
+    m_lastTime: -8586340899829269777
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8586340906737081436
+    m_lastTime: -8586340899829209940
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -173,31 +210,81 @@ MonoBehaviour:
       - ElementName: SS_Air_Turbulence
         ObjectType: 13
       Path: Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+  - PhysicalPath: Game Parameters\Gameplay.wwu
+    ParentPhysicalPath: 
+    guid: 75e10bfd79e7b8468075cdf5c6876f33
+    GuidInternal: 
+    m_lastTime: -8586340865436129008
+    List:
+    - name: Menuslider_Volume_Music
+      guid: 1aebd68ce9e67d46b48488aa5705f339
+      id: 3910238084
+      PathAndIcons:
+      - ElementName: Gameplay
+        ObjectType: 12
+      - ElementName: Menuslider_Volume_Music
+        ObjectType: 13
+      Path: Gameplay\Menuslider_Volume_Music
+    - name: Menuslider_Volume_SoundFX
+      guid: 763cddbaeae4fe498614bbccec9ddbc0
+      id: 1058246790
+      PathAndIcons:
+      - ElementName: Gameplay
+        ObjectType: 12
+      - ElementName: Menuslider_Volume_SoundFX
+        ObjectType: 13
+      Path: Gameplay\Menuslider_Volume_SoundFX
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: e3316310d8271e438f5b458871155d41
     GuidInternal: 
-    m_lastTime: -8586340906730642359
+    m_lastTime: -8586340899813977467
     List: []
+  - PhysicalPath: States\MusicStates.wwu
+    ParentPhysicalPath: 
+    guid: 04b67ad93857e246800f2fbbedeaa811
+    GuidInternal: 
+    m_lastTime: -8586340866522854746
+    List:
+    - name: Music_Regions
+      guid: d1ed4562c6a4b146a75e976da2c6cf49
+      id: 2106907484
+      PathAndIcons:
+      - ElementName: MusicStates
+        ObjectType: 12
+      - ElementName: Music_Regions
+        ObjectType: 9
+      Path: MusicStates\Music_Regions
+      values:
+      - name: None
+        guid: aa2ecabe3107d24f808550eeb6550279
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586340906730632378
+    m_lastTime: -8586340899813916498
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 64c578f279613943879c0bc962a9b98f
     GuidInternal: 
-    m_lastTime: -8586340906730622372
+    m_lastTime: -8586340899813861470
     List: []
   ExpandedItems:
   - /MGP1_Team1
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
+  - /MGP1_Team1/Events/Default Work Unit/Ambience
   - /MGP1_Team1/SoundBanks
   - /MGP1_Team1/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

@@ -106,6 +106,37 @@
 								<ActiveSource Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Room Tone" ID="{BECA7923-4213-46AC-89F8-C5F77BDB7DA9}" ShortID="812699060">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>47</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" ShortID="63531734">
+									<Language>SFX</Language>
+									<AudioFile>360731__klankbeeld__roomtoneapartment-day160924-0973.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

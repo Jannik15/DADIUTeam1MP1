@@ -48,14 +48,346 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="UI" ID="{721ABC6D-789B-42B8-8A7B-2CE62E8B75EA}" ShortID="969991271">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+									<ObjectRef Name="UI" ID="{D71DCFE4-E7E8-4B0C-B539-743D8C53BE0E}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Button1_Mellow" ID="{A144E17E-4ACA-4502-915F-DE2A8EB9DDFA}" ShortID="301966138">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>56</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{81272B61-A982-48F4-8DDA-D90636BF9C56}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb" ID="{23A1CB7A-79F1-445F-898F-206071A03E47}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{14642617-85AB-42FE-8E15-1AE5391268A2}" ShortID="539636603" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="BaseFrequency" Type="Real32" Value="880"/>
+												<Property Name="NoiseLevel" Type="Real32" Value="-43"/>
+												<Property Name="NoiseShape" Type="int32" Value="1"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-7"/>
+												<Property Name="Osc1Pwm" Type="Real32" Value="48">
+													<RTPCList>
+														<RTPC Name="" ID="{7C7FE756-7A8F-4BE9-A789-3C8B22056BA1}" ShortID="783862824">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{404F9F07-F647-4C5E-B72F-9A02D538F9F4}" ShortID="56429685">
+																			<PropertyList>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="0.8">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{DA1B1F57-73F5-4DAC-BDCE-7138AFF49281}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{EE5AC82E-02EB-4107-93E7-A3106DFB2078}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>45.70816</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.15538</XPos>
+																		<YPos>37.33907</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.37941</XPos>
+																		<YPos>52.36051</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.66254</XPos>
+																		<YPos>62.23175</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.91516</XPos>
+																		<YPos>60.84776</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>64.59227</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Osc1Transpose" Type="int32" Value="-2501"/>
+												<Property Name="Osc1Waveform" Type="int32" Value="1"/>
+												<Property Name="Osc2Level" Type="Real32" Value="-9"/>
+												<Property Name="Osc2Pwm" Type="Real32" Value="59"/>
+												<Property Name="Osc2Transpose" Type="int32" Value="-2504"/>
+												<Property Name="Osc2Waveform" Type="int32" Value="1"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{EAE45F10-B958-4041-9A78-14D83C478D70}" ShortID="601197444">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{069285D5-159B-4D7C-AB5A-905519BC4B69}" ShortID="594955526">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackCurve" Type="Real64" Value="18">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{07AEB4DF-CC8E-424E-8A77-2FDBE268212A}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="5"/>
+																									<Property Name="Min" Type="Real64" Value="-3"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.021"/>
+																				<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.158"/>
+																				<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.089"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="13.2"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D1B1BA3B-5707-4498-BBFD-BCAA4DC4B69C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-0.13715</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{14642617-85AB-42FE-8E15-1AE5391268A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Button2_Tone" ID="{BF45A311-CD05-4E97-B230-6142D2B93B61}" ShortID="755850724">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>53</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="UI Detailed" ID="{F261E386-F57C-4458-A994-0BB978329563}" WorkUnitID="{D76F1687-B7A4-4EB2-AE2A-8F8AAA5EE63D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb" ID="{23A1CB7A-79F1-445F-898F-206071A03E47}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{793790D0-72EB-476C-9AA0-6973FBA71171}" ShortID="355444260" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="BaseFrequency" Type="Real32" Value="440"/>
+												<Property Name="NoiseLevel" Type="Real32" Value="-17"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+												<Property Name="Osc1Pwm" Type="Real32" Value="48"/>
+												<Property Name="Osc1Transpose" Type="int32" Value="-2501"/>
+												<Property Name="Osc1Waveform" Type="int32" Value="1"/>
+												<Property Name="Osc2Level" Type="Real32" Value="-1"/>
+												<Property Name="Osc2Pwm" Type="Real32" Value="62"/>
+												<Property Name="Osc2Waveform" Type="int32" Value="1"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{E9C40E55-88FE-4A0A-844E-AF0A016B9D1A}" ShortID="851580162">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{0B666E21-B8FB-4D2F-ADEE-FF9468057255}" ShortID="95574197">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackCurve" Type="Real64" Value="17">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{1C96396B-A61F-4F65-A0D0-0556069F8FF4}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="5"/>
+																									<Property Name="Min" Type="Real64" Value="-3"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																				<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.168"/>
+																				<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{6F370BC4-CF9D-426E-A657-E7622CC229E1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-0.13715</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{793790D0-72EB-476C-9AA0-6973FBA71171}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Button3_Click" ID="{A264FD0A-66F9-4DA4-9976-0E64F441EC57}" ShortID="647249683">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>57</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BC369452-26B8-45E9-9323-BD6032E9A28B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4866135B-A0ED-448A-AAEE-31614DC5F1E8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="126"/>
+															<Property Name="Min" Type="Real64" Value="-25"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI" ID="{D71DCFE4-E7E8-4B0C-B539-743D8C53BE0E}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb" ID="{23A1CB7A-79F1-445F-898F-206071A03E47}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="220197__gameaudio__click-basic" ID="{33A1D5D4-FA5E-4CFC-AF59-E496E18E76FE}" ShortID="5177747">
+											<Language>SFX</Language>
+											<AudioFile>220197__gameaudio__click-basic.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="220197__gameaudio__click-basic" ID="{33A1D5D4-FA5E-4CFC-AF59-E496E18E76FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
