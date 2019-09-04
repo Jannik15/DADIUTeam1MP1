@@ -6,7 +6,6 @@ public class CharacterMovement : MonoBehaviour
 {
 
     private float playerMoveSpeed, moveThreshold, moveStep;
-    public int moveType;
 
 
     
@@ -21,7 +20,6 @@ public class CharacterMovement : MonoBehaviour
         moveStep = playerMoveSpeed * Time.deltaTime;
         goalPos = transform.position;
         moveThreshold = 0.1f;
-        moveType = 0;
     }
 
     void Update()
@@ -36,7 +34,7 @@ public class CharacterMovement : MonoBehaviour
     }
 
     public void GetInput(){
-        if(moveType == 0 && Input.GetMouseButtonDown(0)) {
+        if(GameMaster.instance.GetWalkType() == 0 && Input.GetMouseButtonDown(0)) {
 
                 goalPos = getPressPos();
             }
@@ -45,7 +43,7 @@ public class CharacterMovement : MonoBehaviour
                 goalPos = getPressPos();
             } */
 
-        if(moveType == 1 && Input.GetMouseButton(0)) {
+        if(GameMaster.instance.GetWalkType() == 1 && Input.GetMouseButton(0)) {
             //if(Input.touchCount > 1) {
                 goalPos = getPressPos();
            // }
