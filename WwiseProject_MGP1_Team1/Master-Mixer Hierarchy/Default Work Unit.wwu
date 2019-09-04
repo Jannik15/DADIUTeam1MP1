@@ -166,6 +166,7 @@
 										</AuxBus>
 									</ChildrenList>
 								</Bus>
+								<Bus Name="Objects" ID="{E7C53D93-BE37-4767-9CCB-E28CFCD6D4E0}"/>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

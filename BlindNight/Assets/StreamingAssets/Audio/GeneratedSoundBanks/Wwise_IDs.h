@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_BUTTON1_MELLOW = 1391607054U;
         static const AkUniqueID PLAY_BUTTON2_TONE = 185252871U;
         static const AkUniqueID PLAY_BUTTON3_CLICK = 1166635208U;
+        static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
         static const AkUniqueID PLAY_FLASHLIGHT_ON_OFF = 4064524182U;
         static const AkUniqueID PLAY_FLASHLIGHT_SWITCH = 784840363U;
         static const AkUniqueID PLAY_FOOTSTEP_SURFACE = 709824872U;
@@ -82,6 +83,7 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NON_WORLD = 838047381U;
+        static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID WORLD = 2609808943U;
