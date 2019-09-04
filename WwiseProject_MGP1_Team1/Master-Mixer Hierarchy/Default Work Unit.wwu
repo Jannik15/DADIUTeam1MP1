@@ -130,7 +130,24 @@
 								</Property>
 							</PropertyList>
 							<ChildrenList>
-								<Bus Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}"/>
+								<Bus Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}">
+									<ChildrenList>
+										<AuxBus Name="Presence_Reverb" ID="{E700524E-84A3-43D5-97A0-D1CFAA9915FC}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Large_Church1" ID="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

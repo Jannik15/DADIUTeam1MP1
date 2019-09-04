@@ -40,6 +40,19 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music_Regions" ID="{6245EDD1-A4C6-46B1-A75E-976DA2C6CF49}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Room1" ID="{5537F364-AE60-413D-BAFC-4DF93E9D5095}"/>
+								<CustomState Name="" ID="{1223529E-D384-4DF0-9C0B-91A1BA127D41}" ShortID="303797068"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{CF06602E-42E7-4C7D-A25C-3041FCCF6B4E}">
 							<PropertyList>

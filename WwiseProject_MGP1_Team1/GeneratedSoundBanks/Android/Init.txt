@@ -19,9 +19,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	348963605	Reverb			\Default Work Unit\Master Audio Bus\Non-World\UI\Reverb	
+	3562591321	Presence_Reverb			\Default Work Unit\Master Audio Bus\World\Ambient\Presence_Reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
 	1990128658	Room_Medium	Wwise RoomVerb			
+	2662085913	Large_Church1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

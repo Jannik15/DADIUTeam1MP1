@@ -1,6 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3B7EF11C-10D2-40B6-96CC-DDDC3F457FC9}" SchemaVersion="94" RootDocumentID="{239AC835-5F08-401C-AD01-43EF1D5199A5}">
 	<AudioObjects>
-		<WorkUnit Name="Ambiences_Emitters" ID="{3B7EF11C-10D2-40B6-96CC-DDDC3F457FC9}" OwnerID="{E7346269-A5A9-4C2A-B957-A9742A920522}" PersistMode="Nested"/>
+		<WorkUnit Name="Ambiences_Emitters" ID="{3B7EF11C-10D2-40B6-96CC-DDDC3F457FC9}" OwnerID="{E7346269-A5A9-4C2A-B957-A9742A920522}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Presence" ID="{2B5F390E-D235-42DC-B419-062F9DB48A8C}" ShortID="133288843">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1D831935-92B8-4789-9D07-397A9DA594F1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="11"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="9">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{77B6A4B4-3BA8-4354-A6E5-05EC8AAD4804}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="8"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Squecky_Presence" ID="{544BD0DE-39A3-41C4-ABA9-267121B3CF1E}" ShortID="550103712">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>910</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{04379ABF-4CDB-4160-8151-64D91A418C00}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-1011"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Presence_Reverb" ID="{E700524E-84A3-43D5-97A0-D1CFAA9915FC}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CreekyWood_Barefoot_Sneaking" ID="{76226B41-BB2F-41D6-B587-D0AC94553C1C}" ShortID="419815528">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="12.316309750423"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="10.4160791032149"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.3866886632826"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>CreekyWood_Barefoot_Sneaking.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CreekyWood_Barefoot_Sneaking" ID="{76226B41-BB2F-41D6-B587-D0AC94553C1C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Squecky_Presence_01" ID="{734784A8-AF17-4C16-989A-9250BC05165B}" ShortID="474104682">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>910</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{755F053F-BEEA-4A89-93F7-BE5F0DE3276D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-202"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Presence_Reverb" ID="{E700524E-84A3-43D5-97A0-D1CFAA9915FC}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CreekyWood_Barefoot_Sneaking" ID="{919DD6ED-1BBE-4E3D-BB50-08D46C87B661}" ShortID="1032422741">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="48.7725866116751"/>
+										<Property Name="TrimEnd" Type="Real64" Value="52.4322900803722"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>CreekyWood_Barefoot_Sneaking.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CreekyWood_Barefoot_Sneaking" ID="{919DD6ED-1BBE-4E3D-BB50-08D46C87B661}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{947A4B26-24FF-45BA-94ED-2CECAA7C4117}"/>
+						<Position Name="" ID="{18379DD0-366A-48BC-9A96-1928D9F5D050}">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="7.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Presence_Path" ID="{59BB2574-0DF3-4282-B7D8-1EB7207A7D6F}">
+									<PropertyList>
+										<Property Name="RandomX" Type="Real64" Value="10"/>
+										<Property Name="RandomY" Type="Real64" Value="5"/>
+										<Property Name="RandomZ" Type="Real64" Value="5"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-47.46835</XPos>
+											<YPos>46.81529</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>33.5443037974684</XPos>
+											<YPos>70.0636942675159</YPos>
+											<Flags>0</Flags>
+											<Time>833</Time>
+										</Point>
+										<Point>
+											<XPos>52.5316455696203</XPos>
+											<YPos>38.8535031847134</YPos>
+											<Flags>0</Flags>
+											<Time>1666</Time>
+										</Point>
+										<Point>
+											<XPos>7.59493670886076</XPos>
+											<YPos>-38.2165605095541</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>-75.9493670886076</XPos>
+											<YPos>-57.9617834394904</YPos>
+											<Flags>0</Flags>
+											<Time>3333</Time>
+										</Point>
+										<Point>
+											<XPos>-78.4810126582279</XPos>
+											<YPos>-21.656050955414</YPos>
+											<Flags>0</Flags>
+											<Time>4166</Time>
+										</Point>
+										<Point>
+											<XPos>-29.746835443038</XPos>
+											<YPos>-5.73248407643311</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Presence_Path_01" ID="{E03E4D68-2007-4DE1-9E78-392B8C22D19D}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>20.8860759493671</XPos>
+											<YPos>10.1910828025478</YPos>
+											<Flags>0</Flags>
+											<Time>714</Time>
+										</Point>
+										<Point>
+											<XPos>-0.632911392405063</XPos>
+											<YPos>-25.4777070063694</YPos>
+											<Flags>0</Flags>
+											<Time>1428</Time>
+										</Point>
+										<Point>
+											<XPos>17.0886075949367</XPos>
+											<YPos>-43.9490445859873</YPos>
+											<Flags>0</Flags>
+											<Time>2142</Time>
+										</Point>
+										<Point>
+											<XPos>-29.746835443038</XPos>
+											<YPos>-40.7643312101911</YPos>
+											<Flags>0</Flags>
+											<Time>2857</Time>
+										</Point>
+										<Point>
+											<XPos>-28.4810126582279</XPos>
+											<YPos>25.4777070063694</YPos>
+											<Flags>0</Flags>
+											<Time>3571</Time>
+										</Point>
+										<Point>
+											<XPos>-18.9873417721519</XPos>
+											<YPos>35.031847133758</YPos>
+											<Flags>0</Flags>
+											<Time>4285</Time>
+										</Point>
+										<Point>
+											<XPos>-12.0253164556962</XPos>
+											<YPos>57.3248407643312</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

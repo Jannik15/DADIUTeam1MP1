@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_BUTTON1_MELLOW = 1391607054U;
         static const AkUniqueID PLAY_BUTTON2_TONE = 185252871U;
         static const AkUniqueID PLAY_BUTTON3_CLICK = 1166635208U;
+        static const AkUniqueID PLAY_PRESENCE = 4155730121U;
         static const AkUniqueID PLAY_ROOM_WIND = 919644948U;
     } // namespace EVENTS
 
@@ -69,6 +70,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID PRESENCE_REVERB = 3562591321U;
         static const AkUniqueID REVERB = 348963605U;
     } // namespace AUX_BUSSES
 

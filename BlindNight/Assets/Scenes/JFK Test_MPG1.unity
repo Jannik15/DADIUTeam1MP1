@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 582062473}
   - component: {fileID: 582062472}
   - component: {fileID: 582062471}
+  - component: {fileID: 582062476}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -441,7 +442,8 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d5a1b41894f8b864d91f67b4d72d62c2,
+      type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -530,6 +532,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582062469}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &582062476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582062469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce844ef14a00a8d4495175f906521235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 611ae0022ddae4843b800db4748132c2,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &838245454
 GameObject:
   m_ObjectHideFlags: 0

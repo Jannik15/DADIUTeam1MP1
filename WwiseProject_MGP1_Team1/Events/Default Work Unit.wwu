@@ -51,6 +51,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Presence" ID="{7E6DAEF0-225E-4556-8A3D-3BBB8ABE8A9D}">
+					<ChildrenList>
+						<Action Name="" ID="{AF079727-ACD9-4915-81B8-B25672D392CD}" ShortID="353439332">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Presence" ID="{2B5F390E-D235-42DC-B419-062F9DB48A8C}" WorkUnitID="{3B7EF11C-10D2-40B6-96CC-DDDC3F457FC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

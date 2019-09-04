@@ -24,8 +24,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340127620568073
+    m_lastTime: -8586340096166139234
     List:
+    - name: Presence_Reverb
+      guid: 4e5200e7a384d54397a0d1cfaa9915fc
+      id: 3562591321
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Ambient
+        ObjectType: 2
+      - ElementName: Presence_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Ambient\Presence_Reverb
     - name: Reverb
       guid: 7acba123f1795f44898f206071a03e47
       id: 348963605
@@ -46,7 +61,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340112453554307
+    m_lastTime: -8586340091512692687
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -62,8 +77,56 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340112453654043
+    m_lastTime: -8586340091512822338
     List:
+    - name: Play_Button1_Mellow
+      guid: 6615e22321682e4fa1232613e3372de7
+      id: 1391607054
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Button1_Mellow
+        ObjectType: 3
+      Path: Default Work Unit\Play_Button1_Mellow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Button2_Tone
+      guid: f2fa2cdce243664889929b4fe9faab2f
+      id: 185252871
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Button2_Tone
+        ObjectType: 3
+      Path: Default Work Unit\Play_Button2_Tone
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Button3_Click
+      guid: bbdd8d1ec1a8c74ba41019cba04a3f3a
+      id: 1166635208
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Button3_Click
+        ObjectType: 3
+      Path: Default Work Unit\Play_Button3_Click
+      maxAttenuation: 0
+      maxDuration: 0.507227
+      minDuration: 0.46486
+    - name: Play_Presence
+      guid: f0ae6d7e5e2256458a3d3bbb8abe8a9d
+      id: 4155730121
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Presence
+        ObjectType: 3
+      Path: Default Work Unit\Play_Presence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Room_Wind
       guid: a82e819abe91564d8911429bad098583
       id: 919644948
@@ -294,8 +357,6 @@ MonoBehaviour:
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
   - /MGP1_Team1/Events/Default Work Unit/Ambience
-  - /MGP1_Team1/Events/Music
-  - /MGP1_Team1/Events/Music/General
   - /MGP1_Team1/States
   - /MGP1_Team1/States/MusicStates
   - /MGP1_Team1/States/MusicStates/Music_Regions
