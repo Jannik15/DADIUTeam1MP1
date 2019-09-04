@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3d05971feb405c41b3dd1718adbd3311
     GuidInternal: 
-    m_lastTime: -8586340906730622372
+    m_lastTime: -8586340169874810974
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340906736628919
+    m_lastTime: -8586340169894435825
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340906730652367
+    m_lastTime: -8586340169875531173
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340906737091436
+    m_lastTime: -8586340169896816438
     List:
     - name: test
       guid: 3b85880b26740f449c5aaf3597534a4a
@@ -68,20 +68,20 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\test
       maxAttenuation: 0
-      maxDuration: 4
-      minDuration: 4
+      maxDuration: 4000000
+      minDuration: 4000000
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c4c42834edf7314b8c300b5d103ef982
     GuidInternal: 
-    m_lastTime: -8586340906737091436
+    m_lastTime: -8586340169896766412
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8586340906737081436
+    m_lastTime: -8586340169896726413
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -178,27 +178,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e3316310d8271e438f5b458871155d41
     GuidInternal: 
-    m_lastTime: -8586340906730642359
+    m_lastTime: -8586340169875461143
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586340906730632378
+    m_lastTime: -8586340169874891009
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 64c578f279613943879c0bc962a9b98f
     GuidInternal: 
-    m_lastTime: -8586340906730622372
+    m_lastTime: -8586340169874850826
     List: []
   ExpandedItems:
   - /MGP1_Team1
-  - /MGP1_Team1/Events
-  - /MGP1_Team1/Events/Default Work Unit
-  - /MGP1_Team1/SoundBanks
-  - /MGP1_Team1/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
