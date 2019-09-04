@@ -35,18 +35,23 @@ public class GameMaster : MonoBehaviour
         walkType = type;
     }
 
+    public int GetWalkType()
+    {
+        return walkType;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            GameObject filenamefld = null;
-            Transform[] trans = GameObject.Find("MainCanvas").GetComponentsInChildren<Transform>(true);
+            GameObject MainMenu = null;
+            Transform[] trans = GameObject.Find("Canvas").GetComponentsInChildren<Transform>(true);
             foreach (Transform t in trans)
             {
                 if (t.gameObject.name == "MainMenu")
                 {
-                    filenamefld = t.gameObject;
-                    filenamefld.SetActive(!filenamefld.gameObject.activeSelf);
+                    MainMenu = t.gameObject;
+                    MainMenu.SetActive(!MainMenu.gameObject.activeSelf);
                 }
             }
         }
