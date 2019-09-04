@@ -1,11 +1,28 @@
 Event	ID	Name			Wwise Object Path	Notes
 	185252871	Play_Button2_Tone			\Default Work Unit\Play_Button2_Tone	
+	709824872	Play_Footstep_Surface			\Default Work Unit\Play_Footstep_Surface	
+	784840363	Play_Flashlight_Switch			\Default Work Unit\Play_Flashlight_Switch	
 	919644948	Play_Room_Wind			\Default Work Unit\Ambience\Play_Room_Wind	
 	1166635208	Play_Button3_Click			\Default Work Unit\Play_Button3_Click	
 	1391607054	Play_Button1_Mellow			\Default Work Unit\Play_Button1_Mellow	
 	1532327793	Music_TitleScreen			\Music\Music_TitleScreen	
 	3741135221	Music_Region			\Music\General\Music_Region	
+	4064524182	Play_Flashlight_On_Off			\Default Work Unit\Play_Flashlight_On_Off	
 	4155730121	Play_Presence			\Default Work Unit\Play_Presence	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4064446173	Surface_Type			\Default Work Unit\Surface_Type	
+
+Switch	ID	Name	Switch Group			Notes
+	712161697	Rug	Surface_Type			
+	2058049674	Wood	Surface_Type			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2106907484	Music_Regions			\MusicStates\Music_Regions	
+
+State	ID	Name	State Group			Notes
+	0	None	Music_Regions			
+	1359360137	Room1	Music_Regions			
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	95574197	Modulator Envelope (Custom)				
@@ -15,12 +32,20 @@ Modulator Time	ID	Name			Wwise Object Path	Notes
 	56429685	Modulator Time (Custom)				
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	3214314	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Wind Howling\SoundSeed Air Wind	
 	355444260	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button2_Tone\Wwise Synth One	
 	539636603	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button1_Mellow\Wwise Synth One	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5177747	Button3_Click	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\220197__gameaudio__click-basic_7A224B1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button3_Click		24092
 	63531734	Room Tone	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Room Tone		5778888
+	322987836	footstep_wood_4	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\footstep_wood_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_4		42996
 	419815528	Squecky_Presence	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\CreekyWood_Barefoot_Sneaking_42191F11.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Presence\Squecky_Presence		378420
+	604692420	footstep_wood_6	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\footstep_wood_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_6		53840
+	731430948	Flashlight_Switch	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\435845__dersuperanton__flashlight-click_DF764F78.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_Switch		44596
+	845153691	footstep_wood_2	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\footstep_wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_2		58712
+	846937253	Flashlight_On_Off	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\435845__dersuperanton__flashlight-click_4B3BC24A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_On_Off		107100
+	853566693	footstep_wood_5	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\footstep_wood_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_5		57600
 	1032422741	Squecky_Presence_01	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\CreekyWood_Barefoot_Sneaking_3809F4D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Presence\Squecky_Presence_01		702728
+	1042308158	footstep_wood_3	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\footstep_wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_3		56056
 

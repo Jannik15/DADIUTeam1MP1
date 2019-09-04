@@ -24,8 +24,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340096166139234
+    m_lastTime: -8586340080037426479
     List:
+    - name: Player_Footstep_Reverb
+      guid: 5128347f32ab854bbe10337b8f44a7a3
+      id: 3916004666
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Ambient
+        ObjectType: 2
+      - ElementName: Player_Footstep_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Ambient\Player_Footstep_Reverb
     - name: Presence_Reverb
       guid: 4e5200e7a384d54397a0d1cfaa9915fc
       id: 3562591321
@@ -61,7 +76,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340091512692687
+    m_lastTime: -8586340083001675541
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -77,7 +92,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340091512822338
+    m_lastTime: -8586340083001765305
     List:
     - name: Play_Button1_Mellow
       guid: 6615e22321682e4fa1232613e3372de7
@@ -115,6 +130,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.507227
       minDuration: 0.46486
+    - name: Play_Footstep_Surface
+      guid: e404ba7db155db41bb6d965d45a2d045
+      id: 709824872
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Footstep_Surface
+        ObjectType: 3
+      Path: Default Work Unit\Play_Footstep_Surface
+      maxAttenuation: 0
+      maxDuration: 0.402056
+      minDuration: 0.232926
     - name: Play_Presence
       guid: f0ae6d7e5e2256458a3d3bbb8abe8a9d
       id: 4155730121
@@ -343,8 +370,33 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586340899813916498
-    List: []
+    m_lastTime: -8586340081056434078
+    List:
+    - name: Surface_Type
+      guid: da5061335875a745896d2f33a17fe9c2
+      id: 4064446173
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Surface_Type
+        ObjectType: 11
+      Path: Default Work Unit\Surface_Type
+      values:
+      - name: Rug
+        guid: 7540f78a98cf40448fab0eda3bc96d83
+        id: 712161697
+        PathAndIcons:
+        - ElementName: Rug
+          ObjectType: 10
+      - name: Wood
+        guid: 32f763f8d884b94991a43c95bbca611c
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -357,8 +409,5 @@ MonoBehaviour:
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
   - /MGP1_Team1/Events/Default Work Unit/Ambience
-  - /MGP1_Team1/States
-  - /MGP1_Team1/States/MusicStates
-  - /MGP1_Team1/States/MusicStates/Music_Regions
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

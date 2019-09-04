@@ -67,7 +67,9 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Room1" ID="{5537F364-AE60-413D-BAFC-4DF93E9D5095}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Rug" ID="{8AF74075-CF98-4440-8FAB-0EDA3BC96D83}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

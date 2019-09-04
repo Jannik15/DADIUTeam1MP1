@@ -148,6 +148,24 @@
 										</AuxBus>
 									</ChildrenList>
 								</Bus>
+								<Bus Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}">
+									<ChildrenList>
+										<AuxBus Name="Player_Footstep_Reverb" ID="{7F342851-AB32-4B85-BE10-337B8F44A7A3}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Player_Flashlight_Reverb" ID="{4AB68F57-073A-4340-8C92-E537C9EECC4B}">
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

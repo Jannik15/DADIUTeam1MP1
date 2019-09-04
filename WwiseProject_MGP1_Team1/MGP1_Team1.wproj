@@ -31,6 +31,7 @@
 						<Value Platform="Android">256</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9Ijc0OTEiIG1hc2s9IlBTTkUyOTc0IiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PC9wcm9qZWN0Pg==|U79MS0mZNBUmxe3kTQl2lSA1HmSdeGokvfGQnnRuNG5uhjvgR5L5yWwT4kzkUrT0jmq0BdhSglnhVUZqpZO63rovmk3Sqxl7mYiVKw30HlskIYgL7GPlsworWIaQAK1P+ptiIuejR6sdIAvxCa3x1gnqNWlEnydYXhvKpwX5YH1uMxxU9KnlWw50JWg/hfb6S9d2LYoioh3IYGygcrPRZXgyzfXvgQJHJmzOb+Rfu8owJ/xtUNqIw5Ofod1/YNtjljTkIRUeF+r3SCQlMcWW4nknvle+noQqy6SHwy4bD4Yklrg0wI5afa0e0OL2hicauOG5dhX+GTcn8N2KwrivPg=="/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>

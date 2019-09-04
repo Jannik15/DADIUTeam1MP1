@@ -5,9 +5,11 @@
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{FAB9A8F5-D1CB-44AF-8250-7542C084CE26}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Footstep_Surface" ID="{7DBA04E4-55B1-41DB-BB6D-965D45A2D045}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Button1_Mellow" ID="{A144E17E-4ACA-4502-915F-DE2A8EB9DDFA}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Presence" ID="{7E6DAEF0-225E-4556-8A3D-3BBB8ABE8A9D}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Button2_Tone" ID="{DC2CFAF2-43E2-4866-8992-9B4FE9FAAB2F}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Flashlight_On_Off" ID="{D593DAA7-7C9F-494C-A084-3F7F54CD2FCC}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Button3_Click" ID="{1E8DDDBB-A8C1-4BC7-A410-19CBA04A3F3A}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Music_Region" ID="{01B3EF25-CE68-4C22-B7DC-3C6734697336}" WorkUnitID="{211CCABC-53A3-43CF-BE84-BA1D138041C2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Music_TitleScreen" ID="{7F32B523-395B-4CAA-8005-FF04C30331B4}" WorkUnitID="{211CCABC-53A3-43CF-BE84-BA1D138041C2}" Filter="7" Origin="Manual"/>
@@ -15,6 +17,7 @@
 						<ObjectRef Name="Button3_Click" ID="{A264FD0A-66F9-4DA4-9976-0E64F441EC57}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Button2_Tone" ID="{BF45A311-CD05-4E97-B230-6142D2B93B61}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Button1_Mellow" ID="{23E21566-6821-4F2E-A123-2613E3372DE7}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Flashlight_Switch" ID="{FCE99D4E-A172-4F64-AFAC-708883E78B04}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

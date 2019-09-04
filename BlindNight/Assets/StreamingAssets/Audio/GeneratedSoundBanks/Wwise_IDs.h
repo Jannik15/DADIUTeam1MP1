@@ -18,6 +18,9 @@ namespace AK
         static const AkUniqueID PLAY_BUTTON1_MELLOW = 1391607054U;
         static const AkUniqueID PLAY_BUTTON2_TONE = 185252871U;
         static const AkUniqueID PLAY_BUTTON3_CLICK = 1166635208U;
+        static const AkUniqueID PLAY_FLASHLIGHT_ON_OFF = 4064524182U;
+        static const AkUniqueID PLAY_FLASHLIGHT_SWITCH = 784840363U;
+        static const AkUniqueID PLAY_FOOTSTEP_SURFACE = 709824872U;
         static const AkUniqueID PLAY_PRESENCE = 4155730121U;
         static const AkUniqueID PLAY_ROOM_WIND = 919644948U;
     } // namespace EVENTS
@@ -35,6 +38,21 @@ namespace AK
         } // namespace MUSIC_REGIONS
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace SURFACE_TYPE
+        {
+            static const AkUniqueID GROUP = 4064446173U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID RUG = 712161697U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace SURFACE_TYPE
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
@@ -64,12 +82,15 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NON_WORLD = 838047381U;
+        static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID PLAYER_FLASHLIGHT_REVERB = 737812310U;
+        static const AkUniqueID PLAYER_FOOTSTEP_REVERB = 3916004666U;
         static const AkUniqueID PRESENCE_REVERB = 3562591321U;
         static const AkUniqueID REVERB = 348963605U;
     } // namespace AUX_BUSSES
