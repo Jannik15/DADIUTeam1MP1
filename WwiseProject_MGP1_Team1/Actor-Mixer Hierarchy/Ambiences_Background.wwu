@@ -12,6 +12,101 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Wind Howling" ID="{F2E75285-392D-47FD-A650-2E9CFF91ABD4}" ShortID="643365332">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Ambient" ID="{F7D0D4DB-E365-46AA-9F87-E7EA87411061}" WorkUnitID="{19ACBF7D-756B-45E6-9689-82D33F090F73}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" ShortID="3214314" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+									<PropertyList>
+										<Property Name="AverageVelocity" Type="Real32" Value="-150"/>
+										<Property Name="AverageVelocityRandom" Type="Real32" Value="180"/>
+										<Property Name="Duration" Type="Real64" Value="30.7"/>
+										<Property Name="Variability" Type="Real32" Value="0.31"/>
+										<Property Name="VariabilityAutomate" Type="bool" Value="True"/>
+										<Property Name="VariabilityRandom" Type="Real32" Value="0.2"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<PluginData>
+	<CurveList Version="1">
+		<CurveInfo Name="Variability">
+			<Curve Name="" ID="{4D7546C6-A938-4184-9E55-2097C133070F}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0.13718</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>14.01245</XPos>
+						<YPos>-0.07811</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>21.71929</XPos>
+						<YPos>0.0562</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>30.7</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+	</CurveList>
+</PluginData>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{3CB5CDAA-835B-41C7-8DC6-4B0D7DAEB738}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="PanX" Type="Real64" Value="-11.3432835820895"/>
+													<Property Name="PanY" Type="Real64" Value="16.2650602409638"/>
+													<Property Name="QFactor" Type="Real32" Value="13.23"/>
+												</PropertyList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{D8090C6D-9874-4E82-BE12-723F8CC39838}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="Frequency" Type="Real32" Value="577"/>
+													<Property Name="Gain" Type="Real32" Value="-4"/>
+													<Property Name="PanX" Type="Real64" Value="18.5074626865672"/>
+													<Property Name="PanY" Type="Real64" Value="20.4819277108434"/>
+													<Property Name="QFactor" Type="Real32" Value="39.23"/>
+												</PropertyList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{F9C67E69-D131-4504-998E-8D75814883E6}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="Frequency" Type="Real32" Value="648"/>
+													<Property Name="Gain" Type="Real32" Value="-3"/>
+													<Property Name="PanX" Type="Real64" Value="-0.597014925373134"/>
+													<Property Name="PanY" Type="Real64" Value="-1.80722891566267"/>
+													<Property Name="QFactor" Type="Real32" Value="45.27"/>
+												</PropertyList>
+											</PluginInnerObject>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

@@ -14,6 +14,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Ambience" ID="{294220D3-2EAF-4A00-950C-6717B1835CE6}" ShortID="355614163">
+					<ChildrenList>
+						<Event Name="Play_Wind_Howling" ID="{D00A8A59-87A9-4CAA-AE77-858586003073}">
+							<ChildrenList>
+								<Action Name="" ID="{3F617210-0A2C-45B7-908E-6535A845C3BC}" ShortID="264146321">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind Howling" ID="{F2E75285-392D-47FD-A650-2E9CFF91ABD4}" WorkUnitID="{A9DEE84B-5288-4DE5-B537-882232B6FDD9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

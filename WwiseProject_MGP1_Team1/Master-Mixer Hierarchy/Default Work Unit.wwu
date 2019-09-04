@@ -112,6 +112,9 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}"/>
+							</ChildrenList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
