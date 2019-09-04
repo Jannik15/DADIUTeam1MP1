@@ -52,14 +52,26 @@
 													<Modifier Name="" ID="{81272B61-A982-48F4-8DDA-D90636BF9C56}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="5"/>
-															<Property Name="Min" Type="Real64" Value="-3"/>
+															<Property Name="Max" Type="Real64" Value="9"/>
+															<Property Name="Min" Type="Real64" Value="-6"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{61BA660A-3825-4A1F-B47E-2FF67EC49C20}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-25"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
 												<Value>-3</Value>
@@ -222,6 +234,19 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{855E0E4E-73D6-4183-824B-F0812E92A7A0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-51"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -329,7 +354,7 @@
 													<Modifier Name="" ID="{4866135B-A0ED-448A-AAEE-31614DC5F1E8}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="126"/>
+															<Property Name="Max" Type="Real64" Value="227"/>
 															<Property Name="Min" Type="Real64" Value="-25"/>
 														</PropertyList>
 													</Modifier>

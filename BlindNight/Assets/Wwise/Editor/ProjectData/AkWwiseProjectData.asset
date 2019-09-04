@@ -150,7 +150,7 @@ MonoBehaviour:
       Path: Default Work Unit\UI\Play_Button3_Click
       maxAttenuation: 0
       maxDuration: 0.507227
-      minDuration: 0.46486
+      minDuration: 0.438516
     - name: Play_Door_Open
       guid: a1772980d041434482eb5701fa5dd305
       id: 1660008929

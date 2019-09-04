@@ -1,15 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
-	185252871	Play_Button2_Tone			\Default Work Unit\Play_Button2_Tone	
-	709824872	Play_Footstep_Surface			\Default Work Unit\Play_Footstep_Surface	
-	784840363	Play_Flashlight_Switch			\Default Work Unit\Play_Flashlight_Switch	
+	185252871	Play_Button2_Tone			\Default Work Unit\UI\Play_Button2_Tone	
+	709824872	Play_Footstep_Surface			\Default Work Unit\Player\Play_Footstep_Surface	
+	784840363	Play_Flashlight_Switch			\Default Work Unit\Player\Play_Flashlight_Switch	
 	919644948	Play_Room_Wind			\Default Work Unit\Ambience\Play_Room_Wind	
-	1166635208	Play_Button3_Click			\Default Work Unit\Play_Button3_Click	
-	1391607054	Play_Button1_Mellow			\Default Work Unit\Play_Button1_Mellow	
+	1166635208	Play_Button3_Click			\Default Work Unit\UI\Play_Button3_Click	
+	1391607054	Play_Button1_Mellow			\Default Work Unit\UI\Play_Button1_Mellow	
 	1532327793	Music_TitleScreen			\Music\Music_TitleScreen	
-	1660008929	Play_Door_Open			\Default Work Unit\Play_Door_Open	
+	1660008929	Play_Door_Open			\Default Work Unit\Objects\Play_Door_Open	
 	3741135221	Music_Region			\Music\General\Music_Region	
-	4064524182	Play_Flashlight_On_Off			\Default Work Unit\Play_Flashlight_On_Off	
-	4155730121	Play_Presence			\Default Work Unit\Play_Presence	
+	4064524182	Play_Flashlight_On_Off			\Default Work Unit\Player\Play_Flashlight_On_Off	
+	4155730121	Play_Presence			\Default Work Unit\Ambience\Play_Presence	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	4064446173	Surface_Type			\Default Work Unit\Surface_Type	

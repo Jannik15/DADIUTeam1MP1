@@ -14,6 +14,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="Room_Wind" ID="{98F6069C-08F8-4D22-A597-262952A2A8DC}" ShortID="59421918">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
@@ -33,7 +40,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -62,7 +69,7 @@
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-2</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>

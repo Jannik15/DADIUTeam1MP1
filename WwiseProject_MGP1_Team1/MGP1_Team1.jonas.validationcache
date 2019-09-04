@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Ambiences_Background.wwu" DateLow="1567595640" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Ambiences_Background.wwu" DateLow="1567605757" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Ambiences_Emitters.wwu" DateLow="1567599116" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Ambient.wwu" DateLow="1567517793" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1567597504" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1567605643" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1567595411" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1567594123" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Objects.wwu" DateLow="1567604249" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Player.wwu" DateLow="1567602184" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Actor-Mixer Hierarchy\Player.wwu" DateLow="1567605392" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Attenuations\Default Work Unit.wwu" DateLow="1567597268" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Audio Devices\Default Work Unit.wwu" DateLow="1567516902" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Control Surface Sessions\Default Work Unit.wwu" DateLow="1567516902" DateHigh="0"/>
@@ -20,7 +20,7 @@
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Default Work Unit.wwu" DateLow="1567520482" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Factory Convolution Reverb Effects Ambisonics.wwu" DateLow="1567516902" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Factory Convolution Reverb Effects Stereo.wwu" DateLow="1567516902" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Factory Effects.wwu" DateLow="1567601898" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Factory Effects.wwu" DateLow="1567605392" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Factory iZotope Box Modeler.wwu" DateLow="1567516902" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Factory iZotope Delay.wwu" DateLow="1567516902" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Effects\Factory iZotope Dynamics.wwu" DateLow="1567516902" DateHigh="0"/>
@@ -44,7 +44,7 @@
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Queries\Default Work Unit.wwu" DateLow="1567516904" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Queries\Factory Queries.wwu" DateLow="1567516904" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\SoundBanks\Default Work Unit.wwu" DateLow="1567604718" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1567604177" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1567605392" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\States\Default Work Unit.wwu" DateLow="1567516904" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\States\MusicStates.wwu" DateLow="1567595851" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\Switches\Default Work Unit.wwu" DateLow="1567604617" DateHigh="0"/>
