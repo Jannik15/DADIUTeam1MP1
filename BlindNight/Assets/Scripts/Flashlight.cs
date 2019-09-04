@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    public GameObject volumetricLight;
+    Renderer volumetricLight;
+    public Color lightColor;
+    private void Start()
+    {
+        volumetricLight = GetComponentInChildren<Renderer>();
+        lightColor = GetComponent<Light>().color;
+    }
 
     void Update()
     {
-        Debug.Log(volumetricLight.GetComponent<Material>().name);
-        //volumetricLight.GetComponent<Material>().color = gameObject.GetComponent<Light>().color;
-        //volumetricLight.GetComponent<Material>() = gameObject.GetComponent<Light>().color;
+        GetComponent<Light>().color = lightColor;
+        volumetricLight.material.color = GetComponent<Light>().color; // Main color
+        volumetricLight.material.SetColor("_EmissionColor", GetComponent<Light>().color); // Emissive color
     }
 }
