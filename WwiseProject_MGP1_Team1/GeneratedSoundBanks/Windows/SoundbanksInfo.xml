@@ -20,10 +20,22 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3741135221" Name="Music_Region" ObjectPath="\Events\Music\General\Music_Region" DurationType="Infinite"/>
+				<Event Id="1532327793" Name="Music_TitleScreen" ObjectPath="\Events\Music\Music_TitleScreen" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1391607054" Name="Play_Button1_Mellow" ObjectPath="\Events\Default Work Unit\Play_Button1_Mellow" DurationType="Unknown"/>
+				<Event Id="185252871" Name="Play_Button2_Tone" ObjectPath="\Events\Default Work Unit\Play_Button2_Tone" DurationType="Unknown"/>
+				<Event Id="1166635208" Name="Play_Button3_Click" ObjectPath="\Events\Default Work Unit\Play_Button3_Click" DurationType="OneShot" DurationMin="0.464860" DurationMax="0.507227"/>
+				<Event Id="919644948" Name="Play_Room_Wind" ObjectPath="\Events\Default Work Unit\Ambience\Play_Room_Wind" DurationType="Infinite"/>
+			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="202795201" Language="SFX">
-					<ShortName>GS_MuteHorn_120-C.wav</ShortName>
-					<Path>SFX\GS_MuteHorn_120-C_10C4C929.wem</Path>
+				<File Id="5177747" Language="SFX">
+					<ShortName>220197__gameaudio__click-basic.wav</ShortName>
+					<Path>SFX\220197__gameaudio__click-basic_7A224B1A.wem</Path>
+				</File>
+				<File Id="63531734" Language="SFX">
+					<ShortName>360731__klankbeeld__roomtoneapartment-day160924-0973.wav</ShortName>
+					<Path>SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

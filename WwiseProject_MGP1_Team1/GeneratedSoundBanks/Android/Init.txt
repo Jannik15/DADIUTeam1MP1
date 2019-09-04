@@ -3,6 +3,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	0	None	Music_Regions			
+	1359360137	Room1	Music_Regions			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1058246790	Menuslider_Volume_SoundFX			\Gameplay\Menuslider_Volume_SoundFX	
@@ -15,6 +16,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Non-World\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Non-World\UI\Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1990128658	Room_Medium	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

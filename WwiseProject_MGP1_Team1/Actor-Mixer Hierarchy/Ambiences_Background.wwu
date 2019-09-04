@@ -13,32 +13,89 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Wind Howling" ID="{F2E75285-392D-47FD-A650-2E9CFF91ABD4}" ShortID="643365332">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverrideConversion" Type="bool" Value="True"/>
-								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-							</PropertyList>
+						<BlendContainer Name="Room_Wind" ID="{98F6069C-08F8-4D22-A597-262952A2A8DC}" ShortID="59421918">
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Ambient" ID="{F7D0D4DB-E365-46AA-9F87-E7EA87411061}" WorkUnitID="{19ACBF7D-756B-45E6-9689-82D33F090F73}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SourcePlugin Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" ShortID="3214314" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+								<Sound Name="Room Tone" ID="{BECA7923-4213-46AC-89F8-C5F77BDB7DA9}" ShortID="812699060">
 									<PropertyList>
-										<Property Name="AverageVelocity" Type="Real32" Value="-150"/>
-										<Property Name="AverageVelocityRandom" Type="Real32" Value="180"/>
-										<Property Name="Duration" Type="Real64" Value="30.7"/>
-										<Property Name="Variability" Type="Real32" Value="0.31"/>
-										<Property Name="VariabilityAutomate" Type="bool" Value="True"/>
-										<Property Name="VariabilityRandom" Type="Real32" Value="0.2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>47</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<PluginData>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" ShortID="63531734">
+											<Language>SFX</Language>
+											<AudioFile>360731__klankbeeld__roomtoneapartment-day160924-0973.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind Howling" ID="{F2E75285-392D-47FD-A650-2E9CFF91ABD4}" ShortID="643365332">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A835690A-944C-473D-8405-28E6E3B522E4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-29"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Ambient" ID="{F7D0D4DB-E365-46AA-9F87-E7EA87411061}" WorkUnitID="{19ACBF7D-756B-45E6-9689-82D33F090F73}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" ShortID="3214314" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+											<PropertyList>
+												<Property Name="AverageVelocity" Type="Real32" Value="-150"/>
+												<Property Name="AverageVelocityRandom" Type="Real32" Value="180"/>
+												<Property Name="Duration" Type="Real64" Value="30.7"/>
+												<Property Name="Variability" Type="Real32" Value="0.31"/>
+												<Property Name="VariabilityAutomate" Type="bool" Value="True"/>
+												<Property Name="VariabilityRandom" Type="Real32" Value="0.2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<PluginData>
 	<CurveList Version="1">
 		<CurveInfo Name="Variability">
 			<Curve Name="" ID="{4D7546C6-A938-4184-9E55-2097C133070F}">
@@ -71,72 +128,43 @@
 		</CurveInfo>
 	</CurveList>
 </PluginData>
-									<PluginInnerObjectList>
-										<List Name="Deflectors">
-											<PluginInnerObject Name="" ID="{3CB5CDAA-835B-41C7-8DC6-4B0D7DAEB738}" PluginName="Deflector" CompanyID="0" PluginID="121">
-												<PropertyList>
-													<Property Name="PanX" Type="Real64" Value="-11.3432835820895"/>
-													<Property Name="PanY" Type="Real64" Value="16.2650602409638"/>
-													<Property Name="QFactor" Type="Real32" Value="13.23"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{D8090C6D-9874-4E82-BE12-723F8CC39838}" PluginName="Deflector" CompanyID="0" PluginID="121">
-												<PropertyList>
-													<Property Name="Frequency" Type="Real32" Value="577"/>
-													<Property Name="Gain" Type="Real32" Value="-4"/>
-													<Property Name="PanX" Type="Real64" Value="18.5074626865672"/>
-													<Property Name="PanY" Type="Real64" Value="20.4819277108434"/>
-													<Property Name="QFactor" Type="Real32" Value="39.23"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{F9C67E69-D131-4504-998E-8D75814883E6}" PluginName="Deflector" CompanyID="0" PluginID="121">
-												<PropertyList>
-													<Property Name="Frequency" Type="Real32" Value="648"/>
-													<Property Name="Gain" Type="Real32" Value="-3"/>
-													<Property Name="PanX" Type="Real64" Value="-0.597014925373134"/>
-													<Property Name="PanY" Type="Real64" Value="-1.80722891566267"/>
-													<Property Name="QFactor" Type="Real32" Value="45.27"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
-								</SourcePlugin>
+											<PluginInnerObjectList>
+												<List Name="Deflectors">
+													<PluginInnerObject Name="" ID="{3CB5CDAA-835B-41C7-8DC6-4B0D7DAEB738}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="PanX" Type="Real64" Value="-11.3432835820895"/>
+															<Property Name="PanY" Type="Real64" Value="16.2650602409638"/>
+															<Property Name="QFactor" Type="Real32" Value="13.23"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{D8090C6D-9874-4E82-BE12-723F8CC39838}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="577"/>
+															<Property Name="Gain" Type="Real32" Value="-4"/>
+															<Property Name="PanX" Type="Real64" Value="18.5074626865672"/>
+															<Property Name="PanY" Type="Real64" Value="20.4819277108434"/>
+															<Property Name="QFactor" Type="Real32" Value="39.23"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{F9C67E69-D131-4504-998E-8D75814883E6}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="648"/>
+															<Property Name="Gain" Type="Real32" Value="-3"/>
+															<Property Name="PanX" Type="Real64" Value="-0.597014925373134"/>
+															<Property Name="PanY" Type="Real64" Value="-1.80722891566267"/>
+															<Property Name="QFactor" Type="Real32" Value="45.27"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Room Tone" ID="{BECA7923-4213-46AC-89F8-C5F77BDB7DA9}" ShortID="812699060">
-							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>47</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" ShortID="63531734">
-									<Language>SFX</Language>
-									<AudioFile>360731__klankbeeld__roomtoneapartment-day160924-0973.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

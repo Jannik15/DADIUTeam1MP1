@@ -9,7 +9,7 @@
 							<ObjectRef Name="Music Detailed" ID="{11A4724A-32FA-4DF4-B1A9-715AC5822EC4}" WorkUnitID="{57B8D8DF-06F5-4803-B26F-6D143FD4168C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+							<ObjectRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -60,7 +60,7 @@
 							<ObjectRef Name="Music Detailed" ID="{11A4724A-32FA-4DF4-B1A9-715AC5822EC4}" WorkUnitID="{57B8D8DF-06F5-4803-B26F-6D143FD4168C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+							<ObjectRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
 						</Reference>
 					</ReferenceList>
 					<TransitionList>

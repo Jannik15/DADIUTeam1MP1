@@ -1,3 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	185252871	Play_Button2_Tone			\Default Work Unit\Play_Button2_Tone	
+	919644948	Play_Room_Wind			\Default Work Unit\Ambience\Play_Room_Wind	
+	1166635208	Play_Button3_Click			\Default Work Unit\Play_Button3_Click	
+	1391607054	Play_Button1_Mellow			\Default Work Unit\Play_Button1_Mellow	
+	1532327793	Music_TitleScreen			\Music\Music_TitleScreen	
+	3741135221	Music_Region			\Music\General\Music_Region	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	95574197	Modulator Envelope (Custom)				
+	594955526	Modulator Envelope (Custom)				
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	56429685	Modulator Time (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	355444260	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button2_Tone\Wwise Synth One	
+	539636603	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button1_Mellow\Wwise Synth One	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	202795201	Test	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\GS_MuteHorn_120-C_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		705664
+	5177747	Button3_Click	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\220197__gameaudio__click-basic_5216A38E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button3_Click		24092
+	63531734	Room Tone	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Room Tone		5778888
 

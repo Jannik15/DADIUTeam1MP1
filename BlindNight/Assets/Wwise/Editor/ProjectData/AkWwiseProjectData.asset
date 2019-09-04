@@ -24,14 +24,29 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340223118622559
-    List: []
+    m_lastTime: -8586340127620568073
+    List:
+    - name: Reverb
+      guid: 7acba123f1795f44898f206071a03e47
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Non-World
+        ObjectType: 2
+      - ElementName: UI
+        ObjectType: 2
+      - ElementName: Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Non-World\UI\Reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340898289078981
+    m_lastTime: -8586340112453554307
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -47,39 +62,27 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340221695109463
+    m_lastTime: -8586340112453654043
     List:
-    - name: Play_Wind_Howling
-      guid: 598a0ad0a987aa4cae77858586003073
-      id: 187470227
+    - name: Play_Room_Wind
+      guid: a82e819abe91564d8911429bad098583
+      id: 919644948
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Ambience
         ObjectType: 4
-      - ElementName: Play_Wind_Howling
+      - ElementName: Play_Room_Wind
         ObjectType: 3
-      Path: Default Work Unit\Ambience\Play_Wind_Howling
+      Path: Default Work Unit\Ambience\Play_Room_Wind
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: test
-      guid: 3b85880b26740f449c5aaf3597534a4a
-      id: 3157003241
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: test
-        ObjectType: 3
-      Path: Default Work Unit\test
-      maxAttenuation: 0
-      maxDuration: 4
-      minDuration: 4
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     guid: bcca1c21a353cf43be84ba1d138041c2
     GuidInternal: 
-    m_lastTime: -8586340868792108409
+    m_lastTime: -8586340112453743801
     List:
     - name: Music_Region
       guid: 25efb30168ce224cb7dc3c6734697336
@@ -105,8 +108,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Music\Music_TitleScreen
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -245,7 +248,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 04b67ad93857e246800f2fbbedeaa811
     GuidInternal: 
-    m_lastTime: -8586340866522854746
+    m_lastTime: -8586340110336169215
     List:
     - name: Music_Regions
       guid: d1ed4562c6a4b146a75e976da2c6cf49
@@ -262,6 +265,12 @@ MonoBehaviour:
         id: 748895195
         PathAndIcons:
         - ElementName: None
+          ObjectType: 8
+      - name: Room1
+        guid: 64f3375560ae3d41bafc4df93e9d5095
+        id: 1359360137
+        PathAndIcons:
+        - ElementName: Room1
           ObjectType: 8
       ValueGuids: []
       ValueIcons: []
@@ -285,7 +294,10 @@ MonoBehaviour:
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
   - /MGP1_Team1/Events/Default Work Unit/Ambience
-  - /MGP1_Team1/SoundBanks
-  - /MGP1_Team1/SoundBanks/Default Work Unit
+  - /MGP1_Team1/Events/Music
+  - /MGP1_Team1/Events/Music/General
+  - /MGP1_Team1/States
+  - /MGP1_Team1/States/MusicStates
+  - /MGP1_Team1/States/MusicStates/Music_Regions
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

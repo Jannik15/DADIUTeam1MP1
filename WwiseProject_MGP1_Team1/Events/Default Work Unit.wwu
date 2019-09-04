@@ -5,12 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Ambience" ID="{294220D3-2EAF-4A00-950C-6717B1835CE6}" ShortID="355614163">
 					<ChildrenList>
-						<Event Name="Play_Wind_Howling" ID="{D00A8A59-87A9-4CAA-AE77-858586003073}">
+						<Event Name="Play_Room_Wind" ID="{9A812EA8-91BE-4D56-8911-429BAD098583}">
 							<ChildrenList>
-								<Action Name="" ID="{3F617210-0A2C-45B7-908E-6535A845C3BC}" ShortID="264146321">
+								<Action Name="" ID="{DABDFD9D-4010-41FB-9A86-7D26250B90B7}" ShortID="490189910">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wind Howling" ID="{F2E75285-392D-47FD-A650-2E9CFF91ABD4}" WorkUnitID="{A9DEE84B-5288-4DE5-B537-882232B6FDD9}"/>
+											<ObjectRef Name="Room_Wind" ID="{98F6069C-08F8-4D22-A597-262952A2A8DC}" WorkUnitID="{A9DEE84B-5288-4DE5-B537-882232B6FDD9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -18,6 +18,39 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Button1_Mellow" ID="{23E21566-6821-4F2E-A123-2613E3372DE7}">
+					<ChildrenList>
+						<Action Name="" ID="{1900E806-51FE-4606-9C1D-4EBE11AAA1AD}" ShortID="424805998">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button1_Mellow" ID="{A144E17E-4ACA-4502-915F-DE2A8EB9DDFA}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Button2_Tone" ID="{DC2CFAF2-43E2-4866-8992-9B4FE9FAAB2F}">
+					<ChildrenList>
+						<Action Name="" ID="{48A7AE02-0507-4E5B-A090-B2C0A20D6D44}" ShortID="498412009">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button2_Tone" ID="{BF45A311-CD05-4E97-B230-6142D2B93B61}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Button3_Click" ID="{1E8DDDBB-A8C1-4BC7-A410-19CBA04A3F3A}">
+					<ChildrenList>
+						<Action Name="" ID="{953E792D-708F-46C2-A897-2BC36885580E}" ShortID="990360245">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button3_Click" ID="{A264FD0A-66F9-4DA4-9976-0E64F441EC57}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

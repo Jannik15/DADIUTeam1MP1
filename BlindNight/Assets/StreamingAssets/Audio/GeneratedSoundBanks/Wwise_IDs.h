@@ -11,6 +11,16 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID MUSIC_REGION = 3741135221U;
+        static const AkUniqueID MUSIC_TITLESCREEN = 1532327793U;
+        static const AkUniqueID PLAY_BUTTON1_MELLOW = 1391607054U;
+        static const AkUniqueID PLAY_BUTTON2_TONE = 185252871U;
+        static const AkUniqueID PLAY_BUTTON3_CLICK = 1166635208U;
+        static const AkUniqueID PLAY_ROOM_WIND = 919644948U;
+    } // namespace EVENTS
+
     namespace STATES
     {
         namespace MUSIC_REGIONS
@@ -19,6 +29,7 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID ROOM1 = 1359360137U;
             } // namespace STATE
         } // namespace MUSIC_REGIONS
 
@@ -55,6 +66,11 @@ namespace AK
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
