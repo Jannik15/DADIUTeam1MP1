@@ -33,6 +33,7 @@ public class GameMaster : MonoBehaviour
     public void SetWalkType(int type)
     {
         walkType = type;
+        ToggleMenu();
     }
 
     public int GetWalkType()
@@ -44,15 +45,20 @@ public class GameMaster : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            GameObject MainMenu = null;
-            Transform[] trans = GameObject.Find("Canvas").GetComponentsInChildren<Transform>(true);
-            foreach (Transform t in trans)
+            ToggleMenu();
+        }
+    }
+
+    public void ToggleMenu()
+    {
+        GameObject MainMenu = null;
+        Transform[] trans = GameObject.Find("Canvas").GetComponentsInChildren<Transform>(true);
+        foreach (Transform t in trans)
+        {
+            if (t.gameObject.name == "MainMenu")
             {
-                if (t.gameObject.name == "MainMenu")
-                {
-                    MainMenu = t.gameObject;
-                    MainMenu.SetActive(!MainMenu.gameObject.activeSelf);
-                }
+                MainMenu = t.gameObject;
+                MainMenu.SetActive(!MainMenu.gameObject.activeSelf);
             }
         }
     }
