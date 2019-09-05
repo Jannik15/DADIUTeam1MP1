@@ -25,8 +25,8 @@
 				<Event Id="1532327793" Name="Music_TitleScreen" ObjectPath="\Events\Music\Music_TitleScreen" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1391607054" Name="Play_Button1_Mellow" ObjectPath="\Events\Default Work Unit\UI\Play_Button1_Mellow" DurationType="Unknown"/>
 				<Event Id="185252871" Name="Play_Button2_Tone" ObjectPath="\Events\Default Work Unit\UI\Play_Button2_Tone" DurationType="Unknown"/>
-				<Event Id="1166635208" Name="Play_Button3_Click" ObjectPath="\Events\Default Work Unit\UI\Play_Button3_Click" DurationType="OneShot" DurationMin="0.438516" DurationMax="0.507227"/>
-				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\Default Work Unit\Objects\Play_Door_Open" DurationType="OneShot" DurationMin="3.492301" DurationMax="3.492301"/>
+				<Event Id="1166635208" Name="Play_Button3_Click" ObjectPath="\Events\Default Work Unit\UI\Play_Button3_Click" DurationType="OneShot" DurationMin="0.407499" DurationMax="0.553774"/>
+				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\Default Work Unit\Objects\Play_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.492301" DurationMax="3.492301"/>
 				<Event Id="4064524182" Name="Play_Flashlight_On_Off" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_On_Off" DurationType="OneShot" DurationMin="0.790204" DurationMax="0.900915"/>
 				<Event Id="784840363" Name="Play_Flashlight_Switch" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_Switch" DurationType="OneShot" DurationMin="0.328760" DurationMax="0.374821"/>
 				<Event Id="709824872" Name="Play_Footstep_Surface" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Surface" DurationType="OneShot" DurationMin="0.232926" DurationMax="0.402056"/>

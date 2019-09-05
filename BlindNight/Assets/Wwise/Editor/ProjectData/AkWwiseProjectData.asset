@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586339169696298276
+    m_lastTime: -8586339141413760391
     List:
     - name: Objects_Reverb
       guid: 171995827826f44fac5d0546aa78d401
@@ -417,26 +417,26 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 75e10bfd79e7b8468075cdf5c6876f33
     GuidInternal: 
-    m_lastTime: -8586340865436129008
+    m_lastTime: -8586339141413585552
     List:
-    - name: Menuslider_Volume_Music
+    - name: Menuslider_Music
       guid: 1aebd68ce9e67d46b48488aa5705f339
-      id: 3910238084
+      id: 663364743
       PathAndIcons:
       - ElementName: Gameplay
         ObjectType: 12
-      - ElementName: Menuslider_Volume_Music
+      - ElementName: Menuslider_Music
         ObjectType: 13
-      Path: Gameplay\Menuslider_Volume_Music
-    - name: Menuslider_Volume_SoundFX
+      Path: Gameplay\Menuslider_Music
+    - name: Menuslider_SoundFX
       guid: 763cddbaeae4fe498614bbccec9ddbc0
-      id: 1058246790
+      id: 2137139513
       PathAndIcons:
       - ElementName: Gameplay
         ObjectType: 12
-      - ElementName: Menuslider_Volume_SoundFX
+      - ElementName: Menuslider_SoundFX
         ObjectType: 13
-      Path: Gameplay\Menuslider_Volume_SoundFX
+      Path: Gameplay\Menuslider_SoundFX
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -516,10 +516,23 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /MGP1_Team1
+  - /MGP1_Team1/Auxiliary Busses
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus/Non-World
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus/World
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
   - /MGP1_Team1/Events/Default Work Unit/Objects
   - /MGP1_Team1/Events/Default Work Unit/Player
   - /MGP1_Team1/Events/Default Work Unit/UI
+  - /MGP1_Team1/Events/Music
+  - /MGP1_Team1/Events/Music/General
+  - /MGP1_Team1/States
+  - /MGP1_Team1/States/MusicStates
+  - /MGP1_Team1/States/MusicStates/Music_Regions
+  - /MGP1_Team1/Switches
+  - /MGP1_Team1/Switches/Default Work Unit
+  - /MGP1_Team1/Switches/Default Work Unit/Surface_Type
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

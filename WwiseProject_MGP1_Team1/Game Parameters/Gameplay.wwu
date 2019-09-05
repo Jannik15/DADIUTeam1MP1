@@ -3,8 +3,16 @@
 	<GameParameters>
 		<WorkUnit Name="Gameplay" ID="{FD0BE175-E779-46B8-8075-CDF5C6876F33}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Menuslider_Volume_Music" ID="{8CD6EB1A-E6E9-467D-B484-88AA5705F339}"/>
-				<GameParameter Name="Menuslider_Volume_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}"/>
+				<GameParameter Name="Menuslider_Music" ID="{8CD6EB1A-E6E9-467D-B484-88AA5705F339}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="70"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="70"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

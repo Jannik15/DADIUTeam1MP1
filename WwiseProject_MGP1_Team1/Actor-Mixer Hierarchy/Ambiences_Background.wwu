@@ -4,6 +4,13 @@
 		<WorkUnit Name="Ambiences_Background" ID="{A9DEE84B-5288-4DE5-B537-882232B6FDD9}" OwnerID="{E7346269-A5A9-4C2A-B957-A9742A920522}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Ambient_Regions" ID="{5F43D14C-150A-4F18-AA96-1A82F6206246}" ShortID="876376175">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
@@ -14,13 +21,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="Room_Wind" ID="{98F6069C-08F8-4D22-A597-262952A2A8DC}" ShortID="59421918">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
@@ -40,7 +40,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -69,7 +69,7 @@
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -94,12 +94,19 @@
 									<ChildrenList>
 										<SourcePlugin Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" ShortID="3214314" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-150"/>
-												<Property Name="AverageVelocityRandom" Type="Real32" Value="180"/>
+												<Property Name="AverageVelocity" Type="Real32" Value="-630"/>
+												<Property Name="AverageVelocityRandom" Type="Real32" Value="720"/>
+												<Property Name="Direction" Type="Real32" Value="2"/>
+												<Property Name="DirectionRandom" Type="Real32" Value="22"/>
 												<Property Name="Duration" Type="Real64" Value="30.7"/>
+												<Property Name="FrequencyScale" Type="Real32" Value="-0.84"/>
+												<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.32"/>
+												<Property Name="Gustiness" Type="Real32" Value="0.56"/>
+												<Property Name="GustinessRandom" Type="Real32" Value="0.1"/>
+												<Property Name="QFactorScaleRandom" Type="Real32" Value="0.34"/>
 												<Property Name="Variability" Type="Real32" Value="0.31"/>
 												<Property Name="VariabilityAutomate" Type="bool" Value="True"/>
-												<Property Name="VariabilityRandom" Type="Real32" Value="0.2"/>
+												<Property Name="VariabilityRandom" Type="Real32" Value="0.38"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<PluginData>
@@ -155,11 +162,19 @@
 													</PluginInnerObject>
 													<PluginInnerObject Name="" ID="{F9C67E69-D131-4504-998E-8D75814883E6}" PluginName="Deflector" CompanyID="0" PluginID="121">
 														<PropertyList>
-															<Property Name="Frequency" Type="Real32" Value="648"/>
+															<Property Name="Frequency" Type="Real32" Value="376"/>
 															<Property Name="Gain" Type="Real32" Value="-3"/>
 															<Property Name="PanX" Type="Real64" Value="-0.597014925373134"/>
 															<Property Name="PanY" Type="Real64" Value="-1.80722891566267"/>
 															<Property Name="QFactor" Type="Real32" Value="45.27"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{742EFA6A-A4DA-40C7-9A40-81040FFC59D9}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="490"/>
+															<Property Name="PanX" Type="Real64" Value="5.67164179104477"/>
+															<Property Name="PanY" Type="Real64" Value="37.3493975903614"/>
+															<Property Name="QFactor" Type="Real32" Value="50"/>
 														</PropertyList>
 													</PluginInnerObject>
 												</List>

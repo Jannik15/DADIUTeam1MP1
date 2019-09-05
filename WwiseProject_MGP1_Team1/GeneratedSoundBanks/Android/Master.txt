@@ -5,11 +5,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	919644948	Play_Room_Wind			\Default Work Unit\Ambience\Play_Room_Wind	
 	1166635208	Play_Button3_Click			\Default Work Unit\UI\Play_Button3_Click	
 	1391607054	Play_Button1_Mellow			\Default Work Unit\UI\Play_Button1_Mellow	
-	1410513580	Play_Wall_Hit_Blend			\Default Work Unit\Play_Wall_Hit_Blend	
+	1410513580	Play_Wall_Hit_Blend			\Default Work Unit\Objects\Play_Wall_Hit_Blend	
 	1532327793	Music_TitleScreen			\Music\Music_TitleScreen	
 	1660008929	Play_Door_Open			\Default Work Unit\Objects\Play_Door_Open	
 	3741135221	Music_Region			\Music\General\Music_Region	
-	3847524746	Play_Moving_Object			\Default Work Unit\Play_Moving_Object	
+	3847524746	Play_Moving_Object			\Default Work Unit\Objects\Play_Moving_Object	
 	4064524182	Play_Flashlight_On_Off			\Default Work Unit\Player\Play_Flashlight_On_Off	
 	4155730121	Play_Presence			\Default Work Unit\Ambience\Play_Presence	
 

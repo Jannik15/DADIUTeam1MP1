@@ -6,8 +6,8 @@ State	ID	Name	State Group			Notes
 	1359360137	Room1	Music_Regions			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	1058246790	Menuslider_Volume_SoundFX			\Gameplay\Menuslider_Volume_SoundFX	
-	3910238084	Menuslider_Volume_Music			\Gameplay\Menuslider_Volume_Music	
+	663364743	Menuslider_Music			\Gameplay\Menuslider_Music	
+	2137139513	Menuslider_SoundFX			\Gameplay\Menuslider_SoundFX	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	77978275	Ambient			\Default Work Unit\Master Audio Bus\World\Ambient	

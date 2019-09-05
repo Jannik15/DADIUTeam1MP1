@@ -33,6 +33,10 @@
 							<ObjectRef Name="Play_Door_Open" ID="{802977A1-41D0-4443-82EB-5701FA5DD305}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}"/>
 							<Position X="3" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Room1" ID="{DBC8B798-C9F5-4618-B09E-4B57A5EDFA8F}" WorkUnitID="{711DB861-F77C-4D58-9A4D-9590A28BCD71}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -48,8 +52,8 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Menuslider_Volume_Music" ID="{8CD6EB1A-E6E9-467D-B484-88AA5705F339}"/>
-							<Value>52.5490196078431</Value>
+							<GameParameterRef Name="Menuslider_Music" ID="{8CD6EB1A-E6E9-467D-B484-88AA5705F339}"/>
+							<Value>70</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
@@ -68,8 +72,8 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Menuslider_Volume_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}"/>
-							<Value>50</Value>
+							<GameParameterRef Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}"/>
+							<Value>70</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>

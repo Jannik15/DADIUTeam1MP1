@@ -59,8 +59,8 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID MENUSLIDER_VOLUME_MUSIC = 3910238084U;
-        static const AkUniqueID MENUSLIDER_VOLUME_SOUNDFX = 1058246790U;
+        static const AkUniqueID MENUSLIDER_MUSIC = 663364743U;
+        static const AkUniqueID MENUSLIDER_SOUNDFX = 2137139513U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
