@@ -42,19 +42,16 @@ public class MotionMatching : MonoBehaviour
         for (int i = 0; i < allPoses.Count; i++)
         {
             Pose[] candidatePose = new Pose[rig.Length];
-            float[] differences = new float[rig.Length];
             candidatePose = allPoses[i];
+            if (candidatePose == currentPose)
+                continue;
+            float[] differences = new float[rig.Length];
             for (int j = 0; j < rig.Length; j++)
             {
-                //if (QuaternionDifference(currentPose[j].rotation, candidatePose[j].rotation) < differences[j] || differences[j] == 0)
-                //{
-                //    differences[j] = QuaternionDifference(currentPose[j].rotation, candidatePose[j].rotation);
-                //}
                 if (i == 0 || Quaternion.Angle(currentPose[j].rotation, candidatePose[j].rotation) < differences[j])
                 {
                     differences[j] = Quaternion.Angle(currentPose[j].rotation, candidatePose[j].rotation);
                     bestPose[j] = candidatePose[j];
-                    continue;
                 }
             }
         }
@@ -84,13 +81,6 @@ public class MotionMatching : MonoBehaviour
 
 
     }
-
-    //float QuaternionDifference(Quaternion a, Quaternion b)
-    //{
-    //    /// speify return type
-    //    float diff = (a.x + a.y + a.z + a.w) - (b.x + b.y + b.z + b.w);
-    //    return diff;
-    //}
 }
 
 class TrajectoryPoint
