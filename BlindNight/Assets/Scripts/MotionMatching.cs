@@ -1,20 +1,65 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MotionMatching : MonoBehaviour
 {
     public Transform[] rig;
+    List<Pose[]> allPoses;
     CSVReader csvData;
     int j = 0;
     bool status = false;
+    int currentAnimIndex;
+    float currentAnimTime;
 
     void Start()
     {
         csvData = FindObjectOfType<CSVReader>();
-        Debug.Log(csvData.gameObject.name);
+
+        for (int i = 0; i < csvData.GetQuaternions()[0].Count; i++)
+        {
+            Pose[] tempPose = new Pose[rig.Length];
+            for (int j = 0; j < rig.Length; j++)
+                tempPose[j] = new Pose(csvData.GetPositions()[j][currentAnimIndex], csvData.GetQuaternions()[j][currentAnimIndex]);
+            allPoses.Add(tempPose);
+        }
     }
-    
+
+    void MMUpdate(float dt)
+    {
+        currentAnimTime += dt;
+        /// Pose takes a vector3 and a quaternion, since we need a representation of this for all joints, we use a Pose array
+        Pose[] currentPose = new Pose[rig.Length];
+        for (int i = 0; i < rig.Length; i++)
+        {
+             currentPose[i] = new Pose(csvData.GetPositions()[i][currentAnimIndex], csvData.GetQuaternions()[i][currentAnimIndex]);
+        }
+        
+        Pose[] bestPose = new Pose[rig.Length];
+
+        /// We compare all the poses to the current pose, to find the best position for each joint, and store these in a candidate pose
+        for (int i = 0; i < allPoses.Count; i++)
+        {
+            Pose[] candidatePose = new Pose[rig.Length];
+            float[] differences = new float[rig.Length];
+            candidatePose = allPoses[i];
+            for (int j = 0; j < rig.Length; j++)
+            {
+                //if (QuaternionDifference(currentPose[j].rotation, candidatePose[j].rotation) < differences[j] || differences[j] == 0)
+                //{
+                //    differences[j] = QuaternionDifference(currentPose[j].rotation, candidatePose[j].rotation);
+                //}
+                if (i == 0 || Quaternion.Angle(currentPose[j].rotation, candidatePose[j].rotation) < differences[j])
+                {
+                    differences[j] = Quaternion.Angle(currentPose[j].rotation, candidatePose[j].rotation);
+                    bestPose[j] = candidatePose[j];
+                    continue;
+                }
+            }
+        }
+    }
+
     void Update()
     {
         
@@ -32,13 +77,32 @@ public class MotionMatching : MonoBehaviour
             j++;
         else
             j--;
-        if (j >= csvData.GetQuaternions()[0].Count-1 || j <= csvData.GetQuaternions()[0].Count+1)
-            status = !status;
+        if (j >= csvData.GetQuaternions()[0].Count - 1)
+            status = true;
+        else if (j <= 0)
+            status = false;
+
+
     }
+
+    //float QuaternionDifference(Quaternion a, Quaternion b)
+    //{
+    //    /// speify return type
+    //    float diff = (a.x + a.y + a.z + a.w) - (b.x + b.y + b.z + b.w);
+    //    return diff;
+    //}
 }
 
 class TrajectoryPoint
 {
     Vector3 point;
     float angle;
+    float timeDelay;
+}
+
+class Goal
+{
+    List<TrajectoryPoint> desiredTrajectory;
+
+    /// If a specific type of stance is desired, this should be put here
 }
