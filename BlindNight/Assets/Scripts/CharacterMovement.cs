@@ -34,19 +34,19 @@ public class CharacterMovement : MonoBehaviour
     }
 
     public void GetInput(){
-        if(GameMaster.instance.GetWalkType() == 0 && Input.GetMouseButtonDown(0)) {
+         if(GameMaster.instance.GetWalkType() == 0 && Input.GetMouseButtonDown(0)) {
 
                 goalPos = getPressPos();
-            }
+            } 
 
-/*             if(Input.GetTouch(0).phase == TouchPhase.Began) {
+            /* if(Input.GetTouch(0).phase == TouchPhase.Began) {
                 goalPos = getPressPos();
-            } */
+            }  */
 
         if(GameMaster.instance.GetWalkType() == 1 && Input.GetMouseButton(0)) {
             //if(Input.touchCount > 1) {
                 goalPos = getPressPos();
-           // }
+            //}
         }
     }
 
