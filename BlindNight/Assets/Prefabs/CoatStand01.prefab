@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8135857662348421474}
   - component: {fileID: 987231489548997460}
   - component: {fileID: 6813894165796892589}
+  - component: {fileID: 6079647651855709870}
   m_Layer: 0
   m_Name: CoatStand01
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6079647651855709870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5094422925817944945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63108754, y: 2.6103683, z: 0.6635648}
+  m_Center: {x: -0.031165972, y: 1.2729402, z: 0.0000002682209}

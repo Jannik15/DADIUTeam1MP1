@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 786305438173454539}
   - component: {fileID: 8625099303096310525}
   - component: {fileID: 2634055429689026052}
+  - component: {fileID: 3714065871195474751}
+  - component: {fileID: 4859352028056847502}
   m_Layer: 0
   m_Name: SofaLShape
   m_TagString: Untagged
@@ -77,3 +79,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3714065871195474751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4373801702724178648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6435788, y: 1.6251621, z: 1.5723848}
+  m_Center: {x: -0.8819355, y: 0.7878481, z: -0.13078177}
+--- !u!65 &4859352028056847502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4373801702724178648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6420906, y: 1.6251621, z: 3.7305489}
+  m_Center: {x: 0.11880863, y: 0.7878481, z: 0.94830036}

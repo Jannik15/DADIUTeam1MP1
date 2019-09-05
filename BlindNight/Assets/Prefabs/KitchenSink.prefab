@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8642207205282618128}
   - component: {fileID: 771328388420739366}
   - component: {fileID: 6451624712424775135}
+  - component: {fileID: 6697017325567409391}
   m_Layer: 0
   m_Name: KitchenSink
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6697017325567409391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734427193804318979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.749796, y: 1.3937389, z: 1.4123268}
+  m_Center: {x: 0.0014749169, y: 0.6695443, z: -0.0023892522}
