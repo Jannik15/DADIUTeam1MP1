@@ -32,12 +32,13 @@ public class MotionMatching : MonoBehaviour
             j++;
         else
             j--;
-        if (j >= csvData.GetQuaternions()[0].Count-1)
+        if (j >= csvData.GetQuaternions()[0].Count-1 || j <= csvData.GetQuaternions()[0].Count+1)
             status = !status;
     }
 }
 
 class TrajectoryPoint
 {
-
+    Vector3 point;
+    float angle;
 }
