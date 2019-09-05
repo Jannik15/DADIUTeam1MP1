@@ -58,7 +58,7 @@ LightmapSettings:
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
-    m_AO: 0
+    m_AO: 1
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
@@ -177,7 +177,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &204317167
 PrefabInstance:
@@ -190,6 +190,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577516691121943817, guid: f5572641e76707941aad2ce109873f55,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 576106301802432282, guid: f5572641e76707941aad2ce109873f55,
         type: 3}
@@ -248,97 +253,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5572641e76707941aad2ce109873f55, type: 3}
---- !u!1 &485122691
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 485122693}
-  - component: {fileID: 485122692}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &485122692
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485122691}
-  m_Enabled: 1
-  serializedVersion: 9
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2
-  m_Range: 36.27
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &485122693
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485122691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.72, y: 5.28, z: 1.18}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 31
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &548690282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -350,6 +264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_1Unit_Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6331251918362796275, guid: 3b405cb66cb89de409478b41612ca772,
         type: 3}
@@ -532,6 +451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallWindowBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 1363592190515343294, guid: 26856597c357a064e9e2565bb3420dd5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2645629517967596973, guid: 26856597c357a064e9e2565bb3420dd5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -600,6 +524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761681467776323969, guid: 792437267257b61429e67955a5071605,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3326442888818369426, guid: 792437267257b61429e67955a5071605,
         type: 3}
@@ -670,6 +599,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightHang01
       objectReference: {fileID: 0}
+    - target: {fileID: 8359297777397947058, guid: 77da7b5ad70069b4daa63f4b547b6964,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4780967734577113249, guid: 77da7b5ad70069b4daa63f4b547b6964,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -738,6 +672,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TV
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637438348083207517, guid: c0a78b4466427f848bfe6fa2613cc4dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7658286341336657742, guid: c0a78b4466427f848bfe6fa2613cc4dc,
         type: 3}
@@ -808,6 +747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 8336553728169475639, guid: 8d263b39d15ed85469f0b2471e6e340b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5037903637367032868, guid: 8d263b39d15ed85469f0b2471e6e340b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -876,6 +820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KitchenOven
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607971424320649488, guid: f009c38011e3e124191aad37888fb755,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6903921933182733059, guid: f009c38011e3e124191aad37888fb755,
         type: 3}
@@ -946,6 +895,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SofaChair_M
       objectReference: {fileID: 0}
+    - target: {fileID: 4580043739338855977, guid: 8afc85a789313c24e9962fc9606bdc20,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 708415733232411706, guid: 8afc85a789313c24e9962fc9606bdc20,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1014,6 +968,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CoatStand01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094422925817944945, guid: 33602cc50df7736479ff9b4d9a4de5cb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8135857662348421474, guid: 33602cc50df7736479ff9b4d9a4de5cb,
         type: 3}
@@ -1084,6 +1043,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CupboardLarge
       objectReference: {fileID: 0}
+    - target: {fileID: 1502269477125110691, guid: e70c7d8c841cf6641a857c88fcb143df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2486686256380168624, guid: e70c7d8c841cf6641a857c88fcb143df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1152,6 +1116,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookCase01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265910121707479408, guid: de9316d589934c54ba6c5c0ce63ec702,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2867160551302419299, guid: de9316d589934c54ba6c5c0ce63ec702,
         type: 3}
@@ -1222,6 +1191,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardboardBox01
       objectReference: {fileID: 0}
+    - target: {fileID: 6834021137812563556, guid: 775348ee8881031418f2de37eee38065,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7533409319111545975, guid: 775348ee8881031418f2de37eee38065,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1279,75 +1253,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 775348ee8881031418f2de37eee38065, type: 3}
---- !u!1001 &2631706649807514075
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7858970653499278002, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_Name
-      value: FloorBlack
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578622106234106017, guid: d16e336206947cc418823b1595608bc7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d16e336206947cc418823b1595608bc7, type: 3}
 --- !u!1001 &2848148805891715915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1359,6 +1264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carpet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934252577251920470, guid: 932f6040158491c46967793baf7d66c2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5595597995022153797, guid: 932f6040158491c46967793baf7d66c2,
         type: 3}
@@ -1429,6 +1339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CeilingFan
       objectReference: {fileID: 0}
+    - target: {fileID: 2293293916764187730, guid: 612b4276d0f5fb2448619bd12c2c5a6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2992698518547586625, guid: 612b4276d0f5fb2448619bd12c2c5a6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1497,6 +1412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carpet02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092544134011891576, guid: a719dd5191b39864684e38e5872e061e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6068211920146128235, guid: a719dd5191b39864684e38e5872e061e,
         type: 3}
@@ -1567,6 +1487,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoffeTable01
       objectReference: {fileID: 0}
+    - target: {fileID: 3804177625469112832, guid: 463eb529331480b4ca7b2c59ca95ca62,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 184786939013341203, guid: 463eb529331480b4ca7b2c59ca95ca62,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1634,7 +1559,12 @@ PrefabInstance:
     - target: {fileID: 8146309292886996086, guid: a5764080922103940ad1cbdcdbb39bc2,
         type: 3}
       propertyPath: m_Name
-      value: BookCase01.001
+      value: BookShelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146309292886996086, guid: a5764080922103940ad1cbdcdbb39bc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5140534605818414693, guid: a5764080922103940ad1cbdcdbb39bc2,
         type: 3}
@@ -1644,7 +1574,7 @@ PrefabInstance:
     - target: {fileID: 5140534605818414693, guid: a5764080922103940ad1cbdcdbb39bc2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000011920929
+      value: 0.726
       objectReference: {fileID: 0}
     - target: {fileID: 5140534605818414693, guid: a5764080922103940ad1cbdcdbb39bc2,
         type: 3}
@@ -1704,6 +1634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LightStand01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688765824701310207, guid: 36597a0d65cd85d41a8fb2aec20425f4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8595839467787835116, guid: 36597a0d65cd85d41a8fb2aec20425f4,
         type: 3}
@@ -1774,6 +1709,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KitchenCabinet
       objectReference: {fileID: 0}
+    - target: {fileID: 1613092655153657500, guid: 31179b5a35a14b041bd192d16c0f1731,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2322030989048497295, guid: 31179b5a35a14b041bd192d16c0f1731,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1842,6 +1782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CardboardBox02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812733127151941070, guid: 47ce8d093b53d6e4e85b8f321e9f0879,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1248495696077359069, guid: 47ce8d093b53d6e4e85b8f321e9f0879,
         type: 3}
@@ -1912,6 +1857,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KitchenSink
       objectReference: {fileID: 0}
+    - target: {fileID: 4734427193804318979, guid: 90f8c4a49382b0c49a858fff7491435e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8642207205282618128, guid: 90f8c4a49382b0c49a858fff7491435e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1980,6 +1930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935421483610870836, guid: e59b2c0df47fb224db62997785c1ee2d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3206745785049802279, guid: e59b2c0df47fb224db62997785c1ee2d,
         type: 3}
@@ -2050,6 +2005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KitchenIsland
       objectReference: {fileID: 0}
+    - target: {fileID: 1594760246936391029, guid: ec7db242476ad8141a5c36cfca1e00cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2340429410908782438, guid: ec7db242476ad8141a5c36cfca1e00cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2118,6 +2078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SofaLShape
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373801702724178648, guid: b02349f832030f04a8122321196cb168,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 786305438173454539, guid: b02349f832030f04a8122321196cb168,
         type: 3}
@@ -2188,6 +2153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting01
       objectReference: {fileID: 0}
+    - target: {fileID: 991785776938124632, guid: 8a725786c55076a41977e5490d565cca,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4294426542978135883, guid: 8a725786c55076a41977e5490d565cca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2257,6 +2227,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sofa
       objectReference: {fileID: 0}
+    - target: {fileID: 272773389784177295, guid: 8239c1c8f8c741b4e9430bbb056fece7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3860231578275096732, guid: 8239c1c8f8c741b4e9430bbb056fece7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2325,6 +2300,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 156781284721661287, guid: 584559538553b0f4994720c4daf300fb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3780673375674132340, guid: 584559538553b0f4994720c4daf300fb,
         type: 3}
