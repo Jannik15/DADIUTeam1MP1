@@ -10,6 +10,8 @@ public class CSVReader : MonoBehaviour
     public string CSVPath = null;
     private string fileFullPath = null;
 
+    // public  CSVfile;
+
     private int labelAmount;
     private int quaternionAmount;
     private int positionAmount;
@@ -127,7 +129,7 @@ public class CSVReader : MonoBehaviour
                     PositionInit();
                     TimestampInit();
 
-                    // Debug.Log(labelValues[4]);  // For debugging
+                    // Debug.Log(labelValues);  // For debugging
                     firstRun = false;
 
                 }
@@ -169,7 +171,21 @@ public class CSVReader : MonoBehaviour
     public void IndexHelper(int index)
     {
         Debug.Log("CSV index " + index + " is the " + labelValues[index]);     
+    }
 
+    public void IndexHelper(string all)
+    {
+        if (all == "all")
+        {
+            for (int i = 0; 0 < labelAmount; i++)
+            {
+                Debug.Log("CSV index " + i + " is the " + labelValues[i]);
+            }
+
+        } else
+        {
+            Debug.Log("Motion Matching: Index helper can only take specific index numbers or all if you want to see all joints");
+        }
     }
 
     private void TimestampInit()
