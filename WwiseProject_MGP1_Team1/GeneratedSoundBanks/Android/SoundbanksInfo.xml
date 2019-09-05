@@ -30,8 +30,10 @@
 				<Event Id="4064524182" Name="Play_Flashlight_On_Off" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_On_Off" DurationType="OneShot" DurationMin="0.790204" DurationMax="0.900915"/>
 				<Event Id="784840363" Name="Play_Flashlight_Switch" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_Switch" DurationType="OneShot" DurationMin="0.328760" DurationMax="0.374821"/>
 				<Event Id="709824872" Name="Play_Footstep_Surface" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Surface" DurationType="OneShot" DurationMin="0.232926" DurationMax="0.402056"/>
+				<Event Id="3847524746" Name="Play_Moving_Object" ObjectPath="\Events\Default Work Unit\Objects\Play_Moving_Object" DurationType="OneShot" DurationMin="1.199916" DurationMax="1.489437"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\Ambience\Play_Presence" DurationType="Infinite"/>
 				<Event Id="919644948" Name="Play_Room_Wind" ObjectPath="\Events\Default Work Unit\Ambience\Play_Room_Wind" DurationType="Infinite"/>
+				<Event Id="1410513580" Name="Play_Wall_Hit_Blend" ObjectPath="\Events\Default Work Unit\Objects\Play_Wall_Hit_Blend" DurationType="OneShot" DurationMin="2.086096" DurationMax="2.448059"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="5177747" Language="SFX">
@@ -41,6 +43,10 @@
 				<File Id="63531734" Language="SFX">
 					<ShortName>360731__klankbeeld__roomtoneapartment-day160924-0973.wav</ShortName>
 					<Path>SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem</Path>
+				</File>
+				<File Id="68146147" Language="SFX">
+					<ShortName>Wall Hit.wav</ShortName>
+					<Path>SFX\Wall Hit_10C4C929.wem</Path>
 				</File>
 				<File Id="224362045" Language="SFX">
 					<ShortName>342873__pfannkuchn__wooden-door-1-opening-and-closing-with-different-speeds-and-articulations.wav</ShortName>
@@ -62,9 +68,17 @@
 					<ShortName>footstep_wood_6.wav</ShortName>
 					<Path>SFX\footstep_wood_6_10C4C929.wem</Path>
 				</File>
+				<File Id="688856799" Language="SFX">
+					<ShortName>Wall Hit_1-002.wav</ShortName>
+					<Path>SFX\Wall Hit_1-002_4BED6220.wem</Path>
+				</File>
 				<File Id="731430948" Language="SFX">
 					<ShortName>435845__dersuperanton__flashlight-click.wav</ShortName>
 					<Path>SFX\435845__dersuperanton__flashlight-click_00CA792D.wem</Path>
+				</File>
+				<File Id="818197218" Language="SFX">
+					<ShortName>90936__robinhood76__01497-brawling-2.wav</ShortName>
+					<Path>SFX\90936__robinhood76__01497-brawling-2_9BB76D43.wem</Path>
 				</File>
 				<File Id="845153691" Language="SFX">
 					<ShortName>footstep_wood_2.wav</ShortName>
@@ -77,6 +91,14 @@
 				<File Id="853566693" Language="SFX">
 					<ShortName>footstep_wood_5.wav</ShortName>
 					<Path>SFX\footstep_wood_5_10C4C929.wem</Path>
+				</File>
+				<File Id="934544696" Language="SFX">
+					<ShortName>90936__robinhood76__01497-brawling-2.wav</ShortName>
+					<Path>SFX\90936__robinhood76__01497-brawling-2_220E57BD.wem</Path>
+				</File>
+				<File Id="934853728" Language="SFX">
+					<ShortName>Wall Hit_1-003.wav</ShortName>
+					<Path>SFX\Wall Hit_1-003_19EB7501.wem</Path>
 				</File>
 				<File Id="1032422741" Language="SFX">
 					<ShortName>CreekyWood_Barefoot_Sneaking.wav</ShortName>

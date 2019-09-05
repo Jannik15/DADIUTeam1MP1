@@ -22,8 +22,10 @@ namespace AK
         static const AkUniqueID PLAY_FLASHLIGHT_ON_OFF = 4064524182U;
         static const AkUniqueID PLAY_FLASHLIGHT_SWITCH = 784840363U;
         static const AkUniqueID PLAY_FOOTSTEP_SURFACE = 709824872U;
+        static const AkUniqueID PLAY_MOVING_OBJECT = 3847524746U;
         static const AkUniqueID PLAY_PRESENCE = 4155730121U;
         static const AkUniqueID PLAY_ROOM_WIND = 919644948U;
+        static const AkUniqueID PLAY_WALL_HIT_BLEND = 1410513580U;
     } // namespace EVENTS
 
     namespace STATES
@@ -91,6 +93,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID OBJECTS_REVERB = 3203606094U;
         static const AkUniqueID PLAYER_FLASHLIGHT_REVERB = 737812310U;
         static const AkUniqueID PLAYER_FOOTSTEP_REVERB = 3916004666U;
         static const AkUniqueID PRESENCE_REVERB = 3562591321U;

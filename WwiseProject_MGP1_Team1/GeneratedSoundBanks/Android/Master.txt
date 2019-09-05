@@ -5,9 +5,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	919644948	Play_Room_Wind			\Default Work Unit\Ambience\Play_Room_Wind	
 	1166635208	Play_Button3_Click			\Default Work Unit\UI\Play_Button3_Click	
 	1391607054	Play_Button1_Mellow			\Default Work Unit\UI\Play_Button1_Mellow	
+	1410513580	Play_Wall_Hit_Blend			\Default Work Unit\Play_Wall_Hit_Blend	
 	1532327793	Music_TitleScreen			\Music\Music_TitleScreen	
 	1660008929	Play_Door_Open			\Default Work Unit\Objects\Play_Door_Open	
 	3741135221	Music_Region			\Music\General\Music_Region	
+	3847524746	Play_Moving_Object			\Default Work Unit\Play_Moving_Object	
 	4064524182	Play_Flashlight_On_Off			\Default Work Unit\Player\Play_Flashlight_On_Off	
 	4155730121	Play_Presence			\Default Work Unit\Ambience\Play_Presence	
 
@@ -40,15 +42,20 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5177747	Button3_Click	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\220197__gameaudio__click-basic_5216A38E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button3_Click		24092
 	63531734	Room Tone	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Room Tone		5778888
+	68146147	WallHit_1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Wall Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall_Hits\WallHit_1		288064
 	224362045	Hinge_Unlock	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\342873__pfannkuchn__wooden-door-1-opening-and-closing-with-different-speeds-and-articulations_53894B5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Hinge_Unlock		255888
 	322987836	footstep_wood_4	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_4		42996
 	419815528	Squecky_Presence	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\CreekyWood_Barefoot_Sneaking_62B7F068.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Presence\Squecky_Presence		378420
 	502447257	Opening_Squeak1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\221649__abbahoot__squeaky-door-opening_E7E4E9FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Opening_Squeak\Opening_Squeak1		780844
 	604692420	footstep_wood_6	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_6		53840
+	688856799	Wall Hit_Deep	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Wall Hit_1-002_4BED6220.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall Hit_Deep		406424
 	731430948	Flashlight_Switch	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\435845__dersuperanton__flashlight-click_00CA792D.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_Switch		44596
+	818197218	Move_Scrape_Wood_1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\90936__robinhood76__01497-brawling-2_9BB76D43.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Moving_Object\Move_Scrape_Wood_1		244356
 	845153691	footstep_wood_2	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_2		58712
 	846937253	Flashlight_On_Off	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\435845__dersuperanton__flashlight-click_6006C544.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_On_Off		107100
 	853566693	footstep_wood_5	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_5		57600
+	934544696	Move_Scrape_Wood	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\90936__robinhood76__01497-brawling-2_220E57BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Moving_Object\Move_Scrape_Wood		234516
+	934853728	WallHit_3	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Wall Hit_1-003_19EB7501.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall_Hits\WallHit_3		208012
 	1032422741	Squecky_Presence_01	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\CreekyWood_Barefoot_Sneaking_501E2519.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Presence\Squecky_Presence_01		702728
 	1042308158	footstep_wood_3	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_3		56056
 

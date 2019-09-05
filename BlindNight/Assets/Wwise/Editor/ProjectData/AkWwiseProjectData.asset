@@ -24,8 +24,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340026362994319
+    m_lastTime: -8586339169696298276
     List:
+    - name: Objects_Reverb
+      guid: 171995827826f44fac5d0546aa78d401
+      id: 3203606094
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Objects
+        ObjectType: 2
+      - ElementName: Objects_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Objects\Objects_Reverb
     - name: Player_Flashlight_Reverb
       guid: 578fb64a3a0740438c92e537c9eecc4b
       id: 737812310
@@ -91,7 +106,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340021665580321
+    m_lastTime: -8586339148695099510
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -107,7 +122,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340021665739800
+    m_lastTime: -8586339148695019708
     List:
     - name: Play_Button1_Mellow
       guid: 6615e22321682e4fa1232613e3372de7
@@ -207,6 +222,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.402056
       minDuration: 0.232926
+    - name: Play_Moving_Object
+      guid: e740afef6fe94c49ad2b0a7bdedf4163
+      id: 3847524746
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Play_Moving_Object
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_Moving_Object
+      maxAttenuation: 0
+      maxDuration: 1.489437
+      minDuration: 1.199916
     - name: Play_Presence
       guid: f0ae6d7e5e2256458a3d3bbb8abe8a9d
       id: 4155730121
@@ -235,6 +264,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Wall_Hit_Blend
+      guid: 4200b7159603b94fb32a33935496e7ff
+      id: 1410513580
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Play_Wall_Hit_Blend
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_Wall_Hit_Blend
+      maxAttenuation: 0
+      maxDuration: 2.448059
+      minDuration: 2.086096
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     guid: bcca1c21a353cf43be84ba1d138041c2
@@ -475,6 +518,7 @@ MonoBehaviour:
   - /MGP1_Team1
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
+  - /MGP1_Team1/Events/Default Work Unit/Objects
   - /MGP1_Team1/Events/Default Work Unit/Player
   - /MGP1_Team1/Events/Default Work Unit/UI
   autoPopulateEnabled: 1
