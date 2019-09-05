@@ -232,6 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4199718209e120e418b83df5a45fe6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CSVPath: Assets/Resources/MotionMatchingData/InitialTestData.csv
 --- !u!1 &696833056
 GameObject:
   m_ObjectHideFlags: 0
