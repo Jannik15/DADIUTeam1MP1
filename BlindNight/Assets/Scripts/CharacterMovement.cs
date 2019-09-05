@@ -24,8 +24,9 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
-
+        
         GetInput();
+        CheckCollisions();
         if(Vector3.Distance(transform.position, goalPos) > moveThreshold)  {
 
             transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
@@ -63,6 +64,12 @@ public class CharacterMovement : MonoBehaviour
             return new Vector3(0,0,0);
         }
     }
+
+    public void CheckCollisions() {
+        
+    }
+
+
 
 }
 
