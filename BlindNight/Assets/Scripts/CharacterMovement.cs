@@ -4,74 +4,87 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-
-    private float playerMoveSpeed, moveThreshold, moveStep;
-
-
-    
-    // This is the script used to move the character.
-    // Start is called before the first frame update
+    private float playerMoveSpeed, moveThreshold, moveStep, playerRotateSpeed, rotStep;
 
     private Vector3 goalPos;
-    
+
+    private Vector2 mousePos;
+    private Vector2 targetMousePos;
+
+    private float minDragDist = 0.2f;
+
     void Start()
     {
-        playerMoveSpeed = 10;
+        playerMoveSpeed = 4;
         moveStep = playerMoveSpeed * Time.deltaTime;
+
+        playerRotateSpeed = 4;
+        rotStep = playerRotateSpeed * Time.deltaTime;
+
         goalPos = transform.position;
         moveThreshold = 0.1f;
     }
 
     void Update()
     {
-        
         GetInput();
-        CheckCollisions();
-        if(Vector3.Distance(transform.position, goalPos) > moveThreshold)  {
-
+        Vector3 direction = goalPos - transform.position;
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotStep);
+        if (Vector3.Distance(transform.position, goalPos) > moveThreshold)
+        {
             transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
         }
-        
     }
 
-    public void GetInput(){
-         if(GameMaster.instance.GetWalkType() == 0 && Input.GetMouseButtonDown(0)) {
-
-                goalPos = getPressPos();
-            } 
-
-            /* if(Input.GetTouch(0).phase == TouchPhase.Began) {
-                goalPos = getPressPos();
-            }  */
-
-        if(GameMaster.instance.GetWalkType() == 1 && Input.GetMouseButton(0)) {
-            //if(Input.touchCount > 1) {
-                goalPos = getPressPos();
-            //}
-        }
-    }
-
-    public Vector3 getPressPos() {
+    public Vector3 getPressPos()
+    {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit)) {
+        if (Physics.Raycast(ray, out hit))
+        {
             return new Vector3(hit.point.x, transform.position.y, hit.point.z);
-      
         }
-    
-        else {
-            return new Vector3(0,0,0);
+        else
+        {
+            return new Vector3(0, 0, 0);
         }
     }
 
-    public void CheckCollisions() {
-        
+    public void GetInput()
+    {
+        if (GameMaster.instance.GetWalkType() == 0 && Input.GetMouseButtonDown(0))
+        {
+            goalPos = getPressPos();
+        }
+
+        if (GameMaster.instance.GetWalkType() == 1 && Input.GetMouseButton(0))
+        {
+            goalPos = getPressPos();
+        }
+
+        if (GameMaster.instance.GetWalkType() == 3)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                mousePos = Input.mousePosition;
+            }
+            if (Input.GetMouseButton(0))
+            {
+                targetMousePos = Input.mousePosition;
+                if (Vector2.Distance(targetMousePos, mousePos) > 60)
+                {
+                    Vector2 dirVector = (targetMousePos - mousePos).normalized;
+                    goalPos = new Vector3(transform.position.x + dirVector.x, transform.position.y, transform.position.z + dirVector.y);
+                } else
+                {
+                    goalPos = transform.position;
+                }
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                goalPos = transform.position;
+            }
+        }
     }
-
-
-
 }
-
-
-
