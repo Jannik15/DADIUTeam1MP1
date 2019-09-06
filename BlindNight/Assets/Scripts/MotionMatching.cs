@@ -5,88 +5,112 @@ using UnityEngine;
 
 public class MotionMatching : MonoBehaviour
 {
+    /* What is a pose?
+     * Pose = Each joint transform at a given timestep in the animation
+     */
+    
+
+    Goal goal;
     public Transform[] rig;
-    List<Pose[]> allPoses;
+    TrajectoryTest movement;    // Movement script reference
+    List<MMPose> allPoses;
     CSVReader csvData;
-    int j = 0;
     bool status = false;
-    int currentAnimIndex;
-    float currentAnimTime;
+    int currentPoseIndex = 0;
+    //float currentAnimTime;
 
     void Start()
     {
+        movement = GetComponent<TrajectoryTest>();
         csvData = FindObjectOfType<CSVReader>();
+        allPoses = new List<MMPose>();
 
+        /// Populate the list allPoses with all poses in the datasheet
         for (int i = 0; i < csvData.GetQuaternions()[0].Count; i++)
         {
             Pose[] tempPose = new Pose[rig.Length];
             for (int j = 0; j < rig.Length; j++)
-                tempPose[j] = new Pose(csvData.GetPositions()[j][currentAnimIndex], csvData.GetQuaternions()[j][currentAnimIndex]);
-            allPoses.Add(tempPose);
+            {
+                tempPose[j] = new Pose(csvData.GetPositions()[j][i], csvData.GetQuaternions()[j][i]);
+            }
+            allPoses.Add(new MMPose(tempPose, i));
         }
     }
 
-    void MMUpdate(float dt)
+    void MMUpdate(Goal goal)
     {
-        currentAnimTime += dt;
-        /// Pose takes a vector3 and a quaternion, since we need a representation of this for all joints, we use a Pose array
-        Pose[] currentPose = new Pose[rig.Length];
+        /// Determine the current pose based on the rig rotations and current pose index
+        MMPose currentPose;
+        Pose[] tempPose = new Pose[rig.Length];
         for (int i = 0; i < rig.Length; i++)
         {
-             currentPose[i] = new Pose(csvData.GetPositions()[i][currentAnimIndex], csvData.GetQuaternions()[i][currentAnimIndex]);
+            tempPose[i] = new Pose(rig[i].position, rig[i].rotation);
+            //currentPose[i] = new Pose(csvData.GetPositions()[i][currentPoseIndex], csvData.GetQuaternions()[i][currentPoseIndex]);
         }
-        
-        Pose[] bestPose = new Pose[rig.Length];
+        currentPose = new MMPose(tempPose, currentPoseIndex);
+
+        MMPose bestPose = new MMPose(new Pose[rig.Length], 0);
+        float bestDiff = 9999999999;
 
         /// We compare all the poses to the current pose, to find the best position for each joint, and store these in a candidate pose
         for (int i = 0; i < allPoses.Count; i++)
         {
-            Pose[] candidatePose = new Pose[rig.Length];
+            MMPose candidatePose = new MMPose(new Pose[rig.Length], 0);
             candidatePose = allPoses[i];
-            if (candidatePose == currentPose)
+
+            /// Must not be the same pose
+            if (candidatePose.getPoseIndex() == currentPose.getPoseIndex())
                 continue;
-            float[] differences = new float[rig.Length];
+
+            /// Compare pose difference between quaternions - just take the one closest to the current
+            
+            float diff = 0;
             for (int j = 0; j < rig.Length; j++)
             {
-                if (i == 0 || Quaternion.Angle(currentPose[j].rotation, candidatePose[j].rotation) < differences[j])
-                {
-                    differences[j] = Quaternion.Angle(currentPose[j].rotation, candidatePose[j].rotation);
-                    bestPose[j] = candidatePose[j];
-                }
+                diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, candidatePose.GetJointTransform(j).rotation);
+            }
+            if (diff < bestDiff)
+            {
+                bestPose = candidatePose;
             }
         }
-    }
 
-    void Update()
-    {
-        
+        // Apply best pose to rig
+        for(int i = 0; i < rig.Length; i++)
+        {
+            rig[i].rotation = bestPose.GetJointTransform(i).rotation;
+        }
+        currentPoseIndex = bestPose.getPoseIndex();
     }
 
     private void LateUpdate()
     {
-        for (int i = 0; i < rig.Length ; i++)
+        MMUpdate(goal);
+    }
+
+    private void AutoplayAnimation()
+    {
+        for (int i = 0; i < rig.Length; i++)
         {
-            rig[i].rotation = csvData.GetQuaternions()[i][j];
-            rig[i].position = csvData.GetPositions()[i][j];
+            rig[i].rotation = csvData.GetQuaternions()[i][currentPoseIndex];
+            rig[i].position = csvData.GetPositions()[i][currentPoseIndex];
         }
 
         if (!status)
-            j++;
+            currentPoseIndex++;
         else
-            j--;
-        if (j >= csvData.GetQuaternions()[0].Count - 1)
+            currentPoseIndex--;
+        if (currentPoseIndex >= csvData.GetQuaternions()[0].Count - 1)
             status = true;
-        else if (j <= 0)
+        else if (currentPoseIndex <= 0)
             status = false;
-
-
     }
 }
 
 class TrajectoryPoint
 {
     Vector3 point;
-    float angle;
+    float Angle;
     float timeDelay;
 }
 
@@ -95,4 +119,36 @@ class Goal
     List<TrajectoryPoint> desiredTrajectory;
 
     /// If a specific type of stance is desired, this should be put here
+}
+
+class MMPose
+{
+    /*  The purpose of this class is to store the information from the motion capture for each joint in a Pose-like structure.
+     *  A Pose takes the position (vector3) and Rotation (quaternion) of an object. 
+     *  Our pose will store the positions and rotations of all joints, such that we can simply set the rig to a desired pose.
+     *  This pose must also  contain the animation index, used to cull the same animation during comparisons.
+     */
+    Pose[] pose;
+    int poseIndex;
+    
+    public MMPose(Pose[] _pose, int _poseIndex)
+    {
+        pose = _pose;
+        poseIndex = _poseIndex;
+    }
+
+    public Pose[] GetPose()
+    {
+        return pose;
+    }
+
+    public Pose GetJointTransform(int num)
+    {
+        return pose[num];
+    }
+
+    public int getPoseIndex()
+    {
+        return poseIndex;
+    }
 }
