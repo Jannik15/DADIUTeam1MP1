@@ -19,7 +19,7 @@ public class Interactions : MonoBehaviour
     // For first version, click on object, if it has "Interactable" tag, Debug in console.
     void Start()
     {
-        clickPos = gameObject.GetComponent<CharacterMovement>().getPressPos();
+        clickPos = gameObject.GetComponent<CharacterMovement>().GetPressPos();
         interactThreshold = 1.5f;
         interactThresholdOS = 0.5f;
         slideSpeed = 10.0f;
