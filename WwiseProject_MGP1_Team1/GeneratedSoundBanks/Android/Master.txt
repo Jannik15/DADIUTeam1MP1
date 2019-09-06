@@ -8,7 +8,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1410513580	Play_Wall_Hit_Blend			\Default Work Unit\Objects\Play_Wall_Hit_Blend	
 	1532327793	Music_TitleScreen			\Music\Music_TitleScreen	
 	1660008929	Play_Door_Open			\Default Work Unit\Objects\Play_Door_Open	
-	3741135221	Music_Region			\Music\General\Music_Region	
 	3847524746	Play_Moving_Object			\Default Work Unit\Objects\Play_Moving_Object	
 	4064524182	Play_Flashlight_On_Off			\Default Work Unit\Player\Play_Flashlight_On_Off	
 	4155730121	Play_Presence			\Default Work Unit\Ambience\Play_Presence	
@@ -19,13 +18,6 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	712161697	Rug	Surface_Type			
 	2058049674	Wood	Surface_Type			
-
-State Group	ID	Name			Wwise Object Path	Notes
-	2106907484	Music_Regions			\MusicStates\Music_Regions	
-
-State	ID	Name	State Group			Notes
-	0	None	Music_Regions			
-	1359360137	Room1	Music_Regions			
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	95574197	Modulator Envelope (Custom)				

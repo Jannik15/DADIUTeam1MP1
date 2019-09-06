@@ -21,7 +21,6 @@
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3741135221" Name="Music_Region" ObjectPath="\Events\Music\General\Music_Region" DurationType="Infinite"/>
 				<Event Id="1532327793" Name="Music_TitleScreen" ObjectPath="\Events\Music\Music_TitleScreen" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1391607054" Name="Play_Button1_Mellow" ObjectPath="\Events\Default Work Unit\UI\Play_Button1_Mellow" DurationType="Unknown"/>
 				<Event Id="185252871" Name="Play_Button2_Tone" ObjectPath="\Events\Default Work Unit\UI\Play_Button2_Tone" DurationType="Unknown"/>
