@@ -22,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
         playerMoveSpeed = 4;
         moveStep = playerMoveSpeed * Time.deltaTime;
 
-        playerRotateSpeed = 10;
+        playerRotateSpeed = 8;
         rotStep = playerRotateSpeed * Time.deltaTime;
 
         goalPos = transform.position;
@@ -56,7 +56,7 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             mousePos = Input.mousePosition;
-            if (mousePos.y > (Screen.height / 3))
+            if (mousePos.y > (Screen.height / 2))
             {
                 return;
             }
