@@ -12,6 +12,8 @@ public class Interactions : MonoBehaviour
     GameObject otherObject;
     public GameObject arrow;
 
+    private GameObject objectClicked, arrowClicked;
+
     public InteractionsSideChecker _ISC;
     // Start is called before the first frame update
    
@@ -64,14 +66,52 @@ public class Interactions : MonoBehaviour
         if(hit.collider.tag == "interactable" /* && Vector3.Distance(transform.position, otherObject) < 1 */) {
             Debug.Log("Entered box click");
             // LockMovement();
+            objectClicked = hit.collider.gameObject;
             SpawnArrows();
             
             
         }
         
-        if(hit.collider.tag == "arrow") {
+        if(hit.collider.tag.Contains("Arrow")) {
             Debug.Log("Entered arrow statement");
                 oldPos = otherObject.transform.position;
+            arrowClicked = hit.collider.gameObject;
+
+/*             if(hit.collider.tag == "northArrow") {
+                Debug.Log("North arrow clicked");
+            }
+            if(hit.collider.tag == "southArrow") {
+                Debug.Log("North arrow clicked");
+            }
+            if(hit.collider.tag == "northArrow") {
+                Debug.Log("North arrow clicked");
+            }
+            if(hit.collider.tag == "northArrow") {
+                Debug.Log("North arrow clicked");
+            } */
+
+            switch(hit.collider.tag) {
+                case "northArrow":
+                    Debug.Log("North Arrow Clicked");
+                    break;
+
+                case "southArrow":
+                    Debug.Log("South Arrow Clicked");
+                    break;
+
+                case "eastArrow":
+                    Debug.Log("East Arrow Clicked");
+                    break;
+
+                case "westArrow":
+                    Debug.Log("West Arrow Clicked");
+                    break;
+                default: 
+                    Debug.Log("Tag doesn't exit");
+                    break;
+            }
+
+
 /*                 if(colliding ) {
                 otherObject.transform.position = oldPos; 
                 // Play not moveable animation                   
@@ -134,9 +174,11 @@ public class Interactions : MonoBehaviour
             Debug.Log("Entered Spawn arrow horizontal");
             //Up arrow
                 GameObject upArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z + arrowDisplaceZ), Quaternion.identity);
+                upArrow.tag = "northArrow";
             //Down arrow (rotate by 180)
                 GameObject downArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z - arrowDisplaceZ), Quaternion.identity);
                 downArrow.transform.eulerAngles = new Vector3(0,180,0);//rotation = new Quaternion(downArrow.transform.rotation.x, 270, downArrow.transform.rotation.z, downArrow.transform.rotation.w);
+                downArrow.tag = "southArrow";
         }
         
             else {
@@ -144,9 +186,11 @@ public class Interactions : MonoBehaviour
                 // Right arrow (rotate 90)
                 GameObject rightArrow = Instantiate(arrow, new Vector3(hitCollider.x + arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 rightArrow.transform.eulerAngles = new Vector3(0,90,0);
+                rightArrow.tag = "westArrow";
                 // Left arrow (rotate 270)
                 GameObject leftArrow = Instantiate(arrow, new Vector3(hitCollider.x - arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 leftArrow.transform.eulerAngles = new Vector3(0,270,0);
+                leftArrow.tag = "eastArrow";
             }
                 
                 
