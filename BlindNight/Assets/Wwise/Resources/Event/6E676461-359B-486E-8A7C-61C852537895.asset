@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c0c95c3964e3b42addb40e099ac7da, type: 3}
+  m_Name: 6E676461-359B-486E-8A7C-61C852537895
+  m_EditorClassIdentifier: 
+  objectName: Play_Room1
+  id: 2018311500
+  guid: 6E676461-359B-486E-8A7C-61C852537895

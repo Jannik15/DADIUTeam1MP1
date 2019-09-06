@@ -520,6 +520,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1987102348}
     m_Modifications:
+    - target: {fileID: 3577516691121943817, guid: f5572641e76707941aad2ce109873f55,
+        type: 3}
+      propertyPath: m_Name
+      value: WallWindow
+      objectReference: {fileID: 0}
     - target: {fileID: 576106301802432282, guid: f5572641e76707941aad2ce109873f55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -575,11 +580,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3577516691121943817, guid: f5572641e76707941aad2ce109873f55,
-        type: 3}
-      propertyPath: m_Name
-      value: WallWindow
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5572641e76707941aad2ce109873f55, type: 3}
 --- !u!4 &492044739 stripped
@@ -629,6 +629,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1922572420}
     m_Modifications:
+    - target: {fileID: 14394675981652161, guid: ddce3e1a20cd0b9409ea22778cc0fbf6,
+        type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 7041482551973635392, guid: ddce3e1a20cd0b9409ea22778cc0fbf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -688,11 +693,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25000012
-      objectReference: {fileID: 0}
-    - target: {fileID: 14394675981652161, guid: ddce3e1a20cd0b9409ea22778cc0fbf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddce3e1a20cd0b9409ea22778cc0fbf6, type: 3}
@@ -916,6 +916,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1987102348}
     m_Modifications:
+    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_1Unit_Mesh (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6331251918362796275, guid: 3b405cb66cb89de409478b41612ca772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -970,11 +975,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_1Unit_Mesh (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b405cb66cb89de409478b41612ca772, type: 3}
@@ -1581,6 +1581,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1987102348}
     m_Modifications:
+    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_1Unit_Mesh (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6331251918362796275, guid: 3b405cb66cb89de409478b41612ca772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1636,11 +1641,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_1Unit_Mesh (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b405cb66cb89de409478b41612ca772, type: 3}
 --- !u!4 &1213317817 stripped
@@ -1656,6 +1656,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1987102348}
     m_Modifications:
+    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_1Unit_Mesh
+      objectReference: {fileID: 0}
     - target: {fileID: 6331251918362796275, guid: 3b405cb66cb89de409478b41612ca772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1710,11 +1715,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_1Unit_Mesh
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b405cb66cb89de409478b41612ca772, type: 3}
@@ -1960,6 +1960,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1987102348}
     m_Modifications:
+    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_1Unit_Mesh (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6331251918362796275, guid: 3b405cb66cb89de409478b41612ca772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2015,11 +2020,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_1Unit_Mesh (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b405cb66cb89de409478b41612ca772, type: 3}
 --- !u!4 &1407289200 stripped
@@ -2035,6 +2035,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1987102348}
     m_Modifications:
+    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_1Unit_Mesh (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6331251918362796275, guid: 3b405cb66cb89de409478b41612ca772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2089,11 +2094,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7027438184129663712, guid: 3b405cb66cb89de409478b41612ca772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_1Unit_Mesh (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b405cb66cb89de409478b41612ca772, type: 3}
@@ -2467,6 +2467,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1922572420}
     m_Modifications:
+    - target: {fileID: 14394675981652161, guid: ddce3e1a20cd0b9409ea22778cc0fbf6,
+        type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 7041482551973635392, guid: ddce3e1a20cd0b9409ea22778cc0fbf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2526,11 +2531,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25000012
-      objectReference: {fileID: 0}
-    - target: {fileID: 14394675981652161, guid: ddce3e1a20cd0b9409ea22778cc0fbf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddce3e1a20cd0b9409ea22778cc0fbf6, type: 3}
@@ -2682,7 +2682,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1847629294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9555db435bd1d7e4891300667d686ffc, type: 3}
+  m_Script: {fileID: 11500000, guid: a0a63e8a3acf6c046874e318cdc5ec65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -2693,7 +2693,8 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 89f5eef4b97f68a44bee4f49920f22f9,
+      type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -2702,10 +2703,6 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  LargeModePositions: []
-  multiPositionArray: []
 --- !u!114 &1847629298
 MonoBehaviour:
   m_ObjectHideFlags: 0

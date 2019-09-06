@@ -88,7 +88,7 @@
 							<ConversionPlugin Name="" ID="{DC4DC826-061F-4F77-A6A2-6573D30C1C47}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Android">
-							<ConversionPlugin Name="" ID="{1C43408C-2409-46CE-8F71-558F7119C4FC}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{A101946F-8E01-4174-A80A-E336E3FDA396}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>

@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID PLAY_MOVING_OBJECT = 3847524746U;
         static const AkUniqueID PLAY_PRESENCE = 4155730121U;
         static const AkUniqueID PLAY_ROOM_WIND = 919644948U;
+        static const AkUniqueID PLAY_ROOM1 = 2018311500U;
         static const AkUniqueID PLAY_WALL_HIT_BLEND = 1410513580U;
     } // namespace EVENTS
 
