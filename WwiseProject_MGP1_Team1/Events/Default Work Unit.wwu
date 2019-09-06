@@ -68,17 +68,6 @@
 				</Folder>
 				<Folder Name="Objects" ID="{264B869A-0D1B-4050-81BD-5A24189542B7}" ShortID="527005116">
 					<ChildrenList>
-						<Event Name="Play_Door_Open" ID="{802977A1-41D0-4443-82EB-5701FA5DD305}">
-							<ChildrenList>
-								<Action Name="" ID="{3A475BE3-0042-4F19-B939-24A6AC4BC0F0}" ShortID="189327467">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Door" ID="{3AE87BD9-B69C-46BD-8FC6-F63BBC087180}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Wall_Hit_Blend" ID="{15B70042-0396-4FB9-B32A-33935496E7FF}">
 							<ChildrenList>
 								<Action Name="" ID="{9B5E9CBF-E2B1-4F04-8A1E-E7C9E4BFA9B8}" ShortID="955534542">
@@ -101,6 +90,32 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Door" ID="{45B6BC05-A7E8-4A4B-9916-A6C996EE8B58}" ShortID="939163515">
+							<ChildrenList>
+								<Event Name="Play_Door_Close" ID="{69BF575F-0427-4934-9985-74821DC8BC27}">
+									<ChildrenList>
+										<Action Name="" ID="{AA164941-DEEE-4576-A275-44A0A58D7ED2}" ShortID="182776486">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_Close" ID="{D9103350-66DD-4B93-8D9B-3A63C735B554}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Door_Open" ID="{802977A1-41D0-4443-82EB-5701FA5DD305}">
+									<ChildrenList>
+										<Action Name="" ID="{3A475BE3-0042-4F19-B939-24A6AC4BC0F0}" ShortID="189327467">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_Open" ID="{3AE87BD9-B69C-46BD-8FC6-F63BBC087180}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{F580ED6C-62F7-4FFF-B8C7-344AF342BB12}" ShortID="915458022">
@@ -140,6 +155,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Move_Negative" ID="{BCFED10F-6079-4357-B4A0-C0E3B52F3469}">
+					<ChildrenList>
+						<Action Name="" ID="{EAA47210-F763-4E01-9169-16F1B5D93761}" ShortID="440444724">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Move_Negative" ID="{DED48A9F-E2FE-4422-ACEB-9E481930D5A6}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -9,6 +9,7 @@
 						<ObjectRef Name="Play_Door_Open" ID="{802977A1-41D0-4443-82EB-5701FA5DD305}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Presence" ID="{7E6DAEF0-225E-4556-8A3D-3BBB8ABE8A9D}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Room" ID="{6E676461-359B-486E-8A7C-61C852537895}" WorkUnitID="{211CCABC-53A3-43CF-BE84-BA1D138041C2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Door_Close" ID="{69BF575F-0427-4934-9985-74821DC8BC27}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Flashlight_On_Off" ID="{D593DAA7-7C9F-494C-A084-3F7F54CD2FCC}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Moving_Object" ID="{EFAF40E7-E96F-494C-AD2B-0A7BDEDF4163}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Button3_Click" ID="{1E8DDDBB-A8C1-4BC7-A410-19CBA04A3F3A}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" Filter="7" Origin="Manual"/>

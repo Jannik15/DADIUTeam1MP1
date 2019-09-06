@@ -1881,6 +1881,7 @@
 						</Effect>
 						<Effect Name="Very_Slow_Modulation" ID="{6082F901-3CE1-4D78-8F2D-B2B72CF28085}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
+								<Property Name="ModDepth" Type="Real32" Value="52.6"/>
 								<Property Name="ModFrequency" Type="Real32" Value="0.5"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>

@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BUTTON3_CLICK = 1166635208U;
+        static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
         static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
         static const AkUniqueID PLAY_FLASHLIGHT_ON_OFF = 4064524182U;
         static const AkUniqueID PLAY_FLASHLIGHT_SWITCH = 784840363U;
@@ -68,6 +69,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID TIMEOFDAY = 3729505769U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

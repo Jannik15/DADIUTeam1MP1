@@ -535,62 +535,125 @@
 										<ActiveSource Name="435845__dersuperanton__flashlight-click" ID="{BAC99D4F-1792-4D75-8201-85BD1730CE34}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Flashlight_Switch" ID="{8BBAE703-2D47-4E17-B9D1-9DD281AD6C0B}" ShortID="14226412">
+								<RandomSequenceContainer Name="Flashlight_Switch" ID="{D1AEB704-43A1-41DC-99CE-26029A275AD7}" ShortID="1056197627">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>41</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-730</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{AF11B6C5-EEE0-4887-9AEA-83F8D881FE3B}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="126"/>
-															<Property Name="Min" Type="Real64" Value="-101"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="UserAuxSendVolume0" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-										</Property>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Player_Flashlight_Reverb" ID="{4AB68F57-073A-4340-8C92-E537C9EECC4B}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="435845__dersuperanton__flashlight-click" ID="{7E002A34-298C-445D-B11D-0D35D1A60BEE}" ShortID="731430948">
+										<Sound Name="Flashlight_Electricity" ID="{171BE73D-F2A0-45FA-89A4-3498E74F106F}" ShortID="349398377">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.213211056472081"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.20177046319797"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.231932027284264"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>435845__dersuperanton__flashlight-click.wav</AudioFile>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Player_Flashlight_Reverb" ID="{4AB68F57-073A-4340-8C92-E537C9EECC4B}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="341612__pureaudioninja__electricity-4" ID="{6BED0E09-DAD1-4CE3-9C6E-2CFA5580F019}" ShortID="29292564">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.250223756067961"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.23437373584142"/>
+														<Property Name="FadeOutShape" Type="int16" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.23437373584142"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>341612__pureaudioninja__electricity-4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="341612__pureaudioninja__electricity-4" ID="{6BED0E09-DAD1-4CE3-9C6E-2CFA5580F019}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Flashlight_Switch" ID="{8BBAE703-2D47-4E17-B9D1-9DD281AD6C0B}" ShortID="14226412">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>41</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-730</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AF11B6C5-EEE0-4887-9AEA-83F8D881FE3B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="126"/>
+																	<Property Name="Min" Type="Real64" Value="-101"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Player_Flashlight_Reverb" ID="{4AB68F57-073A-4340-8C92-E537C9EECC4B}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="435845__dersuperanton__flashlight-click" ID="{7E002A34-298C-445D-B11D-0D35D1A60BEE}" ShortID="731430948">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.213211056472081"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.20177046319797"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.231932027284264"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>435845__dersuperanton__flashlight-click.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="435845__dersuperanton__flashlight-click" ID="{7E002A34-298C-445D-B11D-0D35D1A60BEE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="435845__dersuperanton__flashlight-click" ID="{7E002A34-298C-445D-B11D-0D35D1A60BEE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<Playlist>
+										<ItemRef Name="Flashlight_Switch" ID="{8BBAE703-2D47-4E17-B9D1-9DD281AD6C0B}"/>
+										<ItemRef Name="Flashlight_Electricity" ID="{171BE73D-F2A0-45FA-89A4-3498E74F106F}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

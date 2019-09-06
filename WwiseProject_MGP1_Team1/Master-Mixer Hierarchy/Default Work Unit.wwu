@@ -4,6 +4,18 @@
 		<WorkUnit Name="Default Work Unit" ID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{12CE9880-EC53-4B47-9EBA-C823438DC4AC}" WorkUnitID="{50BA4471-36CD-4D29-9162-D3FEF633D4FB}"/>
@@ -15,6 +27,9 @@
 								<Bus Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{081B06B8-D8BA-47D5-B190-D1CE5DDE39FD}" ShortID="657157966">
 													<ReferenceList>
@@ -42,6 +57,11 @@
 													</Curve>
 												</RTPC>
 											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 								</Bus>
@@ -93,6 +113,38 @@
 											</ReferenceList>
 										</AuxBus>
 									</ChildrenList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+												<TargetProp>BusVolume</TargetProp>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="Objects" ID="{E7C53D93-BE37-4767-9CCB-E28CFCD6D4E0}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+												<TargetProp>BusVolume</TargetProp>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+												<TargetProp>BusVolume</TargetProp>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
 								</Bus>
 							</ChildrenList>
 						</Bus>

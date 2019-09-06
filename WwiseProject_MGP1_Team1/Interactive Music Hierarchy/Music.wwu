@@ -19,7 +19,7 @@
 								<Property Name="Tempo" Type="Real64" Value="82"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -46,6 +46,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="Analog Dreams-2-Minimalistic Loop_4L_PEX" ID="{D2A41E45-65DC-411B-868C-F7D3CAFBED04}" ShortID="40436296">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
@@ -700,6 +707,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="1-Main Loop_8L_PEX-Analog Dreams" ID="{97E90329-1D4B-4EC1-8BAE-E3CE9F5E3A50}" ShortID="693664778">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
@@ -1350,6 +1364,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="1-Main Loop_8L_PEX-Analog Dreams" ID="{9C420E58-43FE-4289-8B46-E8CDF48847B3}" ShortID="328746124">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Music Detailed" ID="{11A4724A-32FA-4DF4-B1A9-715AC5822EC4}" WorkUnitID="{57B8D8DF-06F5-4803-B26F-6D143FD4168C}"/>
@@ -1768,6 +1789,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="1-Main Loop_8L_PEX-Analog Dreams" ID="{685891DD-771F-41AA-80E3-095B37FE4AD6}" ShortID="646490709">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Music Detailed" ID="{11A4724A-32FA-4DF4-B1A9-715AC5822EC4}" WorkUnitID="{57B8D8DF-06F5-4803-B26F-6D143FD4168C}"/>
