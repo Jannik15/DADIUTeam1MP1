@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_FLASHLIGHT_ON_OFF = 4064524182U;
         static const AkUniqueID PLAY_FLASHLIGHT_SWITCH = 784840363U;
         static const AkUniqueID PLAY_FOOTSTEP_SURFACE = 709824872U;
+        static const AkUniqueID PLAY_MOVE_NEGATIVE = 2145787553U;
         static const AkUniqueID PLAY_MOVING_OBJECT = 3847524746U;
         static const AkUniqueID PLAY_PRESENCE = 4155730121U;
         static const AkUniqueID PLAY_ROOM = 2736697007U;

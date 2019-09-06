@@ -18,10 +18,6 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Flashlight_Switch" ID="{FCE99D4E-A172-4F64-AFAC-708883E78B04}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_Button3_Click" ID="{1E8DDDBB-A8C1-4BC7-A410-19CBA04A3F3A}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}"/>
 							<Position X="2" Y="0"/>
 						</Module>

@@ -116,6 +116,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Move_Negative" ID="{BCFED10F-6079-4357-B4A0-C0E3B52F3469}">
+							<ChildrenList>
+								<Action Name="" ID="{EAA47210-F763-4E01-9169-16F1B5D93761}" ShortID="440444724">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Move_Negative" ID="{DED48A9F-E2FE-4422-ACEB-9E481930D5A6}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{F580ED6C-62F7-4FFF-B8C7-344AF342BB12}" ShortID="915458022">
@@ -142,12 +153,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Flashlight_Switch" ID="{FCE99D4E-A172-4F64-AFAC-708883E78B04}">
+						<Event Name="Play_Flashlight_Switch" ID="{9C0A0DE8-F77C-4789-8172-A602C3E8A3F7}">
 							<ChildrenList>
-								<Action Name="" ID="{54F794E0-9F48-4870-A1A0-F2EE90AE5060}" ShortID="555573154">
+								<Action Name="" ID="{70F39FF8-FD6B-4777-9440-18D2DB3E6496}" ShortID="367059436">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Flashlight_Switch" ID="{8BBAE703-2D47-4E17-B9D1-9DD281AD6C0B}" WorkUnitID="{A879E883-0082-4356-90D4-98D568C6B345}"/>
+											<ObjectRef Name="Flashlight_Switch" ID="{D1AEB704-43A1-41DC-99CE-26029A275AD7}" WorkUnitID="{A879E883-0082-4356-90D4-98D568C6B345}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -155,17 +166,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Move_Negative" ID="{BCFED10F-6079-4357-B4A0-C0E3B52F3469}">
-					<ChildrenList>
-						<Action Name="" ID="{EAA47210-F763-4E01-9169-16F1B5D93761}" ShortID="440444724">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Move_Negative" ID="{DED48A9F-E2FE-4422-ACEB-9E481930D5A6}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
