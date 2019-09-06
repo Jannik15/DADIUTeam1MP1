@@ -14,7 +14,7 @@ public class CharacterMovement : MonoBehaviour
     private float minDragDist = 0.2f;
 
     private bool joystickActive = false;
-    private float moveVectorScale = 250.0f;
+    private float moveVectorScale = 100.0f;
     private float maxMoveVectorLength = 1.0f;
 
     void Start()
