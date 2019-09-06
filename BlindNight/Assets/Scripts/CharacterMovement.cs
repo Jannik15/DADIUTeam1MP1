@@ -22,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
         playerMoveSpeed = 4;
         moveStep = playerMoveSpeed * Time.deltaTime;
 
-        playerRotateSpeed = 4;
+        playerRotateSpeed = 10;
         rotStep = playerRotateSpeed * Time.deltaTime;
 
         goalPos = transform.position;
@@ -78,7 +78,7 @@ public class CharacterMovement : MonoBehaviour
 
     void MoveWithJoystickVector(Vector2 direction)
     {
-        float angle = -0.25f * Mathf.PI; // 45.0f;
+        float angle = -0.25f * Mathf.PI; // -45 degrees
         Vector2 turnedDirection = new Vector2(0,0);
         turnedDirection.x = direction.x * Mathf.Cos(angle) - direction.y * Mathf.Sin(angle);
         turnedDirection.y = direction.x * Mathf.Sin(angle) + direction.y * Mathf.Cos(angle);
@@ -87,11 +87,17 @@ public class CharacterMovement : MonoBehaviour
         turnedDirection = Vector2.ClampMagnitude(turnedDirection, maxMoveVectorLength);
         Debug.Log(turnedDirection);
 
-        Vector3 newPosX = transform.position;
-        newPosX.x += turnedDirection.x * playerMoveSpeed * Time.deltaTime;
-        newPosX.z += turnedDirection.y * playerMoveSpeed * Time.deltaTime;
-        transform.position = newPosX;
-        //transform.position.y = turnedDirection.x * playerMoveSpeed * Time.deltaTime;
+        // get new position
+        Vector3 newPos = transform.position;
+        newPos.x += turnedDirection.x * playerMoveSpeed * Time.deltaTime;
+        newPos.z += turnedDirection.y * playerMoveSpeed * Time.deltaTime;
+
+        // look towards new position
+        Vector3 newDir = newPos - transform.position;
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(newDir), rotStep);
+
+        // move to new position
+        transform.position = newPos;
     }
 
     void MoveWithKeyboard()
