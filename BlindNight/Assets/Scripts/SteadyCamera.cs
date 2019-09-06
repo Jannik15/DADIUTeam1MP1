@@ -12,8 +12,7 @@ public class SteadyCamera : MonoBehaviour
     {
         //distance = Vector3.Distance(transform.position, target.transform.position);
         //cameraHeight = 22.0f;
-        //offset = transform.position - target.transform.position;
-        offset = new Vector3(-22, 30, -22);
+        offset = transform.position - target.transform.position;
     }
 
     // Update is called once per frame
