@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f37939f01049d45a7162831883a2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightColor: {r: 1, g: 0, b: 0, a: 0}
+  lightColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &4751251697306031369
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,21 +194,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1535458161989802871}
     m_Modifications:
-    - target: {fileID: 2846609459276069901, guid: 1b271edc43351fc4b8aba7c298290c81,
-        type: 3}
-      propertyPath: m_Name
-      value: VolumetricSpotlight
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846609459276069901, guid: 1b271edc43351fc4b8aba7c298290c81,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846609459276069901, guid: 1b271edc43351fc4b8aba7c298290c81,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1286457055669669406, guid: 1b271edc43351fc4b8aba7c298290c81,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -278,6 +263,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2846609459276069901, guid: 1b271edc43351fc4b8aba7c298290c81,
+        type: 3}
+      propertyPath: m_Name
+      value: VolumetricSpotlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2846609459276069901, guid: 1b271edc43351fc4b8aba7c298290c81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2846609459276069901, guid: 1b271edc43351fc4b8aba7c298290c81,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b271edc43351fc4b8aba7c298290c81, type: 3}

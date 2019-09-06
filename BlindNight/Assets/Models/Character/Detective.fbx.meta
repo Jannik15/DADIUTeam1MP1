@@ -3,7 +3,12 @@ guid: 357641806f449114b8bdaef7344ea013
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Detective_M1
+    second: {fileID: 2100000, guid: 463c58b5627e05f4ab59d26b0cf68703, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
