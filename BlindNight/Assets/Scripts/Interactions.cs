@@ -7,7 +7,7 @@ public class Interactions : MonoBehaviour
     // public CharacterMovement charMove;
     public Vector3 clickPos, hitCollider;
     public float interactThreshold, interactThresholdOS, interactStep, slideSpeed, unitSize;
-
+    private Vector3 oldPos;
     public bool canMove;
     // Start is called before the first frame update
    
@@ -44,6 +44,7 @@ public class Interactions : MonoBehaviour
 
         RaycastHit hit;
         
+        // Check if item pressed is interactable. 
         if(!(Physics.Raycast(ray, out hit) && hit.collider.tag == "interactable")) {
             return;
         }
@@ -51,9 +52,33 @@ public class Interactions : MonoBehaviour
         hitCollider = hit.collider.transform.position;
         GameObject otherObject = hit.collider.gameObject;
         Debug.Log("Item has been pressed " + hit.collider.name); 
-        CheckObjectMovement(otherObject);
-    }
 
+        // Check if interactable object has been moved to, and what direction you're in.
+        if(hit.collider.tag == "interactable" /* && Vector3.Distance(transform.position, otherObject) < 1 */) {
+            // LockMovement();
+            /*
+            SpawnArrows();
+            */
+            
+        }
+        if(hit.collider.name.Contains("arrow")) {
+
+                oldPos = otherObject.transform.position;
+/*                 if(colliding ) {
+                otherObject.transform.position = oldPos; 
+                // Play not moveable animation                   
+                }
+
+                else {
+                otherObject.transform.position = oldPos;
+                Vector3.Lerp(hitCollider, new Vector3(hitCollider.x, hitCollider.y, hitCollider.z), interactStep);
+                // Play move animation
+                } */
+
+            }
+/*         CheckObjectMovement(otherObject); */
+    }
+/* 
     void CheckObjectMovement(GameObject obj) {
         float objX = obj.transform.position.x;
         float objZ = obj.transform.position.z;
@@ -67,9 +92,9 @@ public class Interactions : MonoBehaviour
         CheckObjectMovementVertical(objX, objZ, objWidth/2, objHeight/2, playerX, playerZ);
         // Check horizontal 
 
-    }
+    } */
 
-    void CheckObjectMovementVertical(float objX, float objZ, float halfWidth, float halfHeight, float playerX, float playerZ) {
+/*     void CheckObjectMovementVertical(float objX, float objZ, float halfWidth, float halfHeight, float playerX, float playerZ) {
         if(playerX > objX + halfWidth) {
             return;
         }
@@ -93,6 +118,20 @@ public class Interactions : MonoBehaviour
         
 
 
+    } */
+
+    public void SpawnArrows() {
+        /*  if(isHorizontal) {
+            Instantiate(rightArrow, rightArrowPos)
+            Instantiate(leftArrow, leftArrowPos)
+        }
+        
+            else() {
+                Instantiate(upArrow, upArrowPos)
+                Instantiate(downArrow, downArrowPos)
+            }
+                
+                */
     }
 }
 
