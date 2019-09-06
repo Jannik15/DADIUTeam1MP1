@@ -27,12 +27,39 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
+        if (GameMaster.instance.GetWalkType() == 2) {
+            MoveWithKeyboard();
+        } else {
         GetInput();
         Vector3 direction = goalPos - transform.position;
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotStep);
         if (Vector3.Distance(transform.position, goalPos) > moveThreshold)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
+            {
+                transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
+            }
+        }
+    }
+
+    void MoveWithKeyboard() {
+        if(Input.GetKey(KeyCode.LeftArrow)) {
+            Vector3 position = transform.position;
+            position.x -= moveStep;
+            transform.position = position;
+        }
+        if(Input.GetKey(KeyCode.RightArrow)) {
+            Vector3 position = transform.position;
+            position.x += moveStep;
+            transform.position = position;
+        }
+        if(Input.GetKey(KeyCode.UpArrow)) {
+            Vector3 position = transform.position;
+            position.z += moveStep;
+            transform.position = position;
+        }
+        if(Input.GetKey(KeyCode.DownArrow)) {
+            Vector3 position = transform.position;
+            position.z -= moveStep;
+            transform.position = position;
         }
     }
 
