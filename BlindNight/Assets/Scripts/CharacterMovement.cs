@@ -85,7 +85,7 @@ public class CharacterMovement : MonoBehaviour
 
         turnedDirection /= moveVectorScale;
         turnedDirection = Vector2.ClampMagnitude(turnedDirection, maxMoveVectorLength);
-        Debug.Log(turnedDirection);
+        //Debug.Log(turnedDirection);
 
         // get new position
         Vector3 newPos = transform.position;
