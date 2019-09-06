@@ -52,15 +52,38 @@ public class GameMaster : MonoBehaviour
 
     public void ToggleMenu()
     {
-        GameObject MainMenu = null;
-        Transform[] trans = GameObject.Find("Canvas").GetComponentsInChildren<Transform>(true);
+        GameObject MainMenu = FindChildInParentString("Canvas", "MainMenu");
+        MainMenu.SetActive(!MainMenu.activeSelf);
+
+        GameObject Joystick = FindChildInParentString("Canvas", "Joystick");
+        Joystick.SetActive(!Joystick.activeSelf);
+    }
+
+    public GameObject FindChildInParentString(string parent, string child)
+    {
+        GameObject result = null;
+        Transform[] trans = GameObject.Find(parent).GetComponentsInChildren<Transform>(true);
         foreach (Transform t in trans)
         {
-            if (t.gameObject.name == "MainMenu")
+            if (t.gameObject.name == child)
             {
-                MainMenu = t.gameObject;
-                MainMenu.SetActive(!MainMenu.gameObject.activeSelf);
+                result = t.gameObject;
             }
         }
+        return result;
+    }
+
+    public GameObject FindChildInParentObject(GameObject parent, string child)
+    {
+        GameObject result = null;
+        Transform[] trans = parent.GetComponentsInChildren<Transform>(true);
+        foreach (Transform t in trans)
+        {
+            if (t.gameObject.name == child)
+            {
+                result = t.gameObject;
+            }
+        }
+        return result;
     }
 }

@@ -98,6 +98,26 @@ public class CharacterMovement : MonoBehaviour
 
         // move to new position
         transform.position = newPos;
+
+        UpdateJoystickUI(direction);
+    }
+
+    void UpdateJoystickUI(Vector2 direction)
+    {
+        GameObject JoystickUI = GameMaster.instance.FindChildInParentString("Canvas", "Joystick");
+        if (!JoystickUI)
+        {
+            return;
+        }
+
+        GameObject JoystickDirection = GameMaster.instance.FindChildInParentObject(JoystickUI, "JoystickDirection");
+        float angle = Vector2.Angle(new Vector2(0, 1), direction);// * (180 / Mathf.PI);
+        if (direction.x > 0)
+        {
+            angle = (180 - angle) + 180;
+        }
+        angle -= 40;
+        JoystickDirection.transform.eulerAngles = new Vector3(0, 0, angle);
     }
 
     void MoveWithKeyboard()
