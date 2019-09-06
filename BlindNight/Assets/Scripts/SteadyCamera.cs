@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class SteadyCamera : MonoBehaviour
 {
+    // Start is called before the first frame update
     public GameObject target;
-
+    public float distance, cameraHeight;
     private Vector3 offset;
-
     void Start()
     {
-        offset = new Vector3(-22, 17, -22);
+        //distance = Vector3.Distance(transform.position, target.transform.position);
+        //cameraHeight = 22.0f;
+        offset = transform.position - target.transform.position;
     }
 
+    // Update is called once per frame
     void Update()
     {
+        //transform.position = new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z);
+        /* Vector3 pos = target.transform.position;
+        pos.z += cameraHeight;
+        transform.position = pos; */
         transform.position = target.transform.position + offset;
     }
 }

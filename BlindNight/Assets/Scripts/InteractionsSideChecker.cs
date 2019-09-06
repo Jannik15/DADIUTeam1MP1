@@ -13,7 +13,7 @@ public class InteractionsSideChecker : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        m_IsHorizontal = new bool[2] {false,false};
+        // m_IsHorizontal = new bool[2] {false,false};
 
     }
 
