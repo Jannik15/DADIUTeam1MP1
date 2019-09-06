@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicPlaylistContainer Name="Room1" ID="{DBC8B798-C9F5-4618-B09E-4B57A5EDFA8F}" ShortID="669829937">
+						<MusicPlaylistContainer Name="Room" ID="{DBC8B798-C9F5-4618-B09E-4B57A5EDFA8F}" ShortID="669829937">
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="82"/>
@@ -990,6 +990,7 @@
 													</ClipList>
 												</MusicTrackSequence>
 												<MusicTrackSequence Name="" ID="{20B27F85-8D3D-4F81-917F-CA721662DE88}"/>
+												<MusicTrackSequence Name="" ID="{46433A8E-AF66-4994-A85C-7276CA2FE2B8}"/>
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="1-Main Loop_8L_PEX-Cymbal Chimes Ambi" ID="{6B612899-F316-4D42-A8C7-65C08C5EBEB2}" ShortID="721820555">
@@ -2238,31 +2239,29 @@
 										<Property Name="LoopCount" Type="int16" Value="0"/>
 									</PropertyList>
 									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{2E5DBC47-6BD5-4B05-9E49-3E3EE922E1FE}" ShortID="499347973">
+										<MusicPlaylistItem Name="" ID="{8A502678-94A6-43CA-9FE8-6939B5484169}" ShortID="562388828">
 											<PropertyList>
-												<Property Name="PlayMode" Type="int16" Value="3"/>
+												<Property Name="LoopCount" Type="int16" Value="2">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4ADC0AAB-1E77-469E-823B-76DF2BD8FF3E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
-											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{8A502678-94A6-43CA-9FE8-6939B5484169}" ShortID="562388828">
-													<PropertyList>
-														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-													</PropertyList>
-													<SegmentRef Name="Silence" ID="{EBF4ED42-3775-4265-B320-3A7CC104AEE8}"/>
-												</MusicPlaylistItem>
-												<MusicPlaylistItem Name="" ID="{72FB5432-DE57-420C-BA73-2454218DC9AD}" ShortID="648205591">
-													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="2"/>
-														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-													</PropertyList>
-													<SegmentRef Name="Minimalistic_Loop" ID="{BFF5FA64-B44E-4EFC-941C-1F1CFF0BE83A}"/>
-												</MusicPlaylistItem>
-											</ChildrenList>
+											<SegmentRef Name="Silence" ID="{EBF4ED42-3775-4265-B320-3A7CC104AEE8}"/>
 										</MusicPlaylistItem>
 										<MusicPlaylistItem Name="" ID="{2CAD4611-1BF9-45DD-98DE-1F742D985524}" ShortID="722399891">
 											<ChildrenList>
 												<MusicPlaylistItem Name="" ID="{C7ED9BF8-390E-4EF0-A0FD-7F4EE631C680}" ShortID="737269499">
 													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="2">
+														<Property Name="LoopCount" Type="int16" Value="3">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{62769C2B-6A9B-4BFC-8D51-253D28C1D5DD}">
@@ -2279,45 +2278,101 @@
 													</PropertyList>
 													<SegmentRef Name="Minimalistic_Loop" ID="{BFF5FA64-B44E-4EFC-941C-1F1CFF0BE83A}"/>
 												</MusicPlaylistItem>
-											</ChildrenList>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{9957FDB6-9290-4006-BF47-AF005B6871AA}" ShortID="100634860">
-											<PropertyList>
-												<Property Name="PlayMode" Type="int16" Value="3"/>
-											</PropertyList>
-											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{B399F015-94CB-42B2-A548-0F2FA6473F5B}" ShortID="339376304">
+												<MusicPlaylistItem Name="" ID="{9957FDB6-9290-4006-BF47-AF005B6871AA}" ShortID="100634860">
 													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="2">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{94E7BCD1-9FFB-4258-B935-1CD1AA955ECD}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="1"/>
-																			<Property Name="Min" Type="Real64" Value="-1"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+														<Property Name="LoopCount" Type="int16" Value="2"/>
+														<Property Name="PlayMode" Type="int16" Value="2"/>
 													</PropertyList>
-													<SegmentRef Name="A_Loop" ID="{181C8357-3942-4E7F-A919-F5CEF19F8FDB}"/>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{B399F015-94CB-42B2-A548-0F2FA6473F5B}" ShortID="339376304">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="3">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{94E7BCD1-9FFB-4258-B935-1CD1AA955ECD}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="1"/>
+																					<Property Name="Min" Type="Real64" Value="-1"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>60</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<SegmentRef Name="A_Loop" ID="{181C8357-3942-4E7F-A919-F5CEF19F8FDB}"/>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{172FC1E0-CB99-45C6-A50D-C79593AC1C48}" ShortID="1019620314">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>20</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<SegmentRef Name="Silence" ID="{EBF4ED42-3775-4265-B320-3A7CC104AEE8}"/>
+														</MusicPlaylistItem>
+													</ChildrenList>
 												</MusicPlaylistItem>
-												<MusicPlaylistItem Name="" ID="{B5982EFA-8F12-452A-AC70-731258A1C826}" ShortID="389426157">
-													<PropertyList>
-														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-													</PropertyList>
-													<SegmentRef Name="B_Loop_Variation" ID="{D260A974-A9E0-4564-BC02-3C9A8FE62E81}"/>
+												<MusicPlaylistItem Name="" ID="{EC812B98-F231-4280-A0B8-CDBC97F80ED0}" ShortID="390447162">
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{CB9770EC-6A3B-438A-AB16-5E53F6750A64}" ShortID="571449344">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<SegmentRef Name="Minimalistic_Loop" ID="{BFF5FA64-B44E-4EFC-941C-1F1CFF0BE83A}"/>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{B5982EFA-8F12-452A-AC70-731258A1C826}" ShortID="389426157">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="2">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{A56F2508-861A-4F49-ADB8-3137B062ED65}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="1"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<SegmentRef Name="B_Loop_Variation" ID="{D260A974-A9E0-4564-BC02-3C9A8FE62E81}"/>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{E82B2F89-B3E5-4866-9718-036F92FC3D5E}" ShortID="968930575">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="2">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{D3BEEBDE-328E-4584-8AD0-56F7AAA0EEBF}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="1"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<SegmentRef Name="B_Loop" ID="{85DC7639-0A27-4EA6-A496-CA46317954C4}"/>
+														</MusicPlaylistItem>
+													</ChildrenList>
 												</MusicPlaylistItem>
 											</ChildrenList>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{E82B2F89-B3E5-4866-9718-036F92FC3D5E}" ShortID="968930575">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="B_Loop" ID="{85DC7639-0A27-4EA6-A496-CA46317954C4}"/>
 										</MusicPlaylistItem>
 									</ChildrenList>
 								</MusicPlaylistItem>

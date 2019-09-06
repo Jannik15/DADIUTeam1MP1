@@ -16,12 +16,12 @@
 				</Event>
 				<Folder Name="General" ID="{AC1985B4-BADA-442E-8BCC-44F050117D51}" ShortID="533856595">
 					<ChildrenList>
-						<Event Name="Play_Room1" ID="{6E676461-359B-486E-8A7C-61C852537895}">
+						<Event Name="Play_Room" ID="{6E676461-359B-486E-8A7C-61C852537895}">
 							<ChildrenList>
 								<Action Name="" ID="{E289337B-CA18-4E9B-84E5-F65D16976205}" ShortID="819845247">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Room1" ID="{DBC8B798-C9F5-4618-B09E-4B57A5EDFA8F}" WorkUnitID="{711DB861-F77C-4D58-9A4D-9590A28BCD71}"/>
+											<ObjectRef Name="Room" ID="{DBC8B798-C9F5-4618-B09E-4B57A5EDFA8F}" WorkUnitID="{711DB861-F77C-4D58-9A4D-9590A28BCD71}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

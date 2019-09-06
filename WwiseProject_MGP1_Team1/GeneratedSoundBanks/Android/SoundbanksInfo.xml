@@ -21,9 +21,6 @@
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1532327793" Name="Music_TitleScreen" ObjectPath="\Events\Music\Music_TitleScreen" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1391607054" Name="Play_Button1_Mellow" ObjectPath="\Events\Default Work Unit\UI\Play_Button1_Mellow" DurationType="Unknown"/>
-				<Event Id="185252871" Name="Play_Button2_Tone" ObjectPath="\Events\Default Work Unit\UI\Play_Button2_Tone" DurationType="Unknown"/>
 				<Event Id="1166635208" Name="Play_Button3_Click" ObjectPath="\Events\Default Work Unit\UI\Play_Button3_Click" DurationType="OneShot" DurationMin="0.407499" DurationMax="0.553774"/>
 				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\Default Work Unit\Objects\Play_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.492301" DurationMax="3.492301"/>
 				<Event Id="4064524182" Name="Play_Flashlight_On_Off" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_On_Off" DurationType="OneShot" DurationMin="0.790204" DurationMax="0.900915"/>
@@ -31,7 +28,7 @@
 				<Event Id="709824872" Name="Play_Footstep_Surface" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Surface" DurationType="OneShot" DurationMin="0.232926" DurationMax="0.402056"/>
 				<Event Id="3847524746" Name="Play_Moving_Object" ObjectPath="\Events\Default Work Unit\Objects\Play_Moving_Object" DurationType="OneShot" DurationMin="1.199916" DurationMax="1.489437"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\Ambience\Play_Presence" DurationType="Infinite"/>
-				<Event Id="2018311500" Name="Play_Room1" ObjectPath="\Events\Music\General\Play_Room1" DurationType="Infinite"/>
+				<Event Id="2736697007" Name="Play_Room" ObjectPath="\Events\Music\General\Play_Room" DurationType="Infinite"/>
 				<Event Id="919644948" Name="Play_Room_Wind" ObjectPath="\Events\Default Work Unit\Ambience\Play_Room_Wind" DurationType="Infinite"/>
 				<Event Id="1410513580" Name="Play_Wall_Hit_Blend" ObjectPath="\Events\Default Work Unit\Objects\Play_Wall_Hit_Blend" DurationType="OneShot" DurationMin="2.086096" DurationMax="2.448059"/>
 			</IncludedEvents>

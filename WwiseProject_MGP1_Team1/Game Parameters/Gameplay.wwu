@@ -13,6 +13,7 @@
 						<Property Name="InitialValue" Type="Real64" Value="70"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="TimeOfDay" ID="{CDE71750-AA59-4927-861D-D058B2397D8C}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

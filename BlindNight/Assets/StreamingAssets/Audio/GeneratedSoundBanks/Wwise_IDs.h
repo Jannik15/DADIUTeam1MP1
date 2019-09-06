@@ -13,9 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID MUSIC_TITLESCREEN = 1532327793U;
-        static const AkUniqueID PLAY_BUTTON1_MELLOW = 1391607054U;
-        static const AkUniqueID PLAY_BUTTON2_TONE = 185252871U;
         static const AkUniqueID PLAY_BUTTON3_CLICK = 1166635208U;
         static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
         static const AkUniqueID PLAY_FLASHLIGHT_ON_OFF = 4064524182U;
@@ -23,8 +20,8 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEP_SURFACE = 709824872U;
         static const AkUniqueID PLAY_MOVING_OBJECT = 3847524746U;
         static const AkUniqueID PLAY_PRESENCE = 4155730121U;
+        static const AkUniqueID PLAY_ROOM = 2736697007U;
         static const AkUniqueID PLAY_ROOM_WIND = 919644948U;
-        static const AkUniqueID PLAY_ROOM1 = 2018311500U;
         static const AkUniqueID PLAY_WALL_HIT_BLEND = 1410513580U;
     } // namespace EVENTS
 

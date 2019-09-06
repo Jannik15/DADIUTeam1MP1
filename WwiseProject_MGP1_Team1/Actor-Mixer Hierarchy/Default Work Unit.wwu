@@ -43,6 +43,11 @@
 							<ChildrenList>
 								<Sound Name="Button1_Mellow" ID="{A144E17E-4ACA-4502-915F-DE2A8EB9DDFA}" ShortID="301966138">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>56</Value>
@@ -228,6 +233,11 @@
 								</Sound>
 								<Sound Name="Button2_Tone" ID="{BF45A311-CD05-4E97-B230-6142D2B93B61}" ShortID="755850724">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>53</Value>

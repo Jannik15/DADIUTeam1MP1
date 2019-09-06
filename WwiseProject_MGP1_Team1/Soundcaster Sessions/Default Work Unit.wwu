@@ -34,7 +34,7 @@
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Room1" ID="{DBC8B798-C9F5-4618-B09E-4B57A5EDFA8F}" WorkUnitID="{711DB861-F77C-4D58-9A4D-9590A28BCD71}"/>
+							<ObjectRef Name="Room" ID="{DBC8B798-C9F5-4618-B09E-4B57A5EDFA8F}" WorkUnitID="{711DB861-F77C-4D58-9A4D-9590A28BCD71}"/>
 							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
@@ -72,8 +72,12 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="TimeOfDay" ID="{CDE71750-AA59-4927-861D-D058B2397D8C}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}"/>
-							<Value>52</Value>
+							<Value>70.0124223602484</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
