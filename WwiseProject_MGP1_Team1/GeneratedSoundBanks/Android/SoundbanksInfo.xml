@@ -52,10 +52,6 @@
 					<ShortName>342873__pfannkuchn__wooden-door-1-opening-and-closing-with-different-speeds-and-articulations.wav</ShortName>
 					<Path>SFX\342873__pfannkuchn__wooden-door-1-opening-and-closing-with-different-speeds-and-articulations_53894B5A.wem</Path>
 				</File>
-				<File Id="309603497" Language="SFX">
-					<ShortName>2-Minimalistic Loop_4L_PEX-Sketch Piano #1.wav</ShortName>
-					<Path>SFX\2-Minimalistic Loop_4L_PEX-Sketch Piano #1_730067A1.wem</Path>
-				</File>
 				<File Id="322987836" Language="SFX">
 					<ShortName>footstep_wood_4.wav</ShortName>
 					<Path>SFX\footstep_wood_4_10C4C929.wem</Path>
@@ -140,6 +136,10 @@
 					<ShortName>90936__robinhood76__01497-brawling-2.wav</ShortName>
 					<Path>SFX\90936__robinhood76__01497-brawling-2_9BB76D43.wem</Path>
 				</File>
+				<File Id="824121568" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_1_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_1_WAV_730067A1.wem</Path>
+				</File>
 				<File Id="845153691" Language="SFX">
 					<ShortName>footstep_wood_2.wav</ShortName>
 					<Path>SFX\footstep_wood_2_10C4C929.wem</Path>
@@ -164,9 +164,21 @@
 					<ShortName>90936__robinhood76__01497-brawling-2.wav</ShortName>
 					<Path>SFX\90936__robinhood76__01497-brawling-2_220E57BD.wem</Path>
 				</File>
+				<File Id="934824615" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_3_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_3_WAV_730067A1.wem</Path>
+				</File>
 				<File Id="934853728" Language="SFX">
 					<ShortName>Wall Hit_1-003.wav</ShortName>
 					<Path>SFX\Wall Hit_1-003_19EB7501.wem</Path>
+				</File>
+				<File Id="951053429" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_2_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_2_WAV_730067A1.wem</Path>
+				</File>
+				<File Id="978907180" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_4_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_4_WAV_730067A1.wem</Path>
 				</File>
 				<File Id="1032422741" Language="SFX">
 					<ShortName>CreekyWood_Barefoot_Sneaking.wav</ShortName>

@@ -106,7 +106,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586339148695099510
+    m_lastTime: -8586338486752898319
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586339148695019708
+    m_lastTime: -8586338512412675978
     List:
     - name: Play_Button1_Mellow
       guid: 6615e22321682e4fa1232613e3372de7
@@ -282,22 +282,8 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bcca1c21a353cf43be84ba1d138041c2
     GuidInternal: 
-    m_lastTime: -8586340112453743801
+    m_lastTime: -8586338512412765517
     List:
-    - name: Music_Region
-      guid: 25efb30168ce224cb7dc3c6734697336
-      id: 3741135221
-      PathAndIcons:
-      - ElementName: Music
-        ObjectType: 12
-      - ElementName: General
-        ObjectType: 4
-      - ElementName: Music_Region
-        ObjectType: 3
-      Path: Music\General\Music_Region
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Music_TitleScreen
       guid: 23b5327f5b39aa4c8005ff04c30331b4
       id: 1532327793
@@ -310,6 +296,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Room1
+      guid: 6164676e9b356e488a7c61c852537895
+      id: 2018311500
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: General
+        ObjectType: 4
+      - ElementName: Play_Room1
+        ObjectType: 3
+      Path: Music\General\Play_Room1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -516,23 +516,10 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /MGP1_Team1
-  - /MGP1_Team1/Auxiliary Busses
-  - /MGP1_Team1/Auxiliary Busses/Default Work Unit
-  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus
-  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus/Non-World
-  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus/World
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
-  - /MGP1_Team1/Events/Default Work Unit/Objects
-  - /MGP1_Team1/Events/Default Work Unit/Player
   - /MGP1_Team1/Events/Default Work Unit/UI
   - /MGP1_Team1/Events/Music
   - /MGP1_Team1/Events/Music/General
-  - /MGP1_Team1/States
-  - /MGP1_Team1/States/MusicStates
-  - /MGP1_Team1/States/MusicStates/Music_Regions
-  - /MGP1_Team1/Switches
-  - /MGP1_Team1/Switches/Default Work Unit
-  - /MGP1_Team1/Switches/Default Work Unit/Surface_Type
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

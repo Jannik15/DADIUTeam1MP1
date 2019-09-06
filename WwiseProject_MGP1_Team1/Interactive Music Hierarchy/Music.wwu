@@ -34,7 +34,7 @@
 							<ChildrenList>
 								<MusicSegment Name="Minimalistic_Loop" ID="{BFF5FA64-B44E-4EFC-941C-1F1CFF0BE83A}" ShortID="234650284">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="19768.7166001849"/>
+										<Property Name="EndPosition" Type="Real64" Value="74892.4979674797"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -142,15 +142,30 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="2-Minimalistic Loop_4L_PEX-Sketch Piano #1" ID="{1A65D6AC-BDC4-41CC-BD27-C727AE49EEB2}" ShortID="194201408">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="2-Minimalistic Loop_4L_PEX-Sketch Piano #1" ID="{088A5A51-E274-4166-B158-51DAA10A7DE9}" ShortID="309603497">
+												<AudioFileSource Name="2-Minimalistic Loop_4L_PEX-Piano_1_WAV" ID="{BBE1BE2E-C9D2-4A42-996D-672BD8AFEDB5}" ShortID="824121568">
 													<Language>SFX</Language>
-													<AudioFile>2-Minimalistic Loop_4L_PEX-Sketch Piano #1.wav</AudioFile>
+													<AudioFile>2-Minimalistic Loop_4L_PEX-Piano_1_WAV.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="2-Minimalistic Loop_4L_PEX-Piano_2_WAV" ID="{A4B01555-9CB3-446D-BF46-C7EC7369B5A1}" ShortID="951053429">
+													<Language>SFX</Language>
+													<AudioFile>2-Minimalistic Loop_4L_PEX-Piano_2_WAV.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="2-Minimalistic Loop_4L_PEX-Piano_3_WAV" ID="{F7C2AA33-DB5C-4609-AB9A-A405D5713181}" ShortID="934824615">
+													<Language>SFX</Language>
+													<AudioFile>2-Minimalistic Loop_4L_PEX-Piano_3_WAV.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="2-Minimalistic Loop_4L_PEX-Piano_4_WAV" ID="{C3C102B9-562F-44E4-92F8-455BF363B224}" ShortID="978907180">
+													<Language>SFX</Language>
+													<AudioFile>2-Minimalistic Loop_4L_PEX-Piano_4_WAV.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -164,28 +179,29 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{B45ED281-979D-46D3-9A76-8D11E8F09382}">
 													<ClipList>
-														<MusicClip Name="2-Minimalistic Loop_4L_PEX-Sketch Piano #1" ID="{79D9C629-3126-483C-AD3E-799BB704A20B}">
+														<MusicClip Name="2-Minimalistic Loop_4L_PEX-Piano_3_WAV" ID="{2B9D3B60-20A2-4E56-96E2-6A0F419706B8}">
 															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="8121.9512195122"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="14707.3170731707"/>
-																<Property Name="FadeInDuration" Type="Real64" Value="432.28915337032"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="1296.86746011096"/>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="8048.78048780488"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="14634.1463414634"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="92.6650191848994"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="741.320153479194"/>
+																<Property Name="PlayAt" Type="Real64" Value="73.1707317073169"/>
 															</PropertyList>
-															<AudioSourceRef Name="2-Minimalistic Loop_4L_PEX-Sketch Piano #1" ID="{088A5A51-E274-4166-B158-51DAA10A7DE9}"/>
+															<AudioSourceRef Name="2-Minimalistic Loop_4L_PEX-Piano_3_WAV" ID="{F7C2AA33-DB5C-4609-AB9A-A405D5713181}"/>
 															<PropertyCurveList>
 																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{EDC405C9-AE0F-4D61-A2F3-4556DFB6FF27}">
+																	<Curve Name="" ID="{AF9C17AB-35D9-486B-939C-BB1F96A715CC}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="1"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>8.12195</XPos>
+																				<XPos>8.04878</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>14.70732</XPos>
+																				<XPos>14.63415</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -193,18 +209,18 @@
 																	</Curve>
 																</PropertyCurve>
 																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{D6F4256A-939B-4C9C-99F3-09CD778346DA}">
+																	<Curve Name="" ID="{FFC1A737-4595-42D1-B8FD-085C46D2A354}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="1"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>8.12195</XPos>
+																				<XPos>8.04878</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>14.70732</XPos>
+																				<XPos>14.63415</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -212,18 +228,237 @@
 																	</Curve>
 																</PropertyCurve>
 																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{804E1BAA-84E9-4CFA-B818-69600C2452C2}">
+																	<Curve Name="" ID="{488D4DAA-A439-41BA-BC68-A04DCC602E02}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>8.12195</XPos>
+																				<XPos>8.04878</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>14.70732</XPos>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{065E52CA-CF57-4157-9A1B-B76E933719C8}">
+													<ClipList>
+														<MusicClip Name="2-Minimalistic Loop_4L_PEX-Piano_2_WAV" ID="{4B4BC142-A374-4CD7-83C2-5D38F2B249F8}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="8048.78048780488"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="14634.1463414634"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="185.330038369799"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="463.325095924496"/>
+																<Property Name="PlayAt" Type="Real64" Value="73.1707317073171"/>
+															</PropertyList>
+															<AudioSourceRef Name="2-Minimalistic Loop_4L_PEX-Piano_2_WAV" ID="{A4B01555-9CB3-446D-BF46-C7EC7369B5A1}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{8FC69B00-C009-4979-9F8F-E896C3A9DAEF}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{5869A56C-DD80-4F11-A0BE-78786D3613F8}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{271DF11B-08BF-44B4-AF12-5999A576D886}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{D9CACE77-BAE6-4DFB-BC81-2C0EF7020075}">
+													<ClipList>
+														<MusicClip Name="2-Minimalistic Loop_4L_PEX-Piano_4_WAV" ID="{F8640E7A-BE8B-497A-AED0-451B282FE2CE}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="8048.78048780488"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="14634.1463414634"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="185.330038369799"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="648.655134294295"/>
+																<Property Name="PlayAt" Type="Real64" Value="73.1707317073169"/>
+															</PropertyList>
+															<AudioSourceRef Name="2-Minimalistic Loop_4L_PEX-Piano_4_WAV" ID="{C3C102B9-562F-44E4-92F8-455BF363B224}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{233304D2-8499-4DD6-A2C1-2E5CD95BFA23}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{B036B3A0-5AA6-4E39-8DA2-712C9979EDB6}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{D9810AB3-C867-443F-A506-3FCCBA8CB1C7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{67F564FD-87BE-4E4D-913C-97AF449A1368}">
+													<ClipList>
+														<MusicClip Name="2-Minimalistic Loop_4L_PEX-Piano_1_WAV" ID="{85D78FD2-0D62-4184-8EEE-B52E52D1743A}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="8048.78048780488"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="14634.1463414634"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="138.997528777349"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="463.325095924496"/>
+																<Property Name="PlayAt" Type="Real64" Value="73.1707317073169"/>
+															</PropertyList>
+															<AudioSourceRef Name="2-Minimalistic Loop_4L_PEX-Piano_1_WAV" ID="{BBE1BE2E-C9D2-4A42-996D-672BD8AFEDB5}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{FBC25F54-419F-421B-B1B2-6458A923076E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{B4685A90-4CC3-4036-A08E-CF6C5E71C763}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{51E88CF4-7B25-4060-9AE4-5A7C9FCA95B1}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>8.04878</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.63415</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -2027,6 +2262,19 @@
 											<ChildrenList>
 												<MusicPlaylistItem Name="" ID="{C7ED9BF8-390E-4EF0-A0FD-7F4EE631C680}" ShortID="737269499">
 													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="2">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{62769C2B-6A9B-4BFC-8D51-253D28C1D5DD}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<SegmentRef Name="Minimalistic_Loop" ID="{BFF5FA64-B44E-4EFC-941C-1F1CFF0BE83A}"/>

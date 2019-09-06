@@ -53,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Menuslider_Music" ID="{8CD6EB1A-E6E9-467D-B484-88AA5705F339}"/>
-							<Value>51</Value>
+							<Value>52</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
@@ -73,7 +73,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}"/>
-							<Value>50</Value>
+							<Value>52</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
@@ -92,7 +92,7 @@
 						<CurrentStateRef Name="Room1" ID="{5537F364-AE60-413D-BAFC-4DF93E9D5095}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Rug" ID="{8AF74075-CF98-4440-8FAB-0EDA3BC96D83}"/>
+						<CurrentSwitchRef Name="Wood" ID="{F863F732-84D8-49B9-91A4-3C95BBCA611C}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
