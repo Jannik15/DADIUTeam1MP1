@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2243294682387502266}
   - component: {fileID: 7096210799054941836}
   - component: {fileID: 3550603922257089141}
+  - component: {fileID: 8020617217071718148}
   m_Layer: 0
   m_Name: PillarGranite
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8020617217071718148
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2988861247860778665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4462044, y: 6.048421, z: 0.69243264}
+  m_Center: {x: -0.00000008940697, y: 2.8742104, z: -0.000000059604645}
