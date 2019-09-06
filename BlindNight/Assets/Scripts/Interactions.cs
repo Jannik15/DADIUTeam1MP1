@@ -5,10 +5,14 @@ using UnityEngine;
 public class Interactions : MonoBehaviour
 {
     // public CharacterMovement charMove;
-    public Vector3 clickPos, hitCollider;
-    public float interactThreshold, interactThresholdOS, interactStep, slideSpeed, unitSize;
+    private Vector3 clickPos, hitCollider;
+    private float interactThreshold, interactThresholdOS, interactStep, slideSpeed, unitSize, arrowDisplaceX, arrowDisplaceY, arrowDisplaceZ;
     private Vector3 oldPos;
-    public bool canMove;
+    private bool canMove;
+    GameObject otherObject;
+    public GameObject arrow;
+
+    public InteractionsSideChecker _ISC;
     // Start is called before the first frame update
    
     // Handle interaction with items when the player clicks on them. 
@@ -22,6 +26,9 @@ public class Interactions : MonoBehaviour
         interactStep = slideSpeed * Time.deltaTime;
         canMove = true;
         unitSize = 1;
+        arrowDisplaceX = 1.5f;
+        arrowDisplaceY = 2;
+        arrowDisplaceZ = 1.5f;
     }
 
     // Update is called once per frame
@@ -45,24 +52,25 @@ public class Interactions : MonoBehaviour
         RaycastHit hit;
         
         // Check if item pressed is interactable. 
-        if(!(Physics.Raycast(ray, out hit) && hit.collider.tag == "interactable")) {
+        if(!(Physics.Raycast(ray, out hit))) {
             return;
         }
         
         hitCollider = hit.collider.transform.position;
-        GameObject otherObject = hit.collider.gameObject;
+        otherObject = hit.collider.gameObject;
         Debug.Log("Item has been pressed " + hit.collider.name); 
 
         // Check if interactable object has been moved to, and what direction you're in.
         if(hit.collider.tag == "interactable" /* && Vector3.Distance(transform.position, otherObject) < 1 */) {
+            Debug.Log("Entered box click");
             // LockMovement();
-            /*
             SpawnArrows();
-            */
+            
             
         }
-        if(hit.collider.name.Contains("arrow")) {
-
+        
+        if(hit.collider.tag == "arrow") {
+            Debug.Log("Entered arrow statement");
                 oldPos = otherObject.transform.position;
 /*                 if(colliding ) {
                 otherObject.transform.position = oldPos; 
@@ -75,7 +83,7 @@ public class Interactions : MonoBehaviour
                 // Play move animation
                 } */
 
-            }
+        }
 /*         CheckObjectMovement(otherObject); */
     }
 /* 
@@ -121,17 +129,27 @@ public class Interactions : MonoBehaviour
     } */
 
     public void SpawnArrows() {
-        /*  if(isHorizontal) {
-            Instantiate(rightArrow, rightArrowPos)
-            Instantiate(leftArrow, leftArrowPos)
+
+        if(_ISC.IsHorizontal(otherObject)[1] == true) {
+            Debug.Log("Entered Spawn arrow horizontal");
+            //Up arrow
+                GameObject upArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z + arrowDisplaceZ), Quaternion.identity);
+            //Down arrow (rotate by 180)
+                GameObject downArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z - arrowDisplaceZ), Quaternion.identity);
+                downArrow.transform.eulerAngles = new Vector3(0,180,0);//rotation = new Quaternion(downArrow.transform.rotation.x, 270, downArrow.transform.rotation.z, downArrow.transform.rotation.w);
         }
         
-            else() {
-                Instantiate(upArrow, upArrowPos)
-                Instantiate(downArrow, downArrowPos)
+            else {
+                Debug.Log("Entered Spawn arrow vertical");
+                // Right arrow (rotate 90)
+                GameObject rightArrow = Instantiate(arrow, new Vector3(hitCollider.x + arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
+                rightArrow.transform.eulerAngles = new Vector3(0,90,0);
+                // Left arrow (rotate 270)
+                GameObject leftArrow = Instantiate(arrow, new Vector3(hitCollider.x - arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
+                leftArrow.transform.eulerAngles = new Vector3(0,270,0);
             }
                 
-                */
+                
     }
 }
 
