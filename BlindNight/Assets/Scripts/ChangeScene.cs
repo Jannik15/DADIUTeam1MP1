@@ -27,7 +27,7 @@ public class ChangeScene : MonoBehaviour
     {
         Debug.Log("Playing anim");  
         sceneToLoad = "Level " + sceneNum.ToString();
-        anim.SetTrigger("DoorOpened");
+        anim.SetTrigger("DoorOpening");
     }
 
     public void FadeToNextScene()
