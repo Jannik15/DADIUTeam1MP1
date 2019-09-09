@@ -28,8 +28,8 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	1990128658	Room_Medium	Wwise RoomVerb			
-	2662085913	Large_Church1	Wwise Matrix Reverb			
 	2995775460	Room_Small	Wwise RoomVerb			
+	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
