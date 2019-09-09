@@ -25,6 +25,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallWindowCurtain Variant
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6946cb6d1e1425349b320e095311830a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6946cb6d1e1425349b320e095311830a,
         type: 3}
       propertyPath: m_LocalPosition.x
