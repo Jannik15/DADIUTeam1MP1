@@ -7,7 +7,6 @@ public class Interactions : MonoBehaviour
     // public CharacterMovement charMove;
     private Vector3 clickPos, hitCollider;
     private float interactThreshold, interactThresholdOS, interactStep, slideSpeed, unitSize, arrowDisplaceX, arrowDisplaceY, arrowDisplaceZ;
-    private Vector3 oldPos;
     private bool canMove;
     GameObject otherObject;
     public GameObject arrow;
@@ -32,6 +31,7 @@ public class Interactions : MonoBehaviour
         arrowDisplaceX = 1.5f;
         arrowDisplaceY = 2;
         arrowDisplaceZ = 1.5f;
+        _ISC = GetComponent<InteractionsSideChecker>();
     }
 
     // Update is called once per frame
@@ -68,6 +68,7 @@ public class Interactions : MonoBehaviour
             Debug.Log("Entered box click");
             // LockMovement();
             objectClicked = hit.collider.gameObject;
+            DestroyArrows();
             SpawnArrows();
             
             
@@ -75,8 +76,8 @@ public class Interactions : MonoBehaviour
         
         if(hit.collider.tag == "arrow") {
             Debug.Log("Entered arrow statement");
-                oldPos = otherObject.transform.position;
             arrowClicked = hit.collider.gameObject;
+
 
 /*             if(hit.collider.tag == "northArrow") {
                 Debug.Log("North arrow clicked");
