@@ -88,10 +88,6 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="TimeOfDay" ID="{CDE71750-AA59-4927-861D-D058B2397D8C}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}"/>
 							<Value>100</Value>
 						</RTPCValue>
