@@ -35,9 +35,9 @@ public class InteractionsSideChecker : MonoBehaviour
             Vector3 playerToObjectDirection = thisObject.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
             relativePosition = new Vector3(Mathf.Abs(playerToObjectDirection.x), 0, Mathf.Abs(playerToObjectDirection.z));
             
-            if (relativePosition.x < 0.5f && relativePosition.z > 0.5f)
+            if (relativePosition.x < 1f && relativePosition.z > 1f)
             {
-                if (relativePosition.z < 1.2f)
+                if (relativePosition.z < 2.2f)
                 {
                     m_IsHorizontal[0] = false;
                     m_IsHorizontal[1] = true;
@@ -49,9 +49,9 @@ public class InteractionsSideChecker : MonoBehaviour
                     // Debug.Log("Out of Bounds");
                 }
             }
-            else if (relativePosition.x > 0.5f && relativePosition.z < 0.5f)
+            else if (relativePosition.x > 1f && relativePosition.z < 1f)
             {
-                if (relativePosition.x < 1.2f)
+                if (relativePosition.x < 2.2f)
                 {
                     // Debug.Log("Horizontal Axis");
                     m_IsHorizontal[0] = true;
