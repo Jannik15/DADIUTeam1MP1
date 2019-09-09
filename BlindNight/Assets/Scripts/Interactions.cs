@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interactions : MonoBehaviour
 {
     // public CharacterMovement charMove;
+    // Merge test comment 9:54 9/9/19
     private Vector3 clickPos, hitCollider;
     private float interactThreshold, interactThresholdOS, interactStep, slideSpeed, unitSize, arrowDisplaceX, arrowDisplaceY, arrowDisplaceZ;
     private bool canMove;
