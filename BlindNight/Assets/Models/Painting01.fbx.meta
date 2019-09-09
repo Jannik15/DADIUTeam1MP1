@@ -3,7 +3,12 @@ guid: 3bdc6fbe07d543845a380702b51b3cab
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PaintingTex01
+    second: {fileID: 2100000, guid: 5183c11f9a475fb44b9af4769318ac6e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
