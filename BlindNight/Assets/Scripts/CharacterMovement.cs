@@ -56,7 +56,7 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             mousePos = Input.mousePosition;
-            if (mousePos.y > (Screen.height / 3))
+            if (mousePos.y > (Screen.height / 2))
             {
                 return;
             }
