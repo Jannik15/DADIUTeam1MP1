@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3d05971feb405c41b3dd1718adbd3311
     GuidInternal: 
-    m_lastTime: -8586340899813803350
+    m_lastTime: -8586335735650810182
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586337506920789612
+    m_lastTime: -8586335735729205990
     List:
     - name: Objects_Reverb
       guid: 171995827826f44fac5d0546aa78d401
@@ -106,7 +106,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586338304239939259
+    m_lastTime: -8586335735677293404
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586338302152446734
+    m_lastTime: -8586335735735405569
     List:
     - name: Play_Button3_Click
       guid: bbdd8d1ec1a8c74ba41019cba04a3f3a
@@ -286,7 +286,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bcca1c21a353cf43be84ba1d138041c2
     GuidInternal: 
-    m_lastTime: -8586338441618281256
+    m_lastTime: -8586335735735395561
     List:
     - name: Music_TitleScreen
       guid: 23b5327f5b39aa4c8005ff04c30331b4
@@ -298,8 +298,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Music\Music_TitleScreen
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Room
       guid: 6164676e9b356e488a7c61c852537895
       id: 2736697007
@@ -319,13 +319,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c4c42834edf7314b8c300b5d103ef982
     GuidInternal: 
-    m_lastTime: -8586338404165643135
+    m_lastTime: -8586335735639981463
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8586340899829209940
+    m_lastTime: -8586335735640011443
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -421,7 +421,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 75e10bfd79e7b8468075cdf5c6876f33
     GuidInternal: 
-    m_lastTime: -8586338399899278529
+    m_lastTime: -8586335735735345598
     List:
     - name: Menuslider_Music
       guid: 1aebd68ce9e67d46b48488aa5705f339
@@ -455,13 +455,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e3316310d8271e438f5b458871155d41
     GuidInternal: 
-    m_lastTime: -8586340899813977467
+    m_lastTime: -8586335735650800189
     List: []
   - PhysicalPath: States\MusicStates.wwu
     ParentPhysicalPath: 
     guid: 04b67ad93857e246800f2fbbedeaa811
     GuidInternal: 
-    m_lastTime: -8586340110336169215
+    m_lastTime: -8586335735677273398
     List:
     - name: Music_Regions
       guid: d1ed4562c6a4b146a75e976da2c6cf49
@@ -493,7 +493,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586340022680185457
+    m_lastTime: -8586335735677263419
     List:
     - name: Surface_Type
       guid: da5061335875a745896d2f33a17fe9c2
@@ -525,7 +525,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 64c578f279613943879c0bc962a9b98f
     GuidInternal: 
-    m_lastTime: -8586340899813861470
+    m_lastTime: -8586335735650810182
     List: []
   ExpandedItems:
   - /MGP1_Team1
