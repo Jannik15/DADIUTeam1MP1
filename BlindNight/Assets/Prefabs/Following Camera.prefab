@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8543652281756531106}
   - component: {fileID: 8543652281756531107}
   - component: {fileID: 8543652281756531104}
+  - component: {fileID: 1814370381169878667}
   m_Layer: 0
   m_Name: Following Camera
   m_TagString: MainCamera
@@ -126,5 +127,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 0
-  cameraHeight: 22
+--- !u!114 &1814370381169878667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543652281756531105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.737
+  Brightness: 0.563
+  Contrast: 0.124
+  Sharpness: 0
