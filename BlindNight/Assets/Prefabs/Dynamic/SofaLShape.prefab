@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4859352028056847502}
   m_Layer: 0
   m_Name: SofaLShape
-  m_TagString: Untagged
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

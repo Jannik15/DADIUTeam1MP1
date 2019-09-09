@@ -5,11 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - interactable
+  - MoveCollider
   - arrow
-  - northArrow
-  - southArrow
-  - westArrow
-  - eastArrow
   layers:
   - Default
   - TransparentFX
