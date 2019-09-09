@@ -14,7 +14,7 @@ public class Interactions : MonoBehaviour
 
     private GameObject objectClicked, arrowClicked;
 
-    public InteractionsSideChecker _ISC;
+    InteractionsSideChecker _ISC;
     private GameObject[] arrowList;
     private MoveObject _moveObject;
     // Start is called before the first frame update

@@ -862,6 +862,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2966818273099763565, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966818273099763565, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966818273099763565, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966818273099763565, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.016897917
+      objectReference: {fileID: 0}
     - target: {fileID: 6028932298029237538, guid: 5e9af80120f0b44479ea52ee045960c4,
         type: 3}
       propertyPath: m_Name
@@ -952,5 +972,52 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 2.5200002
       objectReference: {fileID: 0}
+    - target: {fileID: 6944820549798907847, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Drag
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944820549798907847, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944820549798907847, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944820549798907847, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 2160672078151621313, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: _ISC
+      value: 
+      objectReference: {fileID: 2024357285}
+    - target: {fileID: 6829502428192607000, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: lightColor.r
+      value: 0.032451272
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829502428192607000, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: lightColor.g
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9af80120f0b44479ea52ee045960c4, type: 3}
+--- !u!114 &2024357285 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 965970574617869744, guid: 5e9af80120f0b44479ea52ee045960c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2024357284}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06bffb8d33876a4790745a20f4d9ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
