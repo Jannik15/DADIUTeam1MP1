@@ -37,7 +37,7 @@ public class InteractionsSideChecker : MonoBehaviour
             
             if (relativePosition.x < 0.5f && relativePosition.z > 0.5f)
             {
-                if (relativePosition.z < 1.4f)
+                if (relativePosition.z < 1.2f)
                 {
                     m_IsHorizontal[0] = false;
                     m_IsHorizontal[1] = true;
@@ -51,7 +51,7 @@ public class InteractionsSideChecker : MonoBehaviour
             }
             else if (relativePosition.x > 0.5f && relativePosition.z < 0.5f)
             {
-                if (relativePosition.x < 1.4f)
+                if (relativePosition.x < 1.2f)
                 {
                     // Debug.Log("Horizontal Axis");
                     m_IsHorizontal[0] = true;
