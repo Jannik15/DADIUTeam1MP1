@@ -6,6 +6,7 @@ public class Interactions : MonoBehaviour
 {
     // public CharacterMovement charMove;
     // Merge test comment 9:54 9/9/19
+    LayerMask layerMask;
     private Vector3 clickPos, hitCollider;
     private float interactThreshold, interactThresholdOS, interactStep, slideSpeed, unitSize, arrowDisplaceX, arrowDisplaceY, arrowDisplaceZ;
     private bool canMove;
@@ -23,6 +24,7 @@ public class Interactions : MonoBehaviour
     // For first version, click on object, if it has "Interactable" tag, Debug in console.
     void Start()
     {
+        layerMask = 1 << 10;
         clickPos = gameObject.GetComponent<CharacterMovement>().GetPressPos();
         interactThreshold = 1.5f;
         interactThresholdOS = 0.5f;
@@ -30,9 +32,9 @@ public class Interactions : MonoBehaviour
         interactStep = slideSpeed * Time.deltaTime;
         canMove = true;
         unitSize = 1;
-        arrowDisplaceX = 1.5f;
-        arrowDisplaceY = 2;
-        arrowDisplaceZ = 1.5f;
+        arrowDisplaceX = 1f;
+        arrowDisplaceY = 2.5f;
+        arrowDisplaceZ = 1f;
         _ISC = GetComponent<InteractionsSideChecker>();
         _moveObject = GetComponent<MoveObject>();
     }
@@ -56,12 +58,13 @@ public class Interactions : MonoBehaviour
         }
 
         RaycastHit hit;
-        
         // Check if item pressed is interactable. 
-        if(!(Physics.Raycast(ray, out hit))) {
+        if (!Physics.Raycast(ray, out hit, layerMask))
+        {
+            Debug.Log("Nothing hit");
             return;
         }
-        
+
         hitCollider = hit.collider.transform.position;
         otherObject = hit.collider.gameObject;
         //Debug.Log("Item has been pressed " + hit.collider.name); 

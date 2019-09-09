@@ -5,8 +5,8 @@ using UnityEngine;
 public class InteractionsSideChecker : MonoBehaviour
 {
     // public GameObject testObject; // ONLY used for debugging
-    [Tooltip("Depends on scaling of objects. If 1 meter scaling, this value should be 0")]
-    public float scalerValue = 1f;
+    [Tooltip("Depends on scaling of objects. This value should be 0")]
+    public float scalerValue = 0.2f;
 
     GameObject player;
 
@@ -25,6 +25,7 @@ public class InteractionsSideChecker : MonoBehaviour
         // bool[] test = IsHorizontal(testObject);
         // Debug.DrawRay(player.gameObject.transform.position, testObject.gameObject.transform.position - player.gameObject.transform.position, Color.green);
         // Vector3 playerToObjectDirection = testObject.gameObject.transform.position - player.gameObject.transform.position;
+        // Debug.Log(playerToObjectDirection);
 
     }
 
@@ -38,9 +39,9 @@ public class InteractionsSideChecker : MonoBehaviour
             Vector3 playerToObjectDirection = thisObject.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
             relativePosition = new Vector3(Mathf.Abs(playerToObjectDirection.x), 0, Mathf.Abs(playerToObjectDirection.z));
             
-            if (relativePosition.x < 0.5f + scalerValue && relativePosition.z > 0.5f + scalerValue)
+            if (relativePosition.x <= 0.6f + scalerValue && relativePosition.z >= 0.2f + scalerValue)
             {
-                if (relativePosition.z < 1.2f + scalerValue)
+                if (relativePosition.z <= 2.4f + scalerValue)
                 {
                     m_IsHorizontal[0] = false;
                     m_IsHorizontal[1] = true;
@@ -52,9 +53,9 @@ public class InteractionsSideChecker : MonoBehaviour
                     // Debug.Log("Out of Bounds");
                 }
             }
-            else if (relativePosition.x > 0.5f + scalerValue && relativePosition.z < 0.5f + scalerValue)
+            else if (relativePosition.x >= 0.2f + scalerValue && relativePosition.z <= 0.6f + scalerValue)
             {
-                if (relativePosition.x < 1.2f + scalerValue)
+                if (relativePosition.x <= 2.4f + scalerValue)
                 {
                     // Debug.Log("Horizontal Axis");
                     m_IsHorizontal[0] = true;
