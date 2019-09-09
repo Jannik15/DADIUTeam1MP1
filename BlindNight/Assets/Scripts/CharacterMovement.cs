@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Start()
     {
-        playerMoveSpeed = 4;
+        playerMoveSpeed = 2;
         moveStep = playerMoveSpeed * Time.deltaTime;
 
         playerRotateSpeed = 10;

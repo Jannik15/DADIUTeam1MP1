@@ -294,11 +294,6 @@ PrefabInstance:
       propertyPath: m_positionOffsetData.positionOffset.z
       value: -0.1647733
       objectReference: {fileID: 0}
-    - target: {fileID: 1814370381169878667, guid: 799a8acde6b6f4849836a5f6fef71f5d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3207434207857213170, guid: 799a8acde6b6f4849836a5f6fef71f5d,
         type: 3}
       propertyPath: m_Intensity
