@@ -15,6 +15,7 @@ public class Interactions : MonoBehaviour
     private GameObject objectClicked, arrowClicked;
 
     public InteractionsSideChecker _ISC;
+    private GameObject[] arrowList;
     // Start is called before the first frame update
    
     // Handle interaction with items when the player clicks on them. 
@@ -60,7 +61,7 @@ public class Interactions : MonoBehaviour
         
         hitCollider = hit.collider.transform.position;
         otherObject = hit.collider.gameObject;
-        Debug.Log("Item has been pressed " + hit.collider.name); 
+        //Debug.Log("Item has been pressed " + hit.collider.name); 
 
         // Check if interactable object has been moved to, and what direction you're in.
         if(hit.collider.tag == "interactable" /* && Vector3.Distance(transform.position, otherObject) < 1 */) {
@@ -72,7 +73,7 @@ public class Interactions : MonoBehaviour
             
         }
         
-        if(hit.collider.tag.Contains("Arrow")) {
+        if(hit.collider.tag == "arrow") {
             Debug.Log("Entered arrow statement");
                 oldPos = otherObject.transform.position;
             arrowClicked = hit.collider.gameObject;
@@ -90,24 +91,28 @@ public class Interactions : MonoBehaviour
                 Debug.Log("North arrow clicked");
             } */
 
-            switch(hit.collider.tag) {
+            switch(hit.collider.name) {
                 case "northArrow":
-                    Debug.Log("North Arrow Clicked");
+                    //Debug.Log("North Arrow Clicked");
+                    DestroyArrows();
                     break;
 
                 case "southArrow":
-                    Debug.Log("South Arrow Clicked");
+                    //Debug.Log("South Arrow Clicked");
+                    DestroyArrows();
                     break;
 
                 case "eastArrow":
-                    Debug.Log("East Arrow Clicked");
+                    //Debug.Log("East Arrow Clicked");
+                    DestroyArrows();
                     break;
 
                 case "westArrow":
-                    Debug.Log("West Arrow Clicked");
+                    //Debug.Log("West Arrow Clicked");
+                    DestroyArrows();
                     break;
                 default: 
-                    Debug.Log("Tag doesn't exit");
+                    //Debug.Log("Name doesn't exist");
                     break;
             }
 
@@ -171,29 +176,39 @@ public class Interactions : MonoBehaviour
     public void SpawnArrows() {
 
         if(_ISC.IsHorizontal(otherObject)[1] == true) {
-            Debug.Log("Entered Spawn arrow horizontal");
+            //Debug.Log("Entered Spawn arrow horizontal");
             //Up arrow
                 GameObject upArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z + arrowDisplaceZ), Quaternion.identity);
-                upArrow.tag = "northArrow";
+                upArrow.name = "northArrow";
             //Down arrow (rotate by 180)
                 GameObject downArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z - arrowDisplaceZ), Quaternion.identity);
                 downArrow.transform.eulerAngles = new Vector3(0,180,0);//rotation = new Quaternion(downArrow.transform.rotation.x, 270, downArrow.transform.rotation.z, downArrow.transform.rotation.w);
-                downArrow.tag = "southArrow";
+                downArrow.name = "southArrow";
         }
         
             else {
-                Debug.Log("Entered Spawn arrow vertical");
+                //Debug.Log("Entered Spawn arrow vertical");
                 // Right arrow (rotate 90)
                 GameObject rightArrow = Instantiate(arrow, new Vector3(hitCollider.x + arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 rightArrow.transform.eulerAngles = new Vector3(0,90,0);
-                rightArrow.tag = "westArrow";
+                rightArrow.name = "westArrow";
                 // Left arrow (rotate 270)
                 GameObject leftArrow = Instantiate(arrow, new Vector3(hitCollider.x - arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 leftArrow.transform.eulerAngles = new Vector3(0,270,0);
-                leftArrow.tag = "eastArrow";
+                leftArrow.name = "eastArrow";
             }
                 
                 
+    }
+
+    public void DestroyArrows() {
+        arrowList = GameObject.FindGameObjectsWithTag("arrow");
+        Debug.Log(arrowList);
+        for(int i = 0; i < arrowList.Length; i++) {
+            // This should loop through all arrows, and destroy them. 
+            Destroy(arrowList[i]);
+            //Debug.Log("There are " + arrowList[i] + " Arrows left");
+        }
     }
 }
 
