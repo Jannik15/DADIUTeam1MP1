@@ -13,7 +13,7 @@ public class InteractionsSideChecker : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        // m_IsHorizontal = new bool[2] {false,false};
+        m_IsHorizontal = new bool[2] {false,false};
 
     }
 
@@ -29,7 +29,7 @@ public class InteractionsSideChecker : MonoBehaviour
     {
         if (thisObject.GetComponent<Collider>())
         {
-            Vector3 objectSize = thisObject.GetComponent<Collider>().bounds.size;
+            // Vector3 objectSize = thisObject.GetComponent<Collider>().bounds.size;
             // Debug.Log(objectSize.x + " " + objectSize.y + " " + objectSize.z);
 
             Vector3 playerToObjectDirection = thisObject.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
