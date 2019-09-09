@@ -9,15 +9,13 @@ public class MotionMatching : MonoBehaviour
      * Pose = Each joint transform at a given timestep in the animation
      */
     
-
-    Goal goal;
     public Transform[] rig;
     TrajectoryTest movement;    // Movement script reference
     List<MMPose> allPoses;
     CSVReader csvData;
     bool status = false;
     int currentPoseIndex = 0;
-    //float currentAnimTime;
+    string currentPoseState = "Idle";
 
     void Start()
     {
@@ -33,11 +31,11 @@ public class MotionMatching : MonoBehaviour
             {
                 tempPose[j] = new Pose(csvData.GetPositions()[j][i], csvData.GetQuaternions()[j][i]);
             }
-            allPoses.Add(new MMPose(tempPose, i));
+            allPoses.Add(new MMPose(tempPose, i, csvData.GetStates()[i]));
         }
     }
 
-    void MMUpdate(Goal goal)
+    void MMUpdate()
     {
         /// Determine the current pose based on the rig rotations and current pose index
         MMPose currentPose;
@@ -47,31 +45,35 @@ public class MotionMatching : MonoBehaviour
             tempPose[i] = new Pose(rig[i].position, rig[i].rotation);
             //currentPose[i] = new Pose(csvData.GetPositions()[i][currentPoseIndex], csvData.GetQuaternions()[i][currentPoseIndex]);
         }
-        currentPose = new MMPose(tempPose, currentPoseIndex);
+        currentPose = new MMPose(tempPose, currentPoseIndex, currentPoseState);
 
-        MMPose bestPose = new MMPose(new Pose[rig.Length], 0);
+        MMPose bestPose = new MMPose(new Pose[rig.Length], 0, "");
         float bestDiff = 9999999999;
 
         /// We compare all the poses to the current pose, to find the best position for each joint, and store these in a candidate pose
         for (int i = 0; i < allPoses.Count; i++)
         {
-            MMPose candidatePose = new MMPose(new Pose[rig.Length], 0);
+            MMPose candidatePose = new MMPose(new Pose[rig.Length], 0, "");
             candidatePose = allPoses[i];
 
             /// Must not be the same pose
-            if (candidatePose.getPoseIndex() == currentPose.getPoseIndex())
+            if (candidatePose.GetPoseIndex() == currentPose.GetPoseIndex())
                 continue;
 
             /// Compare pose difference between quaternions - just take the one closest to the current
             
             float diff = 0;
-            for (int j = 0; j < rig.Length; j++)
+            //Debug.Log(movement.currentState + " == " + candidatePose.GetPoseState());
+            if (movement.currentState == candidatePose.GetPoseState())
             {
-                diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, candidatePose.GetJointTransform(j).rotation);
-            }
-            if (diff < bestDiff)
-            {
-                bestPose = candidatePose;
+                for (int j = 0; j < rig.Length; j++)
+                {
+                    diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, candidatePose.GetJointTransform(j).rotation);
+                }
+                if (diff < bestDiff)
+                {
+                    bestPose = candidatePose;
+                }
             }
         }
 
@@ -80,12 +82,13 @@ public class MotionMatching : MonoBehaviour
         {
             rig[i].rotation = bestPose.GetJointTransform(i).rotation;
         }
-        currentPoseIndex = bestPose.getPoseIndex();
+        currentPoseIndex = bestPose.GetPoseIndex();
+        currentPoseState = bestPose.GetPoseState();
     }
 
     private void LateUpdate()
     {
-        MMUpdate(goal);
+        MMUpdate();
     }
 
     private void AutoplayAnimation()
@@ -107,20 +110,6 @@ public class MotionMatching : MonoBehaviour
     }
 }
 
-class TrajectoryPoint
-{
-    Vector3 point;
-    float Angle;
-    float timeDelay;
-}
-
-class Goal
-{
-    List<TrajectoryPoint> desiredTrajectory;
-
-    /// If a specific type of stance is desired, this should be put here
-}
-
 class MMPose
 {
     /*  The purpose of this class is to store the information from the motion capture for each joint in a Pose-like structure.
@@ -130,11 +119,13 @@ class MMPose
      */
     Pose[] pose;
     int poseIndex;
+    string poseState;
     
-    public MMPose(Pose[] _pose, int _poseIndex)
+    public MMPose(Pose[] _pose, int _poseIndex, string _poseState)
     {
         pose = _pose;
         poseIndex = _poseIndex;
+        poseState = _poseState;
     }
 
     public Pose[] GetPose()
@@ -147,7 +138,12 @@ class MMPose
         return pose[num];
     }
 
-    public int getPoseIndex()
+    public string GetPoseState()
+    {
+        return poseState;
+    }
+
+    public int GetPoseIndex()
     {
         return poseIndex;
     }

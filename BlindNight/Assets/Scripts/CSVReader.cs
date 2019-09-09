@@ -19,6 +19,7 @@ public class CSVReader : MonoBehaviour
 
     List<Quaternion>[] quaternionDatabase;
     List<Vector3>[] positionDatabase;
+    List<string> stateList;
     List<float> timestampList;
 
     private void Awake()
@@ -95,11 +96,20 @@ public class CSVReader : MonoBehaviour
         return positionDatabase;
     }
 
+    private void StateInit()
+    {
+        stateList = new List<string>();
+    }
+
+    private void StateCreator(string state)
+    {
+        stateList.Add(state);
+    }
 
     public void ReadCSV()
     {
 
-        if (CSVPath != null || CSVPath == "")
+        if (CSVPath != null || CSVPath != "")
         {
 
             fileFullPath = CSVPath;
@@ -120,13 +130,14 @@ public class CSVReader : MonoBehaviour
 
                 if (firstRun)
                 {
-                    string[] tempLabelValues = dataString.Split(',');   //
-                    labelAmount = tempLabelValues.Length;   //
+                    string[] tempLabelValues = dataString.Split(',');
+                    labelAmount = tempLabelValues.Length;
                     labelValues = tempLabelValues;
 
-                    // Initialize the arrays and lists for quaternions, positions and timestamps:
+                    /// Initialize the arrays and lists for quaternions, positions and timestamps:
                     QuaternionInit();
                     PositionInit();
+                    StateInit();
                     TimestampInit();
 
                     // Debug.Log(labelValues);  // For debugging
@@ -139,15 +150,20 @@ public class CSVReader : MonoBehaviour
                     // Debug.Log(tempDataValues[15]);
 
                     float[] dataValues = new float[tempDataValues.Length];
+                    string stateValues = "";
                     for (int i = 0; i < dataValues.Length; i++)
                     {
-                        dataValues[i] = float.Parse(tempDataValues[i], CultureInfo.InvariantCulture.NumberFormat);
+                        if (i == dataValues.Length)
+                            stateValues = tempDataValues[i].ToString();
+                        else
+                            dataValues[i] = float.Parse(tempDataValues[i], CultureInfo.InvariantCulture.NumberFormat);
 
                     }
 
-                    // Populate the quaternion, position and timestamp arrays/lists:
+                    /// Populate the quaternion, position and timestamp arrays/lists:
                     QuaternionCreator(dataValues);
                     PositionCreator(dataValues);
+                    StateCreator(stateValues);
                     Timestamp(dataValues[0]);
 
                     // Ignore below, just for debugging:
@@ -264,6 +280,19 @@ public class CSVReader : MonoBehaviour
         else
         {
             Debug.Log("Motion Matching Error: The position database is empty! - Please build it first using ReadCSV() and make sure you have set the path properly in the inspector.");
+            return null;
+        }
+    }
+
+    public List<string> GetStates()
+    {
+        if (stateList != null)
+        {
+            return stateList;
+        }
+        else
+        {
+            Debug.Log("Motion Matching Error: The state list is empty! - Please build it first using ReadCSV() and make sure you have set the path properly in the inspector.");
             return null;
         }
     }

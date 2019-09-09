@@ -7,6 +7,7 @@ public class TrajectoryTest : MonoBehaviour
     [HideInInspector] public Vector3 dir;
     public int trajectoryGizmosCount;
     public float speed, segmentScale;
+    public string currentState;
 
     public GameObject leftFootCollider, rightFootCollider;
 

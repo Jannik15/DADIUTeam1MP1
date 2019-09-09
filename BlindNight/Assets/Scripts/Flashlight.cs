@@ -5,11 +5,13 @@ using UnityEngine;
 public class Flashlight : MonoBehaviour
 {
     Renderer volumetricLight;
-    public Color lightColor;
+    private Color lightColor;
+    public Color lightColor1;
+    public Color lightColor2;
     private void Start()
     {
         volumetricLight = GetComponentInChildren<Renderer>();
-        lightColor = GetComponent<Light>().color;
+        lightColor = lightColor1;
     }
 
     void Update()
@@ -17,5 +19,13 @@ public class Flashlight : MonoBehaviour
         GetComponent<Light>().color = lightColor;
         volumetricLight.material.color = GetComponent<Light>().color; // Main color
         volumetricLight.material.SetColor("_EmissionColor", GetComponent<Light>().color); // Emissive color
+    }
+
+    public void ChangeColor()
+    {
+        if (lightColor == lightColor1)
+            lightColor = lightColor2;
+        else
+            lightColor = lightColor1;
     }
 }
