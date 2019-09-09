@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ambience" ID="{294220D3-2EAF-4A00-950C-6717B1835CE6}" ShortID="355614163">
+					<ChildrenList>
+						<Event Name="Play_Room_Wind" ID="{9A812EA8-91BE-4D56-8911-429BAD098583}">
+							<ChildrenList>
+								<Action Name="" ID="{DABDFD9D-4010-41FB-9A86-7D26250B90B7}" ShortID="490189910">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Room_Wind" ID="{98F6069C-08F8-4D22-A597-262952A2A8DC}" WorkUnitID="{A9DEE84B-5288-4DE5-B537-882232B6FDD9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Presence" ID="{7E6DAEF0-225E-4556-8A3D-3BBB8ABE8A9D}">
+							<ChildrenList>
+								<Action Name="" ID="{AF079727-ACD9-4915-81B8-B25672D392CD}" ShortID="353439332">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Presence" ID="{2B5F390E-D235-42DC-B419-062F9DB48A8C}" WorkUnitID="{3B7EF11C-10D2-40B6-96CC-DDDC3F457FC9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{A0A9B94E-0657-4EEF-A2ED-7F00B11DB179}" ShortID="400876806">
+					<ChildrenList>
+						<Event Name="Play_Button3_Click" ID="{1E8DDDBB-A8C1-4BC7-A410-19CBA04A3F3A}">
+							<ChildrenList>
+								<Action Name="" ID="{953E792D-708F-46C2-A897-2BC36885580E}" ShortID="990360245">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button3_Click" ID="{A264FD0A-66F9-4DA4-9976-0E64F441EC57}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Objects" ID="{264B869A-0D1B-4050-81BD-5A24189542B7}" ShortID="527005116">
+					<ChildrenList>
+						<Event Name="Play_Wall_Hit_Blend" ID="{15B70042-0396-4FB9-B32A-33935496E7FF}">
+							<ChildrenList>
+								<Action Name="" ID="{9B5E9CBF-E2B1-4F04-8A1E-E7C9E4BFA9B8}" ShortID="955534542">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wall_Hit_Blend" ID="{25AD8122-4232-400B-A616-82696E1B32B7}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Moving_Object" ID="{EFAF40E7-E96F-494C-AD2B-0A7BDEDF4163}">
+							<ChildrenList>
+								<Action Name="" ID="{B11F0F39-1CEF-4F77-975F-C652EF7150EF}" ShortID="548319358">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Moving_Object" ID="{0F5B93E7-49BC-41E8-B7FE-442CE4875962}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Door" ID="{45B6BC05-A7E8-4A4B-9916-A6C996EE8B58}" ShortID="939163515">
+							<ChildrenList>
+								<Event Name="Play_Door_Close" ID="{69BF575F-0427-4934-9985-74821DC8BC27}">
+									<ChildrenList>
+										<Action Name="" ID="{AA164941-DEEE-4576-A275-44A0A58D7ED2}" ShortID="182776486">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_Close" ID="{D9103350-66DD-4B93-8D9B-3A63C735B554}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Door_Open" ID="{802977A1-41D0-4443-82EB-5701FA5DD305}">
+									<ChildrenList>
+										<Action Name="" ID="{3A475BE3-0042-4F19-B939-24A6AC4BC0F0}" ShortID="189327467">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_Open" ID="{3AE87BD9-B69C-46BD-8FC6-F63BBC087180}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Play_Move_Negative" ID="{BCFED10F-6079-4357-B4A0-C0E3B52F3469}">
+							<ChildrenList>
+								<Action Name="" ID="{EAA47210-F763-4E01-9169-16F1B5D93761}" ShortID="440444724">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Move_Negative" ID="{DED48A9F-E2FE-4422-ACEB-9E481930D5A6}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{F580ED6C-62F7-4FFF-B8C7-344AF342BB12}" ShortID="915458022">
+					<ChildrenList>
+						<Event Name="Play_Footstep_Surface" ID="{7DBA04E4-55B1-41DB-BB6D-965D45A2D045}">
+							<ChildrenList>
+								<Action Name="" ID="{B9576B8E-1CCB-46C4-9F71-7E2990669A30}" ShortID="983252759">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footstep_Surface" ID="{8CE968FC-1A7D-471D-A5DD-F8D6B3F0F679}" WorkUnitID="{A879E883-0082-4356-90D4-98D568C6B345}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Flashlight_On_Off" ID="{D593DAA7-7C9F-494C-A084-3F7F54CD2FCC}">
+							<ChildrenList>
+								<Action Name="" ID="{272E8403-9996-4E51-8D11-ECA402CB65D9}" ShortID="90581578">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Flashlight_On_Off" ID="{1020E8AF-1E3C-4EED-BFBE-A6CB3A81F0DE}" WorkUnitID="{A879E883-0082-4356-90D4-98D568C6B345}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Flashlight_Switch" ID="{9C0A0DE8-F77C-4789-8172-A602C3E8A3F7}">
+							<ChildrenList>
+								<Action Name="" ID="{70F39FF8-FD6B-4777-9440-18D2DB3E6496}" ShortID="367059436">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Flashlight_Switch" ID="{D1AEB704-43A1-41DC-99CE-26029A275AD7}" WorkUnitID="{A879E883-0082-4356-90D4-98D568C6B345}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

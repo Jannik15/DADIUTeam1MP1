@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A9DEE84B-5288-4DE5-B537-882232B6FDD9}" SchemaVersion="94" RootDocumentID="{239AC835-5F08-401C-AD01-43EF1D5199A5}">
+	<AudioObjects>
+		<WorkUnit Name="Ambiences_Background" ID="{A9DEE84B-5288-4DE5-B537-882232B6FDD9}" OwnerID="{E7346269-A5A9-4C2A-B957-A9742A920522}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Ambient_Regions" ID="{5F43D14C-150A-4F18-AA96-1A82F6206246}" ShortID="876376175">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Room_Wind" ID="{98F6069C-08F8-4D22-A597-262952A2A8DC}" ShortID="59421918">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Room_Tone" ID="{BECA7923-4213-46AC-89F8-C5F77BDB7DA9}" ShortID="812699060">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>47</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" ShortID="63531734">
+											<Language>SFX</Language>
+											<AudioFile>360731__klankbeeld__roomtoneapartment-day160924-0973.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="360731__klankbeeld__roomtoneapartment-day160924-0973" ID="{F1FA8943-871B-4433-BA2C-8F5AC28E025C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wind_Howling" ID="{F2E75285-392D-47FD-A650-2E9CFF91ABD4}" ShortID="643365332">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A835690A-944C-473D-8405-28E6E3B522E4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-29"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Ambient" ID="{F7D0D4DB-E365-46AA-9F87-E7EA87411061}" WorkUnitID="{19ACBF7D-756B-45E6-9689-82D33F090F73}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" ShortID="3214314" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+											<PropertyList>
+												<Property Name="AverageVelocity" Type="Real32" Value="-630"/>
+												<Property Name="AverageVelocityRandom" Type="Real32" Value="720"/>
+												<Property Name="Direction" Type="Real32" Value="2"/>
+												<Property Name="DirectionRandom" Type="Real32" Value="22"/>
+												<Property Name="Duration" Type="Real64" Value="30.7"/>
+												<Property Name="FrequencyScale" Type="Real32" Value="-0.84"/>
+												<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.32"/>
+												<Property Name="GainOffset" Type="Real32" Value="-4"/>
+												<Property Name="GainOffsetRandom" Type="Real32" Value="6.1"/>
+												<Property Name="Gustiness" Type="Real32" Value="0.56"/>
+												<Property Name="GustinessRandom" Type="Real32" Value="0.1"/>
+												<Property Name="QFactorScaleRandom" Type="Real32" Value="0.34"/>
+												<Property Name="Variability" Type="Real32" Value="0.31"/>
+												<Property Name="VariabilityAutomate" Type="bool" Value="True"/>
+												<Property Name="VariabilityRandom" Type="Real32" Value="0.38"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<PluginData>
+	<CurveList Version="1">
+		<CurveInfo Name="Variability">
+			<Curve Name="" ID="{4D7546C6-A938-4184-9E55-2097C133070F}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0.13718</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>14.01245</XPos>
+						<YPos>-0.07811</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>21.71929</XPos>
+						<YPos>0.0562</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>30.7</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+	</CurveList>
+</PluginData>
+											<PluginInnerObjectList>
+												<List Name="Deflectors">
+													<PluginInnerObject Name="" ID="{3CB5CDAA-835B-41C7-8DC6-4B0D7DAEB738}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="PanX" Type="Real64" Value="-11.3432835820895"/>
+															<Property Name="PanY" Type="Real64" Value="16.2650602409638"/>
+															<Property Name="QFactor" Type="Real32" Value="13.23"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{D8090C6D-9874-4E82-BE12-723F8CC39838}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="577"/>
+															<Property Name="Gain" Type="Real32" Value="-4"/>
+															<Property Name="PanX" Type="Real64" Value="18.5074626865672"/>
+															<Property Name="PanY" Type="Real64" Value="20.4819277108434"/>
+															<Property Name="QFactor" Type="Real32" Value="39.23"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{F9C67E69-D131-4504-998E-8D75814883E6}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="376"/>
+															<Property Name="Gain" Type="Real32" Value="-3"/>
+															<Property Name="PanX" Type="Real64" Value="-0.597014925373134"/>
+															<Property Name="PanY" Type="Real64" Value="-1.80722891566267"/>
+															<Property Name="QFactor" Type="Real32" Value="45.27"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{742EFA6A-A4DA-40C7-9A40-81040FFC59D9}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="490"/>
+															<Property Name="PanX" Type="Real64" Value="5.67164179104477"/>
+															<Property Name="PanY" Type="Real64" Value="37.3493975903614"/>
+															<Property Name="QFactor" Type="Real32" Value="50"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SoundSeed Air Wind" ID="{840FD707-8708-4C02-B3A7-474C1EB07EF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Electricity_Disturbance" ID="{94BF3317-9CC6-4A5A-846B-6F2D613E3818}" ShortID="1020805762">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4.5</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{11B64FE7-9E39-4B7E-96FD-D6D318C5061A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="9"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AB93A798-BD80-4FF9-885D-D14AE3E89774}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-32"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Very_Slow_Modulation" ID="{6082F901-3CE1-4D78-8F2D-B2B72CF28085}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Electricity, Electro Magnetic Interference 05 SND37279" ID="{CCA5197F-DB56-42BB-B68F-E22866C4735D}" ShortID="670319688">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.47452427184466"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.26235436893204"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Electricity, Electro Magnetic Interference 05 SND37279.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{47B2F16C-06F0-4F69-9AB1-4F9BB7068A44}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Electricity_Disturbance_Path" ID="{4BA7FF5A-F6C1-4658-A693-B368EE94F4CE}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-25.9493670886076</XPos>
+															<YPos>19.7452229299363</YPos>
+															<Flags>0</Flags>
+															<Time>625</Time>
+														</Point>
+														<Point>
+															<XPos>-36.7088607594937</XPos>
+															<YPos>-1.27388535031847</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>81.0126582278481</XPos>
+															<YPos>-50.9554140127389</YPos>
+															<Flags>0</Flags>
+															<Time>1875</Time>
+														</Point>
+														<Point>
+															<XPos>81.6455696202532</XPos>
+															<YPos>14.0127388535032</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>37.3417721518987</XPos>
+															<YPos>23.5668789808917</YPos>
+															<Flags>0</Flags>
+															<Time>3125</Time>
+														</Point>
+														<Point>
+															<XPos>-55.0632911392405</XPos>
+															<YPos>-53.5031847133758</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-79.746835443038</XPos>
+															<YPos>23.5668789808917</YPos>
+															<Flags>0</Flags>
+															<Time>4375</Time>
+														</Point>
+														<Point>
+															<XPos>-68.3544303797468</XPos>
+															<YPos>52.2292993630573</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Electricity_Disturbance_Path_01" ID="{D2B4B543-16A3-4E76-AB3E-E4C27A448E8D}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-23.4177215189873</XPos>
+															<YPos>32.484076433121</YPos>
+															<Flags>0</Flags>
+															<Time>625</Time>
+														</Point>
+														<Point>
+															<XPos>-19.620253164557</XPos>
+															<YPos>10.1910828025478</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-22.7848101265823</XPos>
+															<YPos>-10.828025477707</YPos>
+															<Flags>0</Flags>
+															<Time>1875</Time>
+														</Point>
+														<Point>
+															<XPos>-35.4430379746835</XPos>
+															<YPos>3.18471337579618</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-53.7974683544304</XPos>
+															<YPos>-11.4649681528662</YPos>
+															<Flags>0</Flags>
+															<Time>3125</Time>
+														</Point>
+														<Point>
+															<XPos>-53.7974683544304</XPos>
+															<YPos>12.7388535031847</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>31.64557</XPos>
+															<YPos>8.9172</YPos>
+															<Flags>0</Flags>
+															<Time>4375</Time>
+														</Point>
+														<Point>
+															<XPos>15.82278</XPos>
+															<YPos>26.75159</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Electricity_Disturbance_Path_02" ID="{A844F1C0-9BAF-4C06-97EB-DC5757F7B557}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>5.69620253164557</XPos>
+															<YPos>13.3757961783439</YPos>
+															<Flags>0</Flags>
+															<Time>833</Time>
+														</Point>
+														<Point>
+															<XPos>55.0632911392405</XPos>
+															<YPos>3.18471337579618</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>41.13924</XPos>
+															<YPos>17.19745</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>50.63291</XPos>
+															<YPos>26.75159</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-8.22785</XPos>
+															<YPos>-14.01274</YPos>
+															<Flags>0</Flags>
+															<Time>4166</Time>
+														</Point>
+														<Point>
+															<XPos>-0.63291</XPos>
+															<YPos>22.92993</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Electricity_Disturbance_Path_03" ID="{34793215-B048-4F12-8640-93E5AAC33CDA}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-12.6582278481013</XPos>
+															<YPos>7.00636942675159</YPos>
+															<Flags>0</Flags>
+															<Time>625</Time>
+														</Point>
+														<Point>
+															<XPos>-17.0886075949367</XPos>
+															<YPos>17.1974522292994</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-14.5569620253165</XPos>
+															<YPos>40.1273885350318</YPos>
+															<Flags>0</Flags>
+															<Time>1875</Time>
+														</Point>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>70.7006369426752</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-34.8101265822785</XPos>
+															<YPos>73.2484076433121</YPos>
+															<Flags>0</Flags>
+															<Time>3125</Time>
+														</Point>
+														<Point>
+															<XPos>-24.68354</XPos>
+															<YPos>75.15924</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-8.22784</XPos>
+															<YPos>92.3567</YPos>
+															<Flags>0</Flags>
+															<Time>4375</Time>
+														</Point>
+														<Point>
+															<XPos>-27.84809</XPos>
+															<YPos>90.44587</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Electricity_Disturbance_Path_04" ID="{B216D632-49DA-46A0-B8BA-8ADAD98425C9}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-21.5189873417722</XPos>
+															<YPos>36.9426751592357</YPos>
+															<Flags>0</Flags>
+															<Time>833</Time>
+														</Point>
+														<Point>
+															<XPos>31.6455696202532</XPos>
+															<YPos>36.9426751592357</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>55.06329</XPos>
+															<YPos>68.15287</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>41.13924</XPos>
+															<YPos>-49.68153</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>11.39241</XPos>
+															<YPos>-87.8981</YPos>
+															<Flags>0</Flags>
+															<Time>4166</Time>
+														</Point>
+														<Point>
+															<XPos>-12.02532</XPos>
+															<YPos>-83.4395</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Electricity_Disturbance_Path_05" ID="{DF4DA1A9-8A81-49F5-A85C-97B09B9EE2FE}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.79746835443038</XPos>
+															<YPos>17.8343949044586</YPos>
+															<Flags>0</Flags>
+															<Time>833</Time>
+														</Point>
+														<Point>
+															<XPos>-34.8101265822785</XPos>
+															<YPos>-28.0254777070064</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-46.20253</XPos>
+															<YPos>-47.7707</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-13.92405</XPos>
+															<YPos>-72.61146</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>20.8860759493671</XPos>
+															<YPos>-89.8089171974522</YPos>
+															<Flags>0</Flags>
+															<Time>4166</Time>
+														</Point>
+														<Point>
+															<XPos>45.5696202531645</XPos>
+															<YPos>-37.5796178343949</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Electricity, Electro Magnetic Interference 05 SND37279" ID="{CCA5197F-DB56-42BB-B68F-E22866C4735D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

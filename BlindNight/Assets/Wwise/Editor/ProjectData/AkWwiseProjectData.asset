@@ -17,21 +17,96 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3d05971feb405c41b3dd1718adbd3311
     GuidInternal: 
-    m_lastTime: -8586340169874810974
+    m_lastTime: -8586340899813803350
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586340169894435825
-    List: []
+    m_lastTime: -8586337506920789612
+    List:
+    - name: Objects_Reverb
+      guid: 171995827826f44fac5d0546aa78d401
+      id: 3203606094
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Objects
+        ObjectType: 2
+      - ElementName: Objects_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Objects\Objects_Reverb
+    - name: Player_Flashlight_Reverb
+      guid: 578fb64a3a0740438c92e537c9eecc4b
+      id: 737812310
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: Player_Flashlight_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Player\Player_Flashlight_Reverb
+    - name: Player_Footstep_Reverb
+      guid: 5128347f32ab854bbe10337b8f44a7a3
+      id: 3916004666
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: Player_Footstep_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Player\Player_Footstep_Reverb
+    - name: Presence_Reverb
+      guid: 4e5200e7a384d54397a0d1cfaa9915fc
+      id: 3562591321
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Ambient
+        ObjectType: 2
+      - ElementName: Presence_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Ambient\Presence_Reverb
+    - name: Reverb
+      guid: 7acba123f1795f44898f206071a03e47
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Non-World
+        ObjectType: 2
+      - ElementName: UI
+        ObjectType: 2
+      - ElementName: Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Non-World\UI\Reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586340169875531173
+    m_lastTime: -8586338304239939259
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -42,46 +117,215 @@ MonoBehaviour:
       - ElementName: Master
         ObjectType: 7
       Path: Default Work Unit\Master
-    - name: Tester
-      guid: e32ebf5d4bac3d4b83a811a4ef8b2590
-      id: 3163537048
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Tester
-        ObjectType: 7
-      Path: Default Work Unit\Tester
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586340169896816438
+    m_lastTime: -8586338302152446734
     List:
-    - name: test
-      guid: 3b85880b26740f449c5aaf3597534a4a
-      id: 3157003241
+    - name: Play_Button3_Click
+      guid: bbdd8d1ec1a8c74ba41019cba04a3f3a
+      id: 1166635208
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: test
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Button3_Click
         ObjectType: 3
-      Path: Default Work Unit\test
+      Path: Default Work Unit\UI\Play_Button3_Click
       maxAttenuation: 0
-      maxDuration: 4000000
-      minDuration: 4000000
+      maxDuration: 0.553774
+      minDuration: 0.407499
+    - name: Play_Door_Close
+      guid: 5f57bf6927043449998574821dc8bc27
+      id: 2292458263
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Door
+        ObjectType: 4
+      - ElementName: Play_Door_Close
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Door\Play_Door_Close
+      maxAttenuation: 0
+      maxDuration: 2.262191
+      minDuration: 1.843849
+    - name: Play_Door_Open
+      guid: a1772980d041434482eb5701fa5dd305
+      id: 1660008929
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Door
+        ObjectType: 4
+      - ElementName: Play_Door_Open
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Door\Play_Door_Open
+      maxAttenuation: 100
+      maxDuration: 3.492301
+      minDuration: 3.492301
+    - name: Play_Flashlight_On_Off
+      guid: a7da93d59f7c4c49a0843f7f54cd2fcc
+      id: 4064524182
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Flashlight_On_Off
+        ObjectType: 3
+      Path: Default Work Unit\Player\Play_Flashlight_On_Off
+      maxAttenuation: 0
+      maxDuration: 0.900915
+      minDuration: 0.790204
+    - name: Play_Flashlight_Switch
+      guid: e80d0a9c7cf789478172a602c3e8a3f7
+      id: 784840363
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Flashlight_Switch
+        ObjectType: 3
+      Path: Default Work Unit\Player\Play_Flashlight_Switch
+      maxAttenuation: 0
+      maxDuration: 3.421784
+      minDuration: 3.398754
+    - name: Play_Footstep_Surface
+      guid: e404ba7db155db41bb6d965d45a2d045
+      id: 709824872
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Footstep_Surface
+        ObjectType: 3
+      Path: Default Work Unit\Player\Play_Footstep_Surface
+      maxAttenuation: 0
+      maxDuration: 0.402056
+      minDuration: 0.232926
+    - name: Play_Move_Negative
+      guid: 0fd1febc79605743b4a0c0e3b52f3469
+      id: 2145787553
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Play_Move_Negative
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_Move_Negative
+      maxAttenuation: 0
+      maxDuration: 0.808329
+      minDuration: 0.719308
+    - name: Play_Moving_Object
+      guid: e740afef6fe94c49ad2b0a7bdedf4163
+      id: 3847524746
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Play_Moving_Object
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_Moving_Object
+      maxAttenuation: 0
+      maxDuration: 1.489437
+      minDuration: 1.199916
+    - name: Play_Presence
+      guid: f0ae6d7e5e2256458a3d3bbb8abe8a9d
+      id: 4155730121
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Play_Presence
+        ObjectType: 3
+      Path: Default Work Unit\Ambience\Play_Presence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Room_Wind
+      guid: a82e819abe91564d8911429bad098583
+      id: 919644948
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Play_Room_Wind
+        ObjectType: 3
+      Path: Default Work Unit\Ambience\Play_Room_Wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Wall_Hit_Blend
+      guid: 4200b7159603b94fb32a33935496e7ff
+      id: 1410513580
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Play_Wall_Hit_Blend
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_Wall_Hit_Blend
+      maxAttenuation: 0
+      maxDuration: 2.448059
+      minDuration: 2.086096
+  - PhysicalPath: Events\Music.wwu
+    ParentPhysicalPath: 
+    guid: bcca1c21a353cf43be84ba1d138041c2
+    GuidInternal: 
+    m_lastTime: -8586338441618281256
+    List:
+    - name: Music_TitleScreen
+      guid: 23b5327f5b39aa4c8005ff04c30331b4
+      id: 1532327793
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Music_TitleScreen
+        ObjectType: 3
+      Path: Music\Music_TitleScreen
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Room
+      guid: 6164676e9b356e488a7c61c852537895
+      id: 2736697007
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: General
+        ObjectType: 4
+      - ElementName: Play_Room
+        ObjectType: 3
+      Path: Music\General\Play_Room
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c4c42834edf7314b8c300b5d103ef982
     GuidInternal: 
-    m_lastTime: -8586340169896766412
+    m_lastTime: -8586338404165643135
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8586340169896726413
+    m_lastTime: -8586340899829209940
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -173,28 +417,125 @@ MonoBehaviour:
       - ElementName: SS_Air_Turbulence
         ObjectType: 13
       Path: Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+  - PhysicalPath: Game Parameters\Gameplay.wwu
+    ParentPhysicalPath: 
+    guid: 75e10bfd79e7b8468075cdf5c6876f33
+    GuidInternal: 
+    m_lastTime: -8586338399899278529
+    List:
+    - name: Menuslider_Music
+      guid: 1aebd68ce9e67d46b48488aa5705f339
+      id: 663364743
+      PathAndIcons:
+      - ElementName: Gameplay
+        ObjectType: 12
+      - ElementName: Menuslider_Music
+        ObjectType: 13
+      Path: Gameplay\Menuslider_Music
+    - name: Menuslider_SoundFX
+      guid: 763cddbaeae4fe498614bbccec9ddbc0
+      id: 2137139513
+      PathAndIcons:
+      - ElementName: Gameplay
+        ObjectType: 12
+      - ElementName: Menuslider_SoundFX
+        ObjectType: 13
+      Path: Gameplay\Menuslider_SoundFX
+    - name: TimeOfDay
+      guid: 5017e7cd59aa2749861dd058b2397d8c
+      id: 3729505769
+      PathAndIcons:
+      - ElementName: Gameplay
+        ObjectType: 12
+      - ElementName: TimeOfDay
+        ObjectType: 13
+      Path: Gameplay\TimeOfDay
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: e3316310d8271e438f5b458871155d41
     GuidInternal: 
-    m_lastTime: -8586340169875461143
+    m_lastTime: -8586340899813977467
     List: []
+  - PhysicalPath: States\MusicStates.wwu
+    ParentPhysicalPath: 
+    guid: 04b67ad93857e246800f2fbbedeaa811
+    GuidInternal: 
+    m_lastTime: -8586340110336169215
+    List:
+    - name: Music_Regions
+      guid: d1ed4562c6a4b146a75e976da2c6cf49
+      id: 2106907484
+      PathAndIcons:
+      - ElementName: MusicStates
+        ObjectType: 12
+      - ElementName: Music_Regions
+        ObjectType: 9
+      Path: MusicStates\Music_Regions
+      values:
+      - name: None
+        guid: aa2ecabe3107d24f808550eeb6550279
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Room1
+        guid: 64f3375560ae3d41bafc4df93e9d5095
+        id: 1359360137
+        PathAndIcons:
+        - ElementName: Room1
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586340169874891009
-    List: []
+    m_lastTime: -8586340022680185457
+    List:
+    - name: Surface_Type
+      guid: da5061335875a745896d2f33a17fe9c2
+      id: 4064446173
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Surface_Type
+        ObjectType: 11
+      Path: Default Work Unit\Surface_Type
+      values:
+      - name: Rug
+        guid: 7540f78a98cf40448fab0eda3bc96d83
+        id: 712161697
+        PathAndIcons:
+        - ElementName: Rug
+          ObjectType: 10
+      - name: Wood
+        guid: 32f763f8d884b94991a43c95bbca611c
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 64c578f279613943879c0bc962a9b98f
     GuidInternal: 
-    m_lastTime: -8586340169874850826
+    m_lastTime: -8586340899813861470
     List: []
   ExpandedItems:
   - /MGP1_Team1
+  - /MGP1_Team1/Auxiliary Busses
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus
+  - /MGP1_Team1/Events
+  - /MGP1_Team1/Events/Default Work Unit
+  - /MGP1_Team1/Events/Default Work Unit/UI
+  - /MGP1_Team1/Events/Music
+  - /MGP1_Team1/Events/Music/General
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
