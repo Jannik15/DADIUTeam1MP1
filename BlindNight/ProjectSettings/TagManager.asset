@@ -6,6 +6,7 @@ TagManager:
   tags:
   - interactable
   - MoveCollider
+  - arrow
   layers:
   - Default
   - TransparentFX

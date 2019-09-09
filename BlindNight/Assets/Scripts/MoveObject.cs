@@ -8,7 +8,7 @@ public class MoveObject : MonoBehaviour
     public string ImportantNote = "Objects must have both a rigid body and a collider to be detected by the system. Also the 'MoveCollisionCheckerObject' prefab must be located in the resources folder!";
 
     [Tooltip("Should be the length of the 'tiles'")]
-    public float moveLenght = 1f;
+    public float moveLength = 2f;
     float tempMoveLength;
     [Tooltip("Modifier if collision checker is too small/large (in case of false positives)")]
     public float colliderSizeModifier = 0f;
@@ -22,7 +22,7 @@ public class MoveObject : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        tempMoveLength = moveLenght;
+        tempMoveLength = moveLength;
 
         // MoveWest(objectToMove);    // Used for debugging
     }
@@ -33,13 +33,14 @@ public class MoveObject : MonoBehaviour
 
         if (Mathf.Sign(playerToObjectDirection.x) == -1)
         {
-            tempMoveLength = moveLenght * 2;
+            tempMoveLength = moveLength * 2;
         }
 
         Vector3 direction = new Vector3(obj.transform.position.x + tempMoveLength, obj.transform.position.y, obj.transform.position.z);
-        Vector3 pDirection = new Vector3(player.transform.position.x + tempMoveLength, player.transform.position.y, player.transform.position.z);
+        Vector3 pDirection = new Vector3(player.transform.position.x + moveLength, player.transform.position.y, player.transform.position.z);
         moveCollisionCheckerInit(direction, obj);
 
+        direction = new Vector3(obj.transform.position.x + moveLength, obj.transform.position.y, obj.transform.position.z);
         StartCoroutine(DelayedMoveObject(obj, direction, pDirection));
     }
 
@@ -49,13 +50,14 @@ public class MoveObject : MonoBehaviour
 
         if (Mathf.Sign(playerToObjectDirection.x) == +1)
         {
-            tempMoveLength = moveLenght * 2;
+            tempMoveLength = moveLength * 2;
         }
 
         Vector3 direction = new Vector3(obj.transform.position.x - tempMoveLength, obj.transform.position.y, obj.transform.position.z);
-        Vector3 pDirection = new Vector3(player.transform.position.x - tempMoveLength, player.transform.position.y, player.transform.position.z);
+        Vector3 pDirection = new Vector3(player.transform.position.x - moveLength, player.transform.position.y, player.transform.position.z);
         moveCollisionCheckerInit(direction, obj);
 
+        direction = new Vector3(obj.transform.position.x - moveLength, obj.transform.position.y, obj.transform.position.z);
         StartCoroutine(DelayedMoveObject(obj, direction, pDirection));
     }
 
@@ -65,13 +67,14 @@ public class MoveObject : MonoBehaviour
 
         if (Mathf.Sign(playerToObjectDirection.x) == -1)
         {
-            tempMoveLength = moveLenght * 2;
+            tempMoveLength = moveLength * 2;
         }
 
         Vector3 direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + tempMoveLength);
-        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + tempMoveLength);
+        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + moveLength);
         moveCollisionCheckerInit(direction, obj);
 
+        direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength);
         StartCoroutine(DelayedMoveObject(obj, direction, pDirection));
     }
 
@@ -81,13 +84,14 @@ public class MoveObject : MonoBehaviour
 
         if (Mathf.Sign(playerToObjectDirection.x) == 1)
         {
-            tempMoveLength = moveLenght * 2;
+            tempMoveLength = moveLength * 2;
         }
 
         Vector3 direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - tempMoveLength);
-        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - tempMoveLength);
+        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - moveLength);
         moveCollisionCheckerInit(direction, obj);
 
+        direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength);
         StartCoroutine(DelayedMoveObject(obj, direction, pDirection));
     }
 
@@ -121,7 +125,7 @@ public class MoveObject : MonoBehaviour
             isColliding = false;
         }
 
-        tempMoveLength = moveLenght;
+        tempMoveLength = moveLength;
         Destroy(moveCollisionChecker);
 
     }
