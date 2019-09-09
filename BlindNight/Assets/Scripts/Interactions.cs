@@ -176,8 +176,12 @@ public class Interactions : MonoBehaviour
     } */
 
     public void SpawnArrows() {
+        bool[] arrowBool = new bool[2];
+        arrowBool = _ISC.IsHorizontal(otherObject);
 
-        if(_ISC.IsHorizontal(otherObject)[1] == true) {
+        if (arrowBool[1] == true) {
+
+            if(arrowBool[0] == false) {
             //Debug.Log("Entered Spawn arrow horizontal");
             //Up arrow
                 GameObject upArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z + arrowDisplaceZ), Quaternion.identity);
@@ -199,6 +203,13 @@ public class Interactions : MonoBehaviour
                 leftArrow.transform.eulerAngles = new Vector3(0,270,0);
                 leftArrow.name = "eastArrow";
             }
+
+        }
+        else {
+
+            Debug.Log("Out of bounds");
+        }
+        
                 
                 
     }
