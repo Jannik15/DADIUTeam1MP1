@@ -11,7 +11,7 @@ public class MoveObject : MonoBehaviour
     public float moveLength = 2f;
     float tempMoveLength;
     [Tooltip("Modifier if collision checker is too small/large (in case of false positives)")]
-    public float colliderSizeModifier = -0.6f;
+    public float colliderSizeModifier = -0.2f;
 
     bool isColliding = false;
     GameObject moveCollisionChecker;
@@ -65,7 +65,7 @@ public class MoveObject : MonoBehaviour
     {
         Vector3 playerToObjectDirection = obj.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
 
-        if (Mathf.Sign(playerToObjectDirection.x) == -1)
+        if (Mathf.Sign(playerToObjectDirection.z) == -1)
         {
             tempMoveLength = moveLength * 2;
         }
@@ -82,7 +82,7 @@ public class MoveObject : MonoBehaviour
     {
         Vector3 playerToObjectDirection = obj.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
 
-        if (Mathf.Sign(playerToObjectDirection.x) == 1)
+        if (Mathf.Sign(playerToObjectDirection.z) == 1)
         {
             tempMoveLength = moveLength * 2;
         }
@@ -100,9 +100,10 @@ public class MoveObject : MonoBehaviour
         
         moveCollisionChecker = Instantiate(Resources.Load("Prefabs/MoveCollisionCheckerObject", typeof(GameObject)) as GameObject);
         moveCollisionChecker.gameObject.GetComponent<TriggerDetection>().SetCallerCol(obj.gameObject.GetComponent<Collider>());
+        // moveCollisionChecker.transform.position = obj.transform.position;
+        // moveCollisionChecker.transform.localScale = obj.transform.localScale + (new Vector3(colliderSizeModifier, colliderSizeModifier, colliderSizeModifier));
+        moveCollisionChecker.transform.localScale = obj.GetComponent<Collider>().bounds.size + (new Vector3(colliderSizeModifier, colliderSizeModifier, colliderSizeModifier));
         moveCollisionChecker.transform.position = obj.transform.position;
-        moveCollisionChecker.transform.localScale = obj.transform.localScale + (new Vector3(colliderSizeModifier, colliderSizeModifier, colliderSizeModifier));
-
         moveCollisionChecker.transform.position = dir;
 
     }
