@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586339141413760391
+    m_lastTime: -8586337506920789612
     List:
     - name: Objects_Reverb
       guid: 171995827826f44fac5d0546aa78d401
@@ -106,7 +106,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586338436953071837
+    m_lastTime: -8586338304239939259
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -122,36 +122,8 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586338512412675978
+    m_lastTime: -8586338302152446734
     List:
-    - name: Play_Button1_Mellow
-      guid: 6615e22321682e4fa1232613e3372de7
-      id: 1391607054
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: UI
-        ObjectType: 4
-      - ElementName: Play_Button1_Mellow
-        ObjectType: 3
-      Path: Default Work Unit\UI\Play_Button1_Mellow
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Button2_Tone
-      guid: f2fa2cdce243664889929b4fe9faab2f
-      id: 185252871
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: UI
-        ObjectType: 4
-      - ElementName: Play_Button2_Tone
-        ObjectType: 3
-      Path: Default Work Unit\UI\Play_Button2_Tone
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Button3_Click
       guid: bbdd8d1ec1a8c74ba41019cba04a3f3a
       id: 1166635208
@@ -166,6 +138,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.553774
       minDuration: 0.407499
+    - name: Play_Door_Close
+      guid: 5f57bf6927043449998574821dc8bc27
+      id: 2292458263
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Door
+        ObjectType: 4
+      - ElementName: Play_Door_Close
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Door\Play_Door_Close
+      maxAttenuation: 0
+      maxDuration: 2.262191
+      minDuration: 1.843849
     - name: Play_Door_Open
       guid: a1772980d041434482eb5701fa5dd305
       id: 1660008929
@@ -174,9 +162,11 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Objects
         ObjectType: 4
+      - ElementName: Door
+        ObjectType: 4
       - ElementName: Play_Door_Open
         ObjectType: 3
-      Path: Default Work Unit\Objects\Play_Door_Open
+      Path: Default Work Unit\Objects\Door\Play_Door_Open
       maxAttenuation: 100
       maxDuration: 3.492301
       minDuration: 3.492301
@@ -195,7 +185,7 @@ MonoBehaviour:
       maxDuration: 0.900915
       minDuration: 0.790204
     - name: Play_Flashlight_Switch
-      guid: 4e9de9fc72a1644fafac708883e78b04
+      guid: e80d0a9c7cf789478172a602c3e8a3f7
       id: 784840363
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -206,8 +196,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Player\Play_Flashlight_Switch
       maxAttenuation: 0
-      maxDuration: 0.374821
-      minDuration: 0.32876
+      maxDuration: 3.421784
+      minDuration: 3.398754
     - name: Play_Footstep_Surface
       guid: e404ba7db155db41bb6d965d45a2d045
       id: 709824872
@@ -222,6 +212,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.402056
       minDuration: 0.232926
+    - name: Play_Move_Negative
+      guid: 0fd1febc79605743b4a0c0e3b52f3469
+      id: 2145787553
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 4
+      - ElementName: Play_Move_Negative
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_Move_Negative
+      maxAttenuation: 0
+      maxDuration: 0.808329
+      minDuration: 0.719308
     - name: Play_Moving_Object
       guid: e740afef6fe94c49ad2b0a7bdedf4163
       id: 3847524746
@@ -315,7 +319,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c4c42834edf7314b8c300b5d103ef982
     GuidInternal: 
-    m_lastTime: -8586340899829269777
+    m_lastTime: -8586338404165643135
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
@@ -417,7 +421,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 75e10bfd79e7b8468075cdf5c6876f33
     GuidInternal: 
-    m_lastTime: -8586339141413585552
+    m_lastTime: -8586338399899278529
     List:
     - name: Menuslider_Music
       guid: 1aebd68ce9e67d46b48488aa5705f339
@@ -437,6 +441,15 @@ MonoBehaviour:
       - ElementName: Menuslider_SoundFX
         ObjectType: 13
       Path: Gameplay\Menuslider_SoundFX
+    - name: TimeOfDay
+      guid: 5017e7cd59aa2749861dd058b2397d8c
+      id: 3729505769
+      PathAndIcons:
+      - ElementName: Gameplay
+        ObjectType: 12
+      - ElementName: TimeOfDay
+        ObjectType: 13
+      Path: Gameplay\TimeOfDay
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -516,6 +529,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /MGP1_Team1
+  - /MGP1_Team1/Auxiliary Busses
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit
+  - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
   - /MGP1_Team1/Events/Default Work Unit/UI
