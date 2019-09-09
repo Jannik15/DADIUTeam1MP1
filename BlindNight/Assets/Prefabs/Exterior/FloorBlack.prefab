@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 3045322552645804720}
   - component: {fileID: 6275816679855315078}
   - component: {fileID: 298547567459083391}
+  - component: {fileID: 288925884313768256}
   m_Layer: 0
   m_Name: FloorBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3045322552645804720
 Transform:
@@ -58,12 +59,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 4888235161327426603, guid: 338be8b50c980024188c9f8c4258df19, type: 3}
-  - {fileID: 7414288616931510704, guid: 338be8b50c980024188c9f8c4258df19, type: 3}
-  - {fileID: -4100915765282294598, guid: 338be8b50c980024188c9f8c4258df19, type: 3}
-  - {fileID: -6311189756039584441, guid: 338be8b50c980024188c9f8c4258df19, type: 3}
-  - {fileID: -3273288294605667722, guid: 338be8b50c980024188c9f8c4258df19, type: 3}
-  - {fileID: -6170508846756130800, guid: 338be8b50c980024188c9f8c4258df19, type: 3}
-  - {fileID: -4567601847423520187, guid: 338be8b50c980024188c9f8c4258df19, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &288925884313768256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024492702508683427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.999998, y: 0, z: 20}
+  m_Center: {x: -0.0000009536743, y: -0.091189384, z: 0}
