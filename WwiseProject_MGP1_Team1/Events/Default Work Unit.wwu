@@ -31,28 +31,6 @@
 				</Folder>
 				<Folder Name="UI" ID="{A0A9B94E-0657-4EEF-A2ED-7F00B11DB179}" ShortID="400876806">
 					<ChildrenList>
-						<Event Name="Play_Button1_Mellow" ID="{23E21566-6821-4F2E-A123-2613E3372DE7}">
-							<ChildrenList>
-								<Action Name="" ID="{1900E806-51FE-4606-9C1D-4EBE11AAA1AD}" ShortID="424805998">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Button1_Mellow" ID="{A144E17E-4ACA-4502-915F-DE2A8EB9DDFA}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Button2_Tone" ID="{DC2CFAF2-43E2-4866-8992-9B4FE9FAAB2F}">
-							<ChildrenList>
-								<Action Name="" ID="{48A7AE02-0507-4E5B-A090-B2C0A20D6D44}" ShortID="498412009">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Button2_Tone" ID="{BF45A311-CD05-4E97-B230-6142D2B93B61}" WorkUnitID="{239AC835-5F08-401C-AD01-43EF1D5199A5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Button3_Click" ID="{1E8DDDBB-A8C1-4BC7-A410-19CBA04A3F3A}">
 							<ChildrenList>
 								<Action Name="" ID="{953E792D-708F-46C2-A897-2BC36885580E}" ShortID="990360245">

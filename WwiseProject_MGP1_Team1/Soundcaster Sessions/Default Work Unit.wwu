@@ -18,6 +18,10 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Flashlight_Switch" ID="{9C0A0DE8-F77C-4789-8172-A602C3E8A3F7}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Button3_Click" ID="{1E8DDDBB-A8C1-4BC7-A410-19CBA04A3F3A}" WorkUnitID="{B3A64C57-BC53-4994-B4BB-B5BC5C4170F2}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -89,7 +93,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}"/>
-							<Value>70.0124223602484</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>

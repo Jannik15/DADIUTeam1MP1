@@ -101,6 +101,8 @@
 												<Property Name="Duration" Type="Real64" Value="30.7"/>
 												<Property Name="FrequencyScale" Type="Real32" Value="-0.84"/>
 												<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.32"/>
+												<Property Name="GainOffset" Type="Real32" Value="-4"/>
+												<Property Name="GainOffsetRandom" Type="Real32" Value="6.1"/>
 												<Property Name="Gustiness" Type="Real32" Value="0.56"/>
 												<Property Name="GustinessRandom" Type="Real32" Value="0.1"/>
 												<Property Name="QFactorScaleRandom" Type="Real32" Value="0.34"/>

@@ -60,7 +60,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -124,26 +124,6 @@
 												<TargetProp>BusVolume</TargetProp>
 											</DuckingParam>
 										</DuckItem>
-										<DuckItem>
-											<BusRef Name="Objects" ID="{E7C53D93-BE37-4767-9CCB-E28CFCD6D4E0}"/>
-											<DuckingParam>
-												<Volume>-6</Volume>
-												<FadeInTime>1</FadeInTime>
-												<FadeOutTime>1</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-												<TargetProp>BusVolume</TargetProp>
-											</DuckingParam>
-										</DuckItem>
-										<DuckItem>
-											<BusRef Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}"/>
-											<DuckingParam>
-												<Volume>-6</Volume>
-												<FadeInTime>1</FadeInTime>
-												<FadeOutTime>1</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-												<TargetProp>BusVolume</TargetProp>
-											</DuckingParam>
-										</DuckItem>
 									</DuckingList>
 								</Bus>
 							</ChildrenList>
@@ -193,13 +173,20 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Large_Church1" ID="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 											</ReferenceList>
 										</AuxBus>
 									</ChildrenList>
 								</Bus>
 								<Bus Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ChildrenList>
 										<AuxBus Name="Player_Footstep_Reverb" ID="{7F342851-AB32-4B85-BE10-337B8F44A7A3}">
 											<ReferenceList>
@@ -216,6 +203,17 @@
 											</ReferenceList>
 										</AuxBus>
 									</ChildrenList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
 								</Bus>
 								<Bus Name="Objects" ID="{E7C53D93-BE37-4767-9CCB-E28CFCD6D4E0}">
 									<ChildrenList>
@@ -227,6 +225,17 @@
 											</ReferenceList>
 										</AuxBus>
 									</ChildrenList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
 								</Bus>
 							</ChildrenList>
 						</Bus>

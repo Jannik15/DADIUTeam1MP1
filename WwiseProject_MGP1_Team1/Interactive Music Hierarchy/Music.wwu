@@ -481,6 +481,11 @@
 										<MusicTrack Name="2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience" ID="{9DE11D61-1A69-4D5A-ABAE-5CB9C00A3264}" ShortID="894224613">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -1299,6 +1304,11 @@
 										<MusicTrack Name="1-Main Loop_8L_PEX-Thrill Human Fear Ambience" ID="{46817CBF-E1CB-49A1-A730-70972F659BA4}" ShortID="414754628">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -1499,7 +1509,7 @@
 																<Property Name="BeginTrimOffset" Type="Real64" Value="2195.12195121951"/>
 																<Property Name="EndTrimOffset" Type="Real64" Value="28536.5853658537"/>
 																<Property Name="FadeInDuration" Type="Real64" Value="321.28514056225"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="1060.24096385542"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1927.71084337349"/>
 															</PropertyList>
 															<AudioSourceRef Name="Harp &amp; Vibraphone BHCT-3-Main Loop_2_8L" ID="{80AC5FE0-A303-4420-825E-5B6C053801AA}"/>
 															<PropertyCurveList>
@@ -1597,7 +1607,7 @@
 																<Property Name="BeginTrimOffset" Type="Real64" Value="2195.12195121951"/>
 																<Property Name="EndTrimOffset" Type="Real64" Value="29268.2926829268"/>
 																<Property Name="FadeInDuration" Type="Real64" Value="192.771084337349"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="353.413654618475"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2248.99598393574"/>
 															</PropertyList>
 															<AudioSourceRef Name="Sketch Piano #1-3-Main Loop_2_8L" ID="{77F96D53-5921-4DA0-B4A7-B858657ED25A}"/>
 															<PropertyCurveList>
@@ -1666,6 +1676,13 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="Thrill Human Fear Ambience-3-Main Loop_2_8L" ID="{2D762F3D-9015-4C9E-83EB-1874F4E845FE}" ShortID="520898579">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
@@ -2094,6 +2111,11 @@
 										<MusicTrack Name="5-Main Loop_2variation_8L-Thrill Human Fear Ambience" ID="{AE2CA95D-4C46-4620-9976-8FE90B3E6F5A}" ShortID="542763115">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
