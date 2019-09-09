@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}" SchemaVersion="94">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{12CE9880-EC53-4B47-9EBA-C823438DC4AC}" WorkUnitID="{50BA4471-36CD-4D29-9162-D3FEF633D4FB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Non-World" ID="{6728F71D-738F-4764-9F6C-64E3D640F331}">
+							<ChildrenList>
+								<Bus Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{081B06B8-D8BA-47D5-B190-D1CE5DDE39FD}" ShortID="657157966">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Menuslider_Music" ID="{8CD6EB1A-E6E9-467D-B484-88AA5705F339}" WorkUnitID="{FD0BE175-E779-46B8-8075-CDF5C6876F33}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{E1A5D2D9-1481-45FE-907C-86E1082046E1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="UI" ID="{D71DCFE4-E7E8-4B0C-B539-743D8C53BE0E}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{AB37AD75-8438-47A2-9E94-FA2FDE0A6372}" ShortID="318184511">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}" WorkUnitID="{FD0BE175-E779-46B8-8075-CDF5C6876F33}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4DA5DC33-C014-4F23-8590-E1D2BD643426}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<AuxBus Name="Reverb" ID="{23A1CB7A-79F1-445F-898F-206071A03E47}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-21</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+												<TargetProp>BusVolume</TargetProp>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="World" ID="{F398072D-F3D5-4CCF-B1F8-D829E4A116B5}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{E10ADF2E-DD28-4FED-9DEB-65748856052B}" ShortID="691901788">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Menuslider_SoundFX" ID="{BADD3C76-E4EA-49FE-8614-BBCCEC9DDBC0}" WorkUnitID="{FD0BE175-E779-46B8-8075-CDF5C6876F33}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{8CAEF64E-287C-4545-B9A0-DCFFC787179F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}">
+									<ChildrenList>
+										<AuxBus Name="Presence_Reverb" ID="{E700524E-84A3-43D5-97A0-D1CFAA9915FC}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<AuxBus Name="Player_Footstep_Reverb" ID="{7F342851-AB32-4B85-BE10-337B8F44A7A3}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Player_Flashlight_Reverb" ID="{4AB68F57-073A-4340-8C92-E537C9EECC4B}">
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="Objects" ID="{E7C53D93-BE37-4767-9CCB-E28CFCD6D4E0}">
+									<ChildrenList>
+										<AuxBus Name="Objects_Reverb" ID="{82951917-2678-4FF4-AC5D-0546AA78D401}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D97AB604-5738-46E2-800F-2FBBEDEAA811}" SchemaVersion="94">
+	<States>
+		<WorkUnit Name="MusicStates" ID="{D97AB604-5738-46E2-800F-2FBBEDEAA811}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music_Regions" ID="{6245EDD1-A4C6-46B1-A75E-976DA2C6CF49}">
+					<ChildrenList>
+						<State Name="None" ID="{BECA2EAA-0731-4FD2-8085-50EEB6550279}"/>
+						<State Name="Room1" ID="{5537F364-AE60-413D-BAFC-4DF93E9D5095}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
