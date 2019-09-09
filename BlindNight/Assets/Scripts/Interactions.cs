@@ -16,6 +16,7 @@ public class Interactions : MonoBehaviour
 
     public InteractionsSideChecker _ISC;
     private GameObject[] arrowList;
+    private MoveObject _moveObject;
     // Start is called before the first frame update
    
     // Handle interaction with items when the player clicks on them. 
@@ -33,6 +34,7 @@ public class Interactions : MonoBehaviour
         arrowDisplaceY = 2;
         arrowDisplaceZ = 1.5f;
         _ISC = GetComponent<InteractionsSideChecker>();
+        _moveObject = GetComponent<MoveObject>();
     }
 
     // Update is called once per frame
@@ -95,22 +97,27 @@ public class Interactions : MonoBehaviour
 
             switch(hit.collider.name) {
                 case "northArrow":
+
                     //Debug.Log("North Arrow Clicked");
+                    _moveObject.MoveNorth(objectClicked);
                     DestroyArrows();
                     break;
 
                 case "southArrow":
                     //Debug.Log("South Arrow Clicked");
+                    _moveObject.MoveSouth(objectClicked);
                     DestroyArrows();
                     break;
 
                 case "eastArrow":
                     //Debug.Log("East Arrow Clicked");
+                    _moveObject.MoveEast(objectClicked);
                     DestroyArrows();
                     break;
 
                 case "westArrow":
                     //Debug.Log("West Arrow Clicked");
+                    _moveObject.MoveWest(objectClicked);
                     DestroyArrows();
                     break;
                 default: 
@@ -185,11 +192,11 @@ public class Interactions : MonoBehaviour
             //Debug.Log("Entered Spawn arrow horizontal");
             //Up arrow
                 GameObject upArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z + arrowDisplaceZ), Quaternion.identity);
-                upArrow.name = "northArrow";
+                upArrow.name = "westArrow";
             //Down arrow (rotate by 180)
                 GameObject downArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z - arrowDisplaceZ), Quaternion.identity);
                 downArrow.transform.eulerAngles = new Vector3(0,180,0);//rotation = new Quaternion(downArrow.transform.rotation.x, 270, downArrow.transform.rotation.z, downArrow.transform.rotation.w);
-                downArrow.name = "southArrow";
+                downArrow.name = "eastArrow";
         }
         
             else {
@@ -197,11 +204,11 @@ public class Interactions : MonoBehaviour
                 // Right arrow (rotate 90)
                 GameObject rightArrow = Instantiate(arrow, new Vector3(hitCollider.x + arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 rightArrow.transform.eulerAngles = new Vector3(0,90,0);
-                rightArrow.name = "westArrow";
+                rightArrow.name = "northArrow";
                 // Left arrow (rotate 270)
                 GameObject leftArrow = Instantiate(arrow, new Vector3(hitCollider.x - arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 leftArrow.transform.eulerAngles = new Vector3(0,270,0);
-                leftArrow.name = "eastArrow";
+                leftArrow.name = "southArrow";
             }
 
         }
