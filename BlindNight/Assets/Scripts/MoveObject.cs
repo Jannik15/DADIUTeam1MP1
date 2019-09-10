@@ -13,7 +13,11 @@ public class MoveObject : MonoBehaviour
     [Tooltip("Modifier if collision checker is too small/large (in case of false positives)")]
     public float colliderSizeModifier = -0.2f;
 
+    private float delayTime = 0.15f;
+
     bool isColliding = false;
+
+    GameObject clickedArrow;
     GameObject moveCollisionChecker;
     GameObject player;
 
@@ -110,18 +114,20 @@ public class MoveObject : MonoBehaviour
 
     IEnumerator DelayedMoveObject(GameObject obj, Vector3 objDirection, Vector3 playerDirection)    // Coroutine
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(delayTime);
 
         isColliding = moveCollisionChecker.gameObject.GetComponent<TriggerDetection>().IsColliding();
 
         if (isColliding == false)
         {
+            clickedArrow.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
             // Vector3.Lerp(obj.transform.position, moveCollisionChecker.transform.position, 2f);   // Must be in update loop
             obj.transform.position = objDirection;
             player.transform.position = playerDirection;
         }
         else
         {
+            clickedArrow.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
             Debug.Log("Space occupied, cannot move object!");
             isColliding = false;
         }
@@ -129,5 +135,15 @@ public class MoveObject : MonoBehaviour
         tempMoveLength = moveLength;
         Destroy(moveCollisionChecker);
 
+    }
+
+    public float getDelayTime()
+    {
+        return delayTime;
+    }
+
+    public void setClickedGameObject(GameObject clickedObject)
+    {
+        clickedArrow = clickedObject;
     }
 }
