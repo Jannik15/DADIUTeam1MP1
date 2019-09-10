@@ -59,7 +59,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0, g: 1, b: 0.09803915, a: 1}
   m_Intensity: 0.7
-  m_Range: 3.72
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -195,11 +195,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1535458161989802871}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 7b833f6e6659e3049bc27ef848e9cfe0,
-        type: 3}
-      propertyPath: m_Name
-      value: FlashLight
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7b833f6e6659e3049bc27ef848e9cfe0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -264,6 +259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1310368
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7b833f6e6659e3049bc27ef848e9cfe0,
+        type: 3}
+      propertyPath: m_Name
+      value: FlashLight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b833f6e6659e3049bc27ef848e9cfe0, type: 3}
