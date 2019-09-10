@@ -27,6 +27,8 @@
 					<ChildrenList>
 						<BlendContainer Name="Wall_Hit_Blend" ID="{25AD8122-4232-400B-A616-82696E1B32B7}" ShortID="190190625">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -264,7 +266,15 @@
 							</BlendTrackList>
 						</BlendContainer>
 						<ActorMixer Name="Door" ID="{78BDE5A8-0948-4AF3-AD54-ED5A380E00D8}" ShortID="364365898">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Door" ID="{358949CB-6C2C-494B-A270-A621B630E57D}" WorkUnitID="{A0DD4767-A078-4EB8-871E-635D6836756A}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
 								</Reference>
@@ -532,6 +542,10 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Move_Object" ID="{131E313C-8EF7-4A18-A0F7-7FA5746ABDB5}" ShortID="1037627073">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
