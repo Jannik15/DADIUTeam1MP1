@@ -10,11 +10,6 @@
 								<Value>8</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>7</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
@@ -96,6 +91,11 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ChildrenList>
 										<AuxBus Name="Reverb" ID="{23A1CB7A-79F1-445F-898F-206071A03E47}">
@@ -162,6 +162,13 @@
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ChildrenList>
 										<AuxBus Name="Presence_Reverb" ID="{E700524E-84A3-43D5-97A0-D1CFAA9915FC}">
 											<PropertyList>
@@ -184,6 +191,11 @@
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
 												<Value>-3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -216,6 +228,13 @@
 									</DuckingList>
 								</Bus>
 								<Bus Name="Objects" ID="{E7C53D93-BE37-4767-9CCB-E28CFCD6D4E0}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ChildrenList>
 										<AuxBus Name="Objects_Reverb" ID="{82951917-2678-4FF4-AC5D-0546AA78D401}">
 											<ReferenceList>

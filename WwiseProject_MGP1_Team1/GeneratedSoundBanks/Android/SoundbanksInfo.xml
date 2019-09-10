@@ -32,7 +32,7 @@
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\Ambience\Play_Presence" DurationType="Infinite"/>
 				<Event Id="2736697007" Name="Play_Room" ObjectPath="\Events\Music\General\Play_Room" DurationType="Infinite"/>
 				<Event Id="919644948" Name="Play_Room_Wind" ObjectPath="\Events\Default Work Unit\Ambience\Play_Room_Wind" DurationType="Infinite"/>
-				<Event Id="1410513580" Name="Play_Wall_Hit_Blend" ObjectPath="\Events\Default Work Unit\Objects\Play_Wall_Hit_Blend" DurationType="OneShot" DurationMin="2.086096" DurationMax="2.448059"/>
+				<Event Id="1410513580" Name="Play_Wall_Hit_Blend" ObjectPath="\Events\Default Work Unit\Objects\Play_Wall_Hit_Blend" DurationType="OneShot" DurationMin="1.101979" DurationMax="1.785873"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="5177747" Language="SFX">
@@ -125,7 +125,7 @@
 				</File>
 				<File Id="688856799" Language="SFX">
 					<ShortName>Wall Hit_1-002.wav</ShortName>
-					<Path>SFX\Wall Hit_1-002_4BED6220.wem</Path>
+					<Path>SFX\Wall Hit_1-002_853EA47A.wem</Path>
 				</File>
 				<File Id="731430948" Language="SFX">
 					<ShortName>435845__dersuperanton__flashlight-click.wav</ShortName>

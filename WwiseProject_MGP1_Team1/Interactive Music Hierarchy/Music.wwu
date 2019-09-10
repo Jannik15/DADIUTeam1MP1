@@ -205,7 +205,6 @@
 													<ChildrenList>
 														<Path2D Name="2-Minimalistic Loop_4L_PEX-Sketch Piano #1_Path_01" ID="{E819B91F-39E0-445F-9D61-7DD04B80FC5B}">
 															<PropertyList>
-																<Property Name="RandomX" Type="Real64" Value="7"/>
 																<Property Name="RandomY" Type="Real64" Value="4"/>
 																<Property Name="RandomZ" Type="Real64" Value="6"/>
 															</PropertyList>
@@ -1440,7 +1439,6 @@
 														<Path2D Name="1-Main Loop_8L_PEX-Harp_Path" ID="{5B288339-E88B-4D62-9FCA-6B58981E767D}">
 															<PropertyList>
 																<Property Name="Duration" Type="int32" Value="60000"/>
-																<Property Name="RandomX" Type="Real64" Value="4"/>
 																<Property Name="RandomY" Type="Real64" Value="7"/>
 																<Property Name="RandomZ" Type="Real64" Value="17"/>
 															</PropertyList>
@@ -1479,7 +1477,6 @@
 														</Path2D>
 														<Path2D Name="1-Main Loop_8L_PEX-Harp_Path_01" ID="{C51E260A-4062-46D1-A755-9A8BFA2B9439}">
 															<PropertyList>
-																<Property Name="RandomX" Type="Real64" Value="3"/>
 																<Property Name="RandomY" Type="Real64" Value="12"/>
 																<Property Name="RandomZ" Type="Real64" Value="8"/>
 															</PropertyList>

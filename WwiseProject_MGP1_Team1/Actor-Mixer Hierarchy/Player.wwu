@@ -563,7 +563,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -621,6 +621,11 @@
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
 														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
