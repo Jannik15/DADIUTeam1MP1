@@ -463,6 +463,11 @@
 									<ChildrenList>
 										<Sound Name="Hinge_Unlock" ID="{30B086DA-D1D9-4254-A932-91B7C173CB78}" ShortID="564109544">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>2</Value>
@@ -495,6 +500,34 @@
 										</Sound>
 										<RandomSequenceContainer Name="Opening_Squeak" ID="{00304E90-3A20-4709-B609-701EA0C648DD}" ShortID="986230009">
 											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{8C76C1FE-A36E-4152-B274-D68FCAFE0DD1}" ShortID="996486303">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Pitch_UP_door" ID="{990EADBB-0FC0-4327-8041-65AB0A04808C}" WorkUnitID="{00A8FE22-E9DC-494B-AC01-899CC1227176}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4BFBF48C-BC38-402B-87C2-FC9399304D62}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 												<Property Name="Volume" Type="Real64">

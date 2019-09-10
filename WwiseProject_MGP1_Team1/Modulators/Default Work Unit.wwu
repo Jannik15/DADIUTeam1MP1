@@ -10,6 +10,13 @@
 						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.079"/>
 					</PropertyList>
 				</ModulatorEnvelope>
+				<ModulatorEnvelope Name="Pitch_UP_door" ID="{990EADBB-0FC0-4327-8041-65AB0A04808C}" ShortID="471397066">
+					<PropertyList>
+						<Property Name="EnvelopeAttackCurve" Type="Real64" Value="62"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0"/>
+					</PropertyList>
+				</ModulatorEnvelope>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>
