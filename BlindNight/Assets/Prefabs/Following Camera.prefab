@@ -43,8 +43,8 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2.88
-  m_Range: 7.8
-  m_SpotAngle: 41
+  m_Range: 8.22
+  m_SpotAngle: 54
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -237,6 +237,6 @@ MonoBehaviour:
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
   Saturation: 0.128
-  Brightness: 0.256
+  Brightness: 0.71
   Contrast: 0.049
   Sharpness: 0
