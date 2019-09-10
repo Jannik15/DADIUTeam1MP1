@@ -49,8 +49,6 @@ public class Interactions : MonoBehaviour
     }
 
 
-
-
     public void getPressPosInteractable()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
