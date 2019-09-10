@@ -156,13 +156,18 @@
 										</MusicTrack>
 										<MusicTrack Name="2-Minimalistic Loop_4L_PEX-Sketch Piano #1" ID="{1A65D6AC-BDC4-41CC-BD27-C727AE49EEB2}" ShortID="194201408">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="2"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -202,106 +207,6 @@
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
 													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="2-Minimalistic Loop_4L_PEX-Sketch Piano #1_Path_01" ID="{E819B91F-39E0-445F-9D61-7DD04B80FC5B}">
-															<PropertyList>
-																<Property Name="RandomY" Type="Real64" Value="4"/>
-																<Property Name="RandomZ" Type="Real64" Value="6"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-51.89873</XPos>
-																	<YPos>46.49682</YPos>
-																	<Flags>0</Flags>
-																	<Time>357</Time>
-																</Point>
-																<Point>
-																	<XPos>47.4683544303797</XPos>
-																	<YPos>38.2165605095541</YPos>
-																	<Flags>0</Flags>
-																	<Time>714</Time>
-																</Point>
-																<Point>
-																	<XPos>-43.6708860759494</XPos>
-																	<YPos>0</YPos>
-																	<Flags>0</Flags>
-																	<Time>1071</Time>
-																</Point>
-																<Point>
-																	<XPos>53.79747</XPos>
-																	<YPos>-14.01274</YPos>
-																	<Flags>0</Flags>
-																	<Time>1428</Time>
-																</Point>
-																<Point>
-																	<XPos>-65.1898734177215</XPos>
-																	<YPos>-29.9363057324841</YPos>
-																	<Flags>0</Flags>
-																	<Time>1785</Time>
-																</Point>
-																<Point>
-																	<XPos>32.2784810126582</XPos>
-																	<YPos>-45.859872611465</YPos>
-																	<Flags>0</Flags>
-																	<Time>2142</Time>
-																</Point>
-																<Point>
-																	<XPos>-56.96203</XPos>
-																	<YPos>-56.05095</YPos>
-																	<Flags>0</Flags>
-																	<Time>2500</Time>
-																</Point>
-																<Point>
-																	<XPos>50</XPos>
-																	<YPos>-50.31847</YPos>
-																	<Flags>0</Flags>
-																	<Time>2857</Time>
-																</Point>
-																<Point>
-																	<XPos>-71.5189873417721</XPos>
-																	<YPos>1.27388535031848</YPos>
-																	<Flags>0</Flags>
-																	<Time>3214</Time>
-																</Point>
-																<Point>
-																	<XPos>45.5696202531645</XPos>
-																	<YPos>12.1019108280255</YPos>
-																	<Flags>0</Flags>
-																	<Time>3571</Time>
-																</Point>
-																<Point>
-																	<XPos>-47.4683544303797</XPos>
-																	<YPos>18.4713375796178</YPos>
-																	<Flags>0</Flags>
-																	<Time>3928</Time>
-																</Point>
-																<Point>
-																	<XPos>61.3924050632911</XPos>
-																	<YPos>70.7006369426752</YPos>
-																	<Flags>0</Flags>
-																	<Time>4285</Time>
-																</Point>
-																<Point>
-																	<XPos>-57.5949367088608</XPos>
-																	<YPos>66.2420382165605</YPos>
-																	<Flags>0</Flags>
-																	<Time>4642</Time>
-																</Point>
-																<Point>
-																	<XPos>20.8860759493671</XPos>
-																	<YPos>77.0700636942675</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
 												</Position>
 											</PositioningInfo>
 											<TransitionList>
@@ -1406,10 +1311,10 @@
 										</MusicTrack>
 										<MusicTrack Name="1-Main Loop_8L_PEX-Harp" ID="{6A1B2950-37F4-4A47-A879-26A39A39CD3D}" ShortID="749202272">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 											</PropertyList>
@@ -1435,85 +1340,6 @@
 													<PropertyList>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="1-Main Loop_8L_PEX-Harp_Path" ID="{5B288339-E88B-4D62-9FCA-6B58981E767D}">
-															<PropertyList>
-																<Property Name="Duration" Type="int32" Value="60000"/>
-																<Property Name="RandomY" Type="Real64" Value="7"/>
-																<Property Name="RandomZ" Type="Real64" Value="17"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>1.26582</XPos>
-																	<YPos>3.50318</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-6.51828</XPos>
-																	<YPos>10.78735</YPos>
-																	<Flags>0</Flags>
-																	<Time>15000</Time>
-																</Point>
-																<Point>
-																	<XPos>7.06744</XPos>
-																	<YPos>28.49385</YPos>
-																	<Flags>0</Flags>
-																	<Time>30000</Time>
-																</Point>
-																<Point>
-																	<XPos>-3.35372</XPos>
-																	<YPos>33.08034</YPos>
-																	<Flags>0</Flags>
-																	<Time>45000</Time>
-																</Point>
-																<Point>
-																	<XPos>1.27207</XPos>
-																	<YPos>14.88072</YPos>
-																	<Flags>0</Flags>
-																	<Time>60000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="1-Main Loop_8L_PEX-Harp_Path_01" ID="{C51E260A-4062-46D1-A755-9A8BFA2B9439}">
-															<PropertyList>
-																<Property Name="RandomY" Type="Real64" Value="12"/>
-																<Property Name="RandomZ" Type="Real64" Value="8"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-5.51749261575027</XPos>
-																	<YPos>38.1952005836787</YPos>
-																	<Flags>0</Flags>
-																	<Time>1250</Time>
-																</Point>
-																<Point>
-																	<XPos>6.29282080728095</XPos>
-																	<YPos>34.0352621614263</YPos>
-																	<Flags>0</Flags>
-																	<Time>2500</Time>
-																</Point>
-																<Point>
-																	<XPos>-3.15542993114403</XPos>
-																	<YPos>24.5268314819922</YPos>
-																	<Flags>0</Flags>
-																	<Time>3750</Time>
-																</Point>
-																<Point>
-																	<XPos>4.81653162940205</XPos>
-																	<YPos>10.5613239215735</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
 												</Position>
 											</PositioningInfo>
 											<TransitionList>
@@ -1907,7 +1733,7 @@
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2380,6 +2206,11 @@
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">

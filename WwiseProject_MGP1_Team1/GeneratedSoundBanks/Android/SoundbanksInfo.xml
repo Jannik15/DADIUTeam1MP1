@@ -23,7 +23,7 @@
 			<IncludedEvents>
 				<Event Id="1166635208" Name="Play_Button3_Click" ObjectPath="\Events\Default Work Unit\UI\Play_Button3_Click" DurationType="OneShot" DurationMin="0.407499" DurationMax="0.553774"/>
 				<Event Id="2292458263" Name="Play_Door_Close" ObjectPath="\Events\Default Work Unit\Objects\Door\Play_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.843849" DurationMax="2.262191"/>
-				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\Default Work Unit\Objects\Door\Play_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.492301" DurationMax="3.492301"/>
+				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\Default Work Unit\Objects\Door\Play_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.492301" DurationMax="3.937006"/>
 				<Event Id="4064524182" Name="Play_Flashlight_On_Off" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_On_Off" DurationType="OneShot" DurationMin="0.790204" DurationMax="0.900915"/>
 				<Event Id="784840363" Name="Play_Flashlight_Switch" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_Switch" DurationType="OneShot" DurationMin="3.398754" DurationMax="3.421784"/>
 				<Event Id="709824872" Name="Play_Footstep_Surface" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Surface" DurationType="OneShot" DurationMin="0.232926" DurationMax="0.402056"/>
