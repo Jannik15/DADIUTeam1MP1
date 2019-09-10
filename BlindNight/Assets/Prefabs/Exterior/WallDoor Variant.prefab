@@ -236,6 +236,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallDoor Variant
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 62ed6db702cbe9647918334ef49968f7,
+        type: 3}
+      propertyPath: m_TagString
+      value: SceneChange
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 62ed6db702cbe9647918334ef49968f7,
         type: 3}
       propertyPath: m_LocalPosition.x
