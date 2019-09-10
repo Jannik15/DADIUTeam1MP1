@@ -35,7 +35,7 @@ public class MoveObject : MonoBehaviour
 
     public void MoveNorth(GameObject obj, bool check)
     {
-        if (!check)
+        if (check == false)
         {
             Vector3 pDirection = new Vector3(player.transform.position.x + moveLength, player.transform.position.y, player.transform.position.z);
             Vector3 direction = new Vector3(obj.transform.position.x + moveLength, obj.transform.position.y, obj.transform.position.z);
@@ -64,7 +64,7 @@ public class MoveObject : MonoBehaviour
 
     public void MoveSouth(GameObject obj, bool check)
     {
-        if (!check)
+        if (check == false)
         {
             Vector3 pDirection = new Vector3(player.transform.position.x - moveLength, player.transform.position.y, player.transform.position.z);
             Vector3 direction = new Vector3(obj.transform.position.x - moveLength, obj.transform.position.y, obj.transform.position.z);
@@ -94,7 +94,7 @@ public class MoveObject : MonoBehaviour
 
     public void MoveWest(GameObject obj, bool check)
     {
-        if (!check)
+        if (check == false)
         {
             Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + moveLength);
             Vector3 direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength);
@@ -123,7 +123,7 @@ public class MoveObject : MonoBehaviour
 
     public void MoveEast(GameObject obj, bool check)
     {
-        if (!check)
+        if (check == false)
         {
             Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - moveLength);
             Vector3 direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength);
