@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3d05971feb405c41b3dd1718adbd3311
     GuidInternal: 
-    m_lastTime: -8586335748677589693
+    m_lastTime: -8586335652526079663
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586334976507965338
+    m_lastTime: -8586334934465871571
     List:
     - name: Objects_Reverb
       guid: 171995827826f44fac5d0546aa78d401
@@ -106,7 +106,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586335748677639725
+    m_lastTime: -8586335652548109684
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586335748707403635
+    m_lastTime: -8586335652577326281
     List:
     - name: Play_Button3_Click
       guid: bbdd8d1ec1a8c74ba41019cba04a3f3a
@@ -136,8 +136,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\UI\Play_Button3_Click
       maxAttenuation: 0
-      maxDuration: 0.553774
-      minDuration: 0.407499
+      maxDuration: 553774
+      minDuration: 407499
     - name: Play_Door_Close
       guid: 5f57bf6927043449998574821dc8bc27
       id: 2292458263
@@ -151,9 +151,9 @@ MonoBehaviour:
       - ElementName: Play_Door_Close
         ObjectType: 3
       Path: Default Work Unit\Objects\Door\Play_Door_Close
-      maxAttenuation: 100
-      maxDuration: 2.262191
-      minDuration: 1.843849
+      maxAttenuation: 100000000
+      maxDuration: 2262191
+      minDuration: 1843849
     - name: Play_Door_Open
       guid: a1772980d041434482eb5701fa5dd305
       id: 1660008929
@@ -167,9 +167,9 @@ MonoBehaviour:
       - ElementName: Play_Door_Open
         ObjectType: 3
       Path: Default Work Unit\Objects\Door\Play_Door_Open
-      maxAttenuation: 100
-      maxDuration: 3.937006
-      minDuration: 3.492301
+      maxAttenuation: 100000000
+      maxDuration: 3937006
+      minDuration: 3492301
     - name: Play_Flashlight_On_Off
       guid: a7da93d59f7c4c49a0843f7f54cd2fcc
       id: 4064524182
@@ -182,8 +182,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Player\Play_Flashlight_On_Off
       maxAttenuation: 0
-      maxDuration: 0.900915
-      minDuration: 0.790204
+      maxDuration: 900915
+      minDuration: 790204
     - name: Play_Flashlight_Switch
       guid: e80d0a9c7cf789478172a602c3e8a3f7
       id: 784840363
@@ -196,8 +196,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Player\Play_Flashlight_Switch
       maxAttenuation: 0
-      maxDuration: 3.421784
-      minDuration: 3.398754
+      maxDuration: 3421784
+      minDuration: 3398754
     - name: Play_Footstep_Surface
       guid: e404ba7db155db41bb6d965d45a2d045
       id: 709824872
@@ -210,8 +210,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Player\Play_Footstep_Surface
       maxAttenuation: 0
-      maxDuration: 0.402056
-      minDuration: 0.232926
+      maxDuration: 402056
+      minDuration: 232926
     - name: Play_Move_Negative
       guid: 0fd1febc79605743b4a0c0e3b52f3469
       id: 2145787553
@@ -224,8 +224,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Objects\Play_Move_Negative
       maxAttenuation: 0
-      maxDuration: 0.808329
-      minDuration: 0.719308
+      maxDuration: 808329
+      minDuration: 719308
     - name: Play_Moving_Object
       guid: e740afef6fe94c49ad2b0a7bdedf4163
       id: 3847524746
@@ -238,8 +238,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Objects\Play_Moving_Object
       maxAttenuation: 0
-      maxDuration: 1.489437
-      minDuration: 1.199916
+      maxDuration: 1489437
+      minDuration: 1199916
     - name: Play_Presence
       guid: f0ae6d7e5e2256458a3d3bbb8abe8a9d
       id: 4155730121
@@ -280,13 +280,13 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Objects\Play_Wall_Hit_Blend
       maxAttenuation: 0
-      maxDuration: 1.785873
-      minDuration: 1.101979
+      maxDuration: 1785873
+      minDuration: 1101979
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     guid: bcca1c21a353cf43be84ba1d138041c2
     GuidInternal: 
-    m_lastTime: -8586335748707393577
+    m_lastTime: -8586335652577316307
     List:
     - name: Music_TitleScreen
       guid: 23b5327f5b39aa4c8005ff04c30331b4
@@ -319,13 +319,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c4c42834edf7314b8c300b5d103ef982
     GuidInternal: 
-    m_lastTime: -8586335748707383919
+    m_lastTime: -8586335652509267524
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8586335748707373968
+    m_lastTime: -8586335652509317413
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -421,7 +421,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 75e10bfd79e7b8468075cdf5c6876f33
     GuidInternal: 
-    m_lastTime: -8586334976511969535
+    m_lastTime: -8586334934470579827
     List:
     - name: Menuslider_Music
       guid: 1aebd68ce9e67d46b48488aa5705f339
@@ -446,13 +446,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e3316310d8271e438f5b458871155d41
     GuidInternal: 
-    m_lastTime: -8586335748677619986
+    m_lastTime: -8586335652525949984
     List: []
   - PhysicalPath: States\MusicStates.wwu
     ParentPhysicalPath: 
     guid: 04b67ad93857e246800f2fbbedeaa811
     GuidInternal: 
-    m_lastTime: -8586335748677609998
+    m_lastTime: -8586335652548049854
     List:
     - name: Music_Regions
       guid: d1ed4562c6a4b146a75e976da2c6cf49
@@ -484,7 +484,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586335748677600029
+    m_lastTime: -8586335652547999261
     List:
     - name: Surface_Type
       guid: da5061335875a745896d2f33a17fe9c2
@@ -516,7 +516,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 64c578f279613943879c0bc962a9b98f
     GuidInternal: 
-    m_lastTime: -8586335748677600029
+    m_lastTime: -8586335652526009826
     List: []
   ExpandedItems:
   - /MGP1_Team1
@@ -525,6 +525,7 @@ MonoBehaviour:
   - /MGP1_Team1/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /MGP1_Team1/Events
   - /MGP1_Team1/Events/Default Work Unit
+  - /MGP1_Team1/Events/Default Work Unit/Objects
   - /MGP1_Team1/Events/Default Work Unit/UI
   - /MGP1_Team1/Events/Music
   - /MGP1_Team1/Events/Music/General
