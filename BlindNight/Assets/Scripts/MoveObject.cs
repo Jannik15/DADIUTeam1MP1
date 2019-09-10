@@ -174,15 +174,15 @@ public class MoveObject : MonoBehaviour
     {
         Debug.Log("Checking West East!");
         Vector3 playerToObjectDirection = obj.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
-        Vector3 direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength);
-        Vector3 direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength * 2);
-        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - moveLength);
+        Vector3 direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength);
+        Vector3 direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength * 2);
+        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + moveLength);
 
         if (Mathf.Sign(playerToObjectDirection.x) == -1)
         {
-            direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength * 2);
-            direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength);
-            pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + moveLength);
+            direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength * 2);
+            direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength);
+            pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - moveLength);
         }
 
         moveCollisionCheckerInit(direction1, direction2, obj);
