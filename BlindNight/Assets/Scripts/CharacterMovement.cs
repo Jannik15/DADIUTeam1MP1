@@ -37,10 +37,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
-
-        //if (GameMaster.instance.GetCanPlay())
-
-        if (!playerFrozen)
+        if (!playerFrozen && GameMaster.instance.GetCanPlay())
 
         {
             if (GameMaster.instance.GetWalkType() == 2)
