@@ -16,6 +16,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: LevelCompleteText
+    second: {fileID: 2100000, guid: 967dd30295721114b944e231aa7426e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: LightParticles
     second: {fileID: 2100000, guid: 073520ed01dfbdd4f9fe53a8ce7e6fca, type: 2}
   materials:
