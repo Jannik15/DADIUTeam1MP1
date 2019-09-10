@@ -81,6 +81,12 @@ public class Interactions : MonoBehaviour
         otherObject = hit.collider.gameObject;
         //Debug.Log("Item has been pressed " + hit.collider.name); 
 
+        if (hit.collider.tag != "interactable")
+        {
+            Debug.Log("Destroyed Arrows");
+            InstantDestroyArrows();
+        }
+
         // Check if interactable object has been moved to, and what direction you're in.
         if (hit.collider.tag == "interactable" /* && Vector3.Distance(transform.position, otherObject) < 1 */)
         {
