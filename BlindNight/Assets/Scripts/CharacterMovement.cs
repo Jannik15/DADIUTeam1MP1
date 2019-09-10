@@ -61,6 +61,9 @@ public class CharacterMovement : MonoBehaviour
                 return;
             }
             joystickActive = true;
+            GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
+            JoystickUI.transform.position = mousePos;
+            JoystickUI.SetActive(true);
         }
         if (Input.GetMouseButton(0))
         {
@@ -73,11 +76,14 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             joystickActive = false;
+            GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI").SetActive(false);
         }
     }
 
     void MoveWithJoystickVector(Vector2 direction)
     {
+        UpdateJoystickUI(direction);
+
         float angle = -0.25f * Mathf.PI; // -45 degrees
         Vector2 turnedDirection = new Vector2(0,0);
         turnedDirection.x = direction.x * Mathf.Cos(angle) - direction.y * Mathf.Sin(angle);
@@ -98,6 +104,20 @@ public class CharacterMovement : MonoBehaviour
 
         // move to new position
         transform.position = newPos;
+    }
+
+    private void UpdateJoystickUI(Vector2 direction)
+    {
+        float angle = Vector2.Angle(new Vector2(0, 1), direction);
+        if (direction.x > 0)
+        {
+            angle = (180 - angle) + 180;
+        }
+        angle -= 40; //image is not pointing forward
+
+        GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
+        GameObject DirectionUI = GameMaster.instance.FindObjectFromParentObject(JoystickUI, "Direction");
+        DirectionUI.transform.eulerAngles = new Vector3(0, 0, angle);
     }
 
     void MoveWithKeyboard()
