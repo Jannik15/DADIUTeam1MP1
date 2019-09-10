@@ -725,7 +725,7 @@ GameObject:
   - component: {fileID: 586996162}
   - component: {fileID: 586996161}
   - component: {fileID: 586996160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BoxCleanup (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +944,7 @@ GameObject:
   - component: {fileID: 976777077}
   - component: {fileID: 976777076}
   - component: {fileID: 976777075}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BoxCleanup (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1379,7 +1379,7 @@ GameObject:
   - component: {fileID: 1542668431}
   - component: {fileID: 1542668430}
   - component: {fileID: 1542668429}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BoxCleanup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1470,7 +1470,7 @@ GameObject:
   - component: {fileID: 1827820664}
   - component: {fileID: 1827820663}
   - component: {fileID: 1827820662}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BoxCleanup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1644,7 +1644,7 @@ PrefabInstance:
     - target: {fileID: 5345327302165440815, guid: 90c9ee3c64d535e42a6d66428cbbf280,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5244998846965993653, guid: 90c9ee3c64d535e42a6d66428cbbf280,
         type: 3}
@@ -1665,7 +1665,7 @@ GameObject:
   - component: {fileID: 1928676878}
   - component: {fileID: 1928676877}
   - component: {fileID: 1928676876}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BoxCleanup (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
