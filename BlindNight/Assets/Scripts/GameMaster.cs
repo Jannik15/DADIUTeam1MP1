@@ -6,7 +6,7 @@ public class GameMaster : MonoBehaviour
 {
     public static GameMaster instance;
 
-    private int walkType = 2;
+    private int walkType = 4;
 
     public void Awake()
     {
