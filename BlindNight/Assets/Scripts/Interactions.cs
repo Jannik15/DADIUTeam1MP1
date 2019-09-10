@@ -13,7 +13,7 @@ public class Interactions : MonoBehaviour
     GameObject otherObject;
     public GameObject arrow;
 
-    public float arrowDeleteDelay = 1.2f;
+    public float arrowDeleteDelay = 0.6f;
     private GameObject objectClicked, arrowClicked;
 
     InteractionsSideChecker _ISC;
@@ -251,7 +251,7 @@ public class Interactions : MonoBehaviour
 
     IEnumerator DelayedDestroyArrows()
     {
-        yield return new WaitForSeconds(_moveObject.getDelayTime() + arrowDeleteDelay);
+        yield return new WaitForSeconds(arrowDeleteDelay);
 
         arrowList = GameObject.FindGameObjectsWithTag("arrow");
         Debug.Log(arrowList);
