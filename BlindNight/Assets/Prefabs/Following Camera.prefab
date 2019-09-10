@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8415831206817370257}
   m_LocalRotation: {x: 0.24996689, y: 0.00000005960465, z: -0.000000014901163, w: 0.9682544}
-  m_LocalPosition: {x: 0, y: 1.19, z: 4.92}
+  m_LocalPosition: {x: -0, y: 1.3, z: 4.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8543652281756531116}
@@ -42,9 +42,9 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.88
-  m_Range: 8.22
-  m_SpotAngle: 54
+  m_Intensity: 2.06
+  m_Range: 16.6
+  m_SpotAngle: 95
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -73,7 +73,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: afcbaca29a664b34e90c2be895d8b027, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
@@ -121,7 +121,7 @@ Transform:
   m_GameObject: {fileID: 8543652281756531105}
   m_LocalRotation: {x: 0.35355338, y: 0.35355338, z: -0.1464466, w: 0.8535535}
   m_LocalPosition: {x: -7.1, y: 14.9, z: -10.2}
-  m_LocalScale: {x: 1, y: 2.7932951, z: 2.7932951}
+  m_LocalScale: {x: 1, y: 2.7932947, z: 2.7932959}
   m_Children:
   - {fileID: 8898035859843687859}
   m_Father: {fileID: 0}
@@ -154,7 +154,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -237,6 +237,6 @@ MonoBehaviour:
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
   Saturation: 0.128
-  Brightness: 0.71
+  Brightness: 0.396
   Contrast: 0.049
   Sharpness: 0
