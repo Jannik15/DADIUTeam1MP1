@@ -6,19 +6,20 @@ public class CharacterMovement : MonoBehaviour
 {
     private float playerMoveSpeed, moveThreshold, moveStep, playerRotateSpeed, rotStep;
 
-    private Vector3 goalPos;
+    private Vector3 goalPos, oldCharPos;
 
     private Vector2 mousePos;
     private Vector2 targetMousePos;
 
     private float minDragDist = 0.2f;
 
-    private bool joystickActive = false;
+    private bool joystickActive = false, playerFrozen = false;
     private float moveVectorScale = 100.0f;
-    private float maxMoveVectorLength = 1.0f;
+    private float maxMoveVectorLength = 1.0f, distTravelled, stepLength;
 
     void Start()
     {
+        UnfreezePlayer();
         playerMoveSpeed = 2;
         moveStep = playerMoveSpeed * Time.deltaTime;
 
@@ -27,26 +28,43 @@ public class CharacterMovement : MonoBehaviour
 
         goalPos = transform.position;
         moveThreshold = 0.1f;
+
+        distTravelled = 0;
+        stepLength = 1;
+        
+        oldCharPos = transform.position;
     }
 
     void Update()
     {
-        if (GameMaster.instance.GetWalkType() == 2)
+        if (!playerFrozen)
         {
-            MoveWithKeyboard();
-        }
-        else if (GameMaster.instance.GetWalkType() == 4)
-        {
-            MoveWithNewJoystick();
-        }
-        else
-        {
-            GetInput();
-            Vector3 direction = goalPos - transform.position;
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotStep);
-            if (Vector3.Distance(transform.position, goalPos) > moveThreshold)
+            if (GameMaster.instance.GetWalkType() == 2)
             {
-                transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
+                MoveWithKeyboard();
+            }
+            else if (GameMaster.instance.GetWalkType() == 4)
+            {
+                MoveWithNewJoystick();
+            }
+            else
+            {
+                GetInput();
+                Vector3 direction = goalPos - transform.position;
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotStep);
+                if (Vector3.Distance(transform.position, goalPos) > moveThreshold)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
+                }
+            }
+
+
+            distTravelled += Vector3.Distance(oldCharPos, transform.position);
+            oldCharPos = transform.position;
+            if (distTravelled > stepLength)
+            {
+                distTravelled = 0;
+                AkSoundEngine.PostEvent("Play_Footstep_Surface", gameObject);
             }
         }
     }
@@ -61,6 +79,9 @@ public class CharacterMovement : MonoBehaviour
                 return;
             }
             joystickActive = true;
+            GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
+            JoystickUI.transform.position = mousePos;
+            JoystickUI.SetActive(true);
         }
         if (Input.GetMouseButton(0))
         {
@@ -73,11 +94,14 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             joystickActive = false;
+            GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI").SetActive(false);
         }
     }
 
     void MoveWithJoystickVector(Vector2 direction)
     {
+        UpdateJoystickUI(direction);
+
         float angle = -0.25f * Mathf.PI; // -45 degrees
         Vector2 turnedDirection = new Vector2(0,0);
         turnedDirection.x = direction.x * Mathf.Cos(angle) - direction.y * Mathf.Sin(angle);
@@ -98,6 +122,26 @@ public class CharacterMovement : MonoBehaviour
 
         // move to new position
         transform.position = newPos;
+    }
+
+    private void UpdateJoystickUI(Vector2 direction)
+    {
+        float angle = Vector2.Angle(new Vector2(0, 1), direction);
+        if (direction.x > 0)
+        {
+            angle = (180 - angle) + 180;
+        }
+        angle -= 40; //image is not pointing forward
+
+        GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
+        if (JoystickUI)
+        {
+            GameObject DirectionUI = GameMaster.instance.FindObjectFromParentObject(JoystickUI, "Direction");
+            if (DirectionUI)
+            {
+                DirectionUI.transform.eulerAngles = new Vector3(0, 0, angle);
+            }
+        }
     }
 
     void MoveWithKeyboard()
@@ -185,5 +229,15 @@ public class CharacterMovement : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void FreezePlayer()
+    {
+        playerFrozen = true;
+    }
+
+    public void UnfreezePlayer()
+    {
+        playerFrozen = false;
     }
 }

@@ -10,10 +10,10 @@ public class TriggerDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag != "player" && callerCol != col)
+        if (col.tag != "player" && col.tag != "SceneChange" && callerCol != col)
         {
             isColliding = true;
-            Debug.Log(isColliding);
+            // Debug.Log(isColliding);
         }
 
     }

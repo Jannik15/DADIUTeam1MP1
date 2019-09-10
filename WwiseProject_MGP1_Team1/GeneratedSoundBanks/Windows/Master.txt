@@ -26,6 +26,9 @@ State	ID	Name	State Group			Notes
 	0	None	Music_Regions			
 	1359360137	Room1	Music_Regions			
 
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	471397066	Pitch_UP_door			\Default Work Unit\Pitch_UP_door	
+
 Effect plug-ins	ID	Name	Type				Notes
 	2394809124	Very_Slow_Modulation	Wwise Tremolo			
 
@@ -38,7 +41,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	63531734	Room_Tone	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Room_Tone		5778888
 	68146147	WallHit_1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Wall Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall_Hits\WallHit_1		288064
 	130944352	Door_Close	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520_DE6713B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Door_Close\Door_Close		198980
-	224362045	Hinge_Unlock	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\342873__pfannkuchn__wooden-door-1-opening-and-closing-with-different-speeds-and-articulations_53894B5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Door_Open\Hinge_Unlock		255888
 	310584922	Door_Close_Shut	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520 1_8351FAF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Door_Close\Door_Close_Shut		96638
 	322987836	footstep_wood_4	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\footstep_wood_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_4		42996
 	343902678	Harp & Vibraphone BHCT-3-Main Loop_2_8L	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Harp & Vibraphone BHCT-3-Main Loop_2_8L_ACB404EA.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop\Harp & Vibraphone BHCT-3-Main Loop_2_8L		1580536
@@ -55,7 +57,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	670319688	Electricity_Disturbance	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Electricity, Electro Magnetic Interference 05 SND37279_61451C3F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Electricity_Disturbance		2346112
 	684900672	Thrill Human Fear Ambience-3-Main Loop_2_8L	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Thrill Human Fear Ambience-3-Main Loop_2_8L_ACB404EA.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop\Thrill Human Fear Ambience-3-Main Loop_2_8L		1580536
 	685953157	1-Main Loop_8L_PEX-Analog Dreams	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\1-Main Loop_8L_PEX-Analog Dreams_ACB404EA.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Analog Dreams		1422496
-	688856799	Wall Hit_Deep	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Wall Hit_1-002_4BED6220.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall Hit_Deep		406424
+	688856799	Wall Hit_Deep	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\Wall Hit_1-002_853EA47A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall Hit_Deep		181800
 	731430948	Flashlight_Switch	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\435845__dersuperanton__flashlight-click_00CA792D.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_Switch\Flashlight_Switch		44596
 	733116318	1-Main Loop_8L_PEX-Cymbal Chimes Ambi	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\1-Main Loop_8L_PEX-Cymbal Chimes Ambi_ACB404EA.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Cymbal Chimes Ambi		1422496
 	740690019	2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Windows\SFX\2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience_ACB404EA.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience		950824

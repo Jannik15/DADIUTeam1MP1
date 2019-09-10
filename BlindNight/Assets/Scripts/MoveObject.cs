@@ -11,9 +11,13 @@ public class MoveObject : MonoBehaviour
     public float moveLength = 2f;
     float tempMoveLength;
     [Tooltip("Modifier if collision checker is too small/large (in case of false positives)")]
-    public float colliderSizeModifier = -0.6f;
+    public float colliderSizeModifier = -0.2f;
+
+    private float delayTime = 0.15f;
 
     bool isColliding = false;
+
+    GameObject clickedArrow;
     GameObject moveCollisionChecker;
     GameObject player;
 
@@ -65,7 +69,7 @@ public class MoveObject : MonoBehaviour
     {
         Vector3 playerToObjectDirection = obj.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
 
-        if (Mathf.Sign(playerToObjectDirection.x) == -1)
+        if (Mathf.Sign(playerToObjectDirection.z) == -1)
         {
             tempMoveLength = moveLength * 2;
         }
@@ -82,7 +86,7 @@ public class MoveObject : MonoBehaviour
     {
         Vector3 playerToObjectDirection = obj.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
 
-        if (Mathf.Sign(playerToObjectDirection.x) == 1)
+        if (Mathf.Sign(playerToObjectDirection.z) == 1)
         {
             tempMoveLength = moveLength * 2;
         }
@@ -100,27 +104,30 @@ public class MoveObject : MonoBehaviour
         
         moveCollisionChecker = Instantiate(Resources.Load("Prefabs/MoveCollisionCheckerObject", typeof(GameObject)) as GameObject);
         moveCollisionChecker.gameObject.GetComponent<TriggerDetection>().SetCallerCol(obj.gameObject.GetComponent<Collider>());
+        // moveCollisionChecker.transform.position = obj.transform.position;
+        // moveCollisionChecker.transform.localScale = obj.transform.localScale + (new Vector3(colliderSizeModifier, colliderSizeModifier, colliderSizeModifier));
+        moveCollisionChecker.transform.localScale = obj.GetComponent<Collider>().bounds.size + (new Vector3(colliderSizeModifier, colliderSizeModifier, colliderSizeModifier));
         moveCollisionChecker.transform.position = obj.transform.position;
-        moveCollisionChecker.transform.localScale = obj.transform.localScale + (new Vector3(colliderSizeModifier, colliderSizeModifier, colliderSizeModifier));
-
         moveCollisionChecker.transform.position = dir;
 
     }
 
     IEnumerator DelayedMoveObject(GameObject obj, Vector3 objDirection, Vector3 playerDirection)    // Coroutine
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(delayTime);
 
         isColliding = moveCollisionChecker.gameObject.GetComponent<TriggerDetection>().IsColliding();
 
         if (isColliding == false)
         {
+            clickedArrow.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green);
             // Vector3.Lerp(obj.transform.position, moveCollisionChecker.transform.position, 2f);   // Must be in update loop
             obj.transform.position = objDirection;
             player.transform.position = playerDirection;
         }
         else
         {
+            clickedArrow.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.red);
             Debug.Log("Space occupied, cannot move object!");
             isColliding = false;
         }
@@ -128,5 +135,15 @@ public class MoveObject : MonoBehaviour
         tempMoveLength = moveLength;
         Destroy(moveCollisionChecker);
 
+    }
+
+    public float getDelayTime()
+    {
+        return delayTime;
+    }
+
+    public void setClickedGameObject(GameObject clickedObject)
+    {
+        clickedArrow = clickedObject;
     }
 }

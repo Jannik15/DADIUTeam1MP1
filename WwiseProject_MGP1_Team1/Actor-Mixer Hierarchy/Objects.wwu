@@ -27,6 +27,13 @@
 					<ChildrenList>
 						<BlendContainer Name="Wall_Hit_Blend" ID="{25AD8122-4232-400B-A616-82696E1B32B7}" ShortID="190190625">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>17</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -42,12 +49,12 @@
 								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -220,6 +227,11 @@
 												<Value>-4</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -236,10 +248,11 @@
 										<AudioFileSource Name="Wall Hit_1-002" ID="{1E070B61-9152-4BC3-A87B-2E044C5C9BD2}" ShortID="688856799">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="7.53424657534247E-02"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.945205479452055"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.946535443543028"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.397260273972603"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.51369863013699"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.34379571751563"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Wall Hit_1-002.wav</AudioFile>
@@ -264,7 +277,20 @@
 							</BlendTrackList>
 						</BlendContainer>
 						<ActorMixer Name="Door" ID="{78BDE5A8-0948-4AF3-AD54-ED5A380E00D8}" ShortID="364365898">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Door" ID="{358949CB-6C2C-494B-A270-A621B630E57D}" WorkUnitID="{A0DD4767-A078-4EB8-871E-635D6836756A}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
 								</Reference>
@@ -398,6 +424,16 @@
 								<RandomSequenceContainer Name="Door_Open" ID="{3AE87BD9-B69C-46BD-8FC6-F63BBC087180}" ShortID="297373906">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FDDC13BB-A7E4-4B64-A2FD-10881E4F3644}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7">
@@ -436,6 +472,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Hinge_Unlock" ID="{30B086DA-D1D9-4254-A932-91B7C173CB78}" ShortID="564109544">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
@@ -462,8 +510,41 @@
 										</Sound>
 										<RandomSequenceContainer Name="Opening_Squeak" ID="{00304E90-3A20-4709-B609-701EA0C648DD}" ShortID="986230009">
 											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{8C76C1FE-A36E-4152-B274-D68FCAFE0DD1}" ShortID="996486303">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Pitch_UP_door" ID="{990EADBB-0FC0-4327-8041-65AB0A04808C}" WorkUnitID="{00A8FE22-E9DC-494B-AC01-899CC1227176}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4BFBF48C-BC38-402B-87C2-FC9399304D62}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -480,16 +561,47 @@
 															<ValueList>
 																<Value>24</Value>
 															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{218927CD-F718-4E1A-8DBB-14346A0110BA}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="15"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
 														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<ValueList>
 																<Value>14</Value>
 															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{CEE75C3C-08C2-424B-84A9-028DBED31A98}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="7"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
 																<Value>630</Value>
 															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{9AB90BD4-C9FB-48F5-B32B-9B404643D683}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-253"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -532,6 +644,10 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Move_Object" ID="{131E313C-8EF7-4A18-A0F7-7FA5746ABDB5}" ShortID="1037627073">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A935E138-7E04-41EC-B675-D68D6271AF80}"/>
@@ -550,7 +666,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-14</Value>
+												<Value>-18</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
