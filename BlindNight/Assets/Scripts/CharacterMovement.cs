@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     private float playerMoveSpeed, moveThreshold, moveStep, playerRotateSpeed, rotStep;
 
-    private Vector3 goalPos;
+    private Vector3 goalPos, oldCharPos;
 
     private Vector2 mousePos;
     private Vector2 targetMousePos;
@@ -15,7 +15,7 @@ public class CharacterMovement : MonoBehaviour
 
     private bool joystickActive = false;
     private float moveVectorScale = 100.0f;
-    private float maxMoveVectorLength = 1.0f;
+    private float maxMoveVectorLength = 1.0f, distTravelled, stepLength;
 
     void Start()
     {
@@ -27,6 +27,11 @@ public class CharacterMovement : MonoBehaviour
 
         goalPos = transform.position;
         moveThreshold = 0.1f;
+
+        distTravelled = 0;
+        stepLength = 1;
+        
+        oldCharPos = transform.position;
     }
 
     void Update()
@@ -48,6 +53,14 @@ public class CharacterMovement : MonoBehaviour
             {
                 transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
             }
+        }
+
+
+        distTravelled += Vector3.Distance(oldCharPos, transform.position);
+        oldCharPos = transform.position;
+        if(distTravelled > stepLength) {
+            distTravelled = 0;
+            AkSoundEngine.PostEvent("Play_Footstep_Surface", gameObject);
         }
     }
 

@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3d05971feb405c41b3dd1718adbd3311
     GuidInternal: 
-    m_lastTime: -8586335735650810182
+    m_lastTime: -8586335748677589693
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f4d2333fee40c4d9cf8ef9ba9e373ef
     GuidInternal: 
-    m_lastTime: -8586335735729205990
+    m_lastTime: -8586334976507965338
     List:
     - name: Objects_Reverb
       guid: 171995827826f44fac5d0546aa78d401
@@ -106,7 +106,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b3ae0c8142c41d4893cf09f04cd19335
     GuidInternal: 
-    m_lastTime: -8586335735677293404
+    m_lastTime: -8586335748677639725
     List:
     - name: Master
       guid: f5a8b9facbd1af4482507542c084ce26
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 574ca6b353bc9449b4bbb5bc5c4170f2
     GuidInternal: 
-    m_lastTime: -8586335735735405569
+    m_lastTime: -8586335748707403635
     List:
     - name: Play_Button3_Click
       guid: bbdd8d1ec1a8c74ba41019cba04a3f3a
@@ -151,7 +151,7 @@ MonoBehaviour:
       - ElementName: Play_Door_Close
         ObjectType: 3
       Path: Default Work Unit\Objects\Door\Play_Door_Close
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 2.262191
       minDuration: 1.843849
     - name: Play_Door_Open
@@ -168,7 +168,7 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Objects\Door\Play_Door_Open
       maxAttenuation: 100
-      maxDuration: 3.492301
+      maxDuration: 3.937006
       minDuration: 3.492301
     - name: Play_Flashlight_On_Off
       guid: a7da93d59f7c4c49a0843f7f54cd2fcc
@@ -280,13 +280,13 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Objects\Play_Wall_Hit_Blend
       maxAttenuation: 0
-      maxDuration: 2.448059
-      minDuration: 2.086096
+      maxDuration: 1.785873
+      minDuration: 1.101979
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     guid: bcca1c21a353cf43be84ba1d138041c2
     GuidInternal: 
-    m_lastTime: -8586335735735395561
+    m_lastTime: -8586335748707393577
     List:
     - name: Music_TitleScreen
       guid: 23b5327f5b39aa4c8005ff04c30331b4
@@ -319,13 +319,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c4c42834edf7314b8c300b5d103ef982
     GuidInternal: 
-    m_lastTime: -8586335735639981463
+    m_lastTime: -8586335748707383919
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8586335735640011443
+    m_lastTime: -8586335748707373968
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -421,7 +421,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 75e10bfd79e7b8468075cdf5c6876f33
     GuidInternal: 
-    m_lastTime: -8586335735735345598
+    m_lastTime: -8586334976511969535
     List:
     - name: Menuslider_Music
       guid: 1aebd68ce9e67d46b48488aa5705f339
@@ -441,27 +441,18 @@ MonoBehaviour:
       - ElementName: Menuslider_SoundFX
         ObjectType: 13
       Path: Gameplay\Menuslider_SoundFX
-    - name: TimeOfDay
-      guid: 5017e7cd59aa2749861dd058b2397d8c
-      id: 3729505769
-      PathAndIcons:
-      - ElementName: Gameplay
-        ObjectType: 12
-      - ElementName: TimeOfDay
-        ObjectType: 13
-      Path: Gameplay\TimeOfDay
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: e3316310d8271e438f5b458871155d41
     GuidInternal: 
-    m_lastTime: -8586335735650800189
+    m_lastTime: -8586335748677619986
     List: []
   - PhysicalPath: States\MusicStates.wwu
     ParentPhysicalPath: 
     guid: 04b67ad93857e246800f2fbbedeaa811
     GuidInternal: 
-    m_lastTime: -8586335735677273398
+    m_lastTime: -8586335748677609998
     List:
     - name: Music_Regions
       guid: d1ed4562c6a4b146a75e976da2c6cf49
@@ -493,7 +484,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 345370e2b95fa0459b662f7c82e0b71c
     GuidInternal: 
-    m_lastTime: -8586335735677263419
+    m_lastTime: -8586335748677600029
     List:
     - name: Surface_Type
       guid: da5061335875a745896d2f33a17fe9c2
@@ -525,7 +516,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 64c578f279613943879c0bc962a9b98f
     GuidInternal: 
-    m_lastTime: -8586335735650810182
+    m_lastTime: -8586335748677600029
     List: []
   ExpandedItems:
   - /MGP1_Team1
