@@ -237,6 +237,6 @@ MonoBehaviour:
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
   Saturation: 0.128
-  Brightness: 0.36
+  Brightness: 0.71
   Contrast: 0.049
   Sharpness: 0
