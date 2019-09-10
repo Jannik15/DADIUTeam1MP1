@@ -116,8 +116,14 @@ public class CharacterMovement : MonoBehaviour
         angle -= 40; //image is not pointing forward
 
         GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
-        GameObject DirectionUI = GameMaster.instance.FindObjectFromParentObject(JoystickUI, "Direction");
-        DirectionUI.transform.eulerAngles = new Vector3(0, 0, angle);
+        if (JoystickUI)
+        {
+            GameObject DirectionUI = GameMaster.instance.FindObjectFromParentObject(JoystickUI, "Direction");
+            if (DirectionUI)
+            {
+                DirectionUI.transform.eulerAngles = new Vector3(0, 0, angle);
+            }
+        }
     }
 
     void MoveWithKeyboard()
