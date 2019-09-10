@@ -13,7 +13,7 @@ public class TriggerDetection : MonoBehaviour
         if (col.tag != "player" && callerCol != col)
         {
             isColliding = true;
-            Debug.Log(isColliding);
+            // Debug.Log(isColliding);
         }
 
     }

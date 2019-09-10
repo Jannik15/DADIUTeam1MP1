@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Start()
     {
-        playerMoveSpeed = 4;
+        playerMoveSpeed = 2;
         moveStep = playerMoveSpeed * Time.deltaTime;
 
         playerRotateSpeed = 10;
@@ -56,7 +56,7 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             mousePos = Input.mousePosition;
-            if (mousePos.y > (Screen.height / 3))
+            if (mousePos.y > (Screen.height / 2))
             {
                 return;
             }
