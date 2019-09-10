@@ -15,7 +15,7 @@ public class GameMaster : MonoBehaviour
 
     void Start()
     {
-
+        Debug.Log("GAME MASTER START");
     }
 
     void CreateGameMaster()
