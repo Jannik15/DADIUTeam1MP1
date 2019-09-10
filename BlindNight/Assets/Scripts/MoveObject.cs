@@ -120,14 +120,14 @@ public class MoveObject : MonoBehaviour
 
         if (isColliding == false)
         {
-            clickedArrow.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
+            clickedArrow.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green);
             // Vector3.Lerp(obj.transform.position, moveCollisionChecker.transform.position, 2f);   // Must be in update loop
             obj.transform.position = objDirection;
             player.transform.position = playerDirection;
         }
         else
         {
-            clickedArrow.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            clickedArrow.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.red);
             Debug.Log("Space occupied, cannot move object!");
             isColliding = false;
         }
