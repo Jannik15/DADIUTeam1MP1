@@ -13,12 +13,13 @@ public class CharacterMovement : MonoBehaviour
 
     private float minDragDist = 0.2f;
 
-    private bool joystickActive = false;
+    private bool joystickActive = false, playerFrozen = false;
     private float moveVectorScale = 100.0f;
     private float maxMoveVectorLength = 1.0f, distTravelled, stepLength;
 
     void Start()
     {
+        UnfreezePlayer();
         playerMoveSpeed = 2;
         moveStep = playerMoveSpeed * Time.deltaTime;
 
@@ -36,7 +37,11 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
-        if (GameMaster.instance.GetCanPlay())
+
+        //if (GameMaster.instance.GetCanPlay())
+
+        if (!playerFrozen)
+
         {
             if (GameMaster.instance.GetWalkType() == 2)
             {
@@ -228,5 +233,15 @@ public class CharacterMovement : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void FreezePlayer()
+    {
+        playerFrozen = true;
+    }
+
+    public void UnfreezePlayer()
+    {
+        playerFrozen = false;
     }
 }

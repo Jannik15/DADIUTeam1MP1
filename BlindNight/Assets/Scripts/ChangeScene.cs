@@ -10,9 +10,11 @@ public class ChangeScene : MonoBehaviour
     Animator fadeAnim;
     [HideInInspector] public string sceneToLoad;
     public UnityEvent sceneEvent;
+    CharacterMovement player;
 
     void Start()
     {
+        player = FindObjectOfType<CharacterMovement>();
         anim = GetComponent<Animator>();
         fadeAnim = GameObject.Find("BlackFade").GetComponent<Animator>();
     }
@@ -25,8 +27,10 @@ public class ChangeScene : MonoBehaviour
 
     public void PlayAnimation(int sceneNum)
     {
-        sceneToLoad = "Level " + sceneNum.ToString();
         anim.SetTrigger("DoorOpened");
+        sceneToLoad = "Level " + sceneNum.ToString();
+        AkSoundEngine.PostEvent("Play_Door_Open", gameObject);
+        player.FreezePlayer();
     }
 
     public void FadeToNextScene()
