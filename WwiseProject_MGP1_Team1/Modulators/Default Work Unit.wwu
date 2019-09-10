@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{00A8FE22-E9DC-494B-AC01-899CC1227176}" SchemaVersion="94">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{00A8FE22-E9DC-494B-AC01-899CC1227176}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="Move_Negative" ID="{6B752501-DE27-47A2-887B-45AB209F413B}" ShortID="828107375">
+					<PropertyList>
+						<Property Name="EnvelopeAttackCurve" Type="Real64" Value="5"/>
+						<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.079"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>
