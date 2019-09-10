@@ -13,12 +13,13 @@ public class CharacterMovement : MonoBehaviour
 
     private float minDragDist = 0.2f;
 
-    private bool joystickActive = false;
+    private bool joystickActive = false, playerFrozen = false;
     private float moveVectorScale = 100.0f;
     private float maxMoveVectorLength = 1.0f, distTravelled, stepLength;
 
     void Start()
     {
+        UnfreezePlayer();
         playerMoveSpeed = 2;
         moveStep = playerMoveSpeed * Time.deltaTime;
 
@@ -36,31 +37,35 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
-        if (GameMaster.instance.GetWalkType() == 2)
+        if (!playerFrozen)
         {
-            MoveWithKeyboard();
-        }
-        else if (GameMaster.instance.GetWalkType() == 4)
-        {
-            MoveWithNewJoystick();
-        }
-        else
-        {
-            GetInput();
-            Vector3 direction = goalPos - transform.position;
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotStep);
-            if (Vector3.Distance(transform.position, goalPos) > moveThreshold)
+            if (GameMaster.instance.GetWalkType() == 2)
             {
-                transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
+                MoveWithKeyboard();
             }
-        }
+            else if (GameMaster.instance.GetWalkType() == 4)
+            {
+                MoveWithNewJoystick();
+            }
+            else
+            {
+                GetInput();
+                Vector3 direction = goalPos - transform.position;
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotStep);
+                if (Vector3.Distance(transform.position, goalPos) > moveThreshold)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
+                }
+            }
 
 
-        distTravelled += Vector3.Distance(oldCharPos, transform.position);
-        oldCharPos = transform.position;
-        if(distTravelled > stepLength) {
-            distTravelled = 0;
-            AkSoundEngine.PostEvent("Play_Footstep_Surface", gameObject);
+            distTravelled += Vector3.Distance(oldCharPos, transform.position);
+            oldCharPos = transform.position;
+            if (distTravelled > stepLength)
+            {
+                distTravelled = 0;
+                AkSoundEngine.PostEvent("Play_Footstep_Surface", gameObject);
+            }
         }
     }
 
@@ -224,5 +229,15 @@ public class CharacterMovement : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void FreezePlayer()
+    {
+        playerFrozen = true;
+    }
+
+    public void UnfreezePlayer()
+    {
+        playerFrozen = false;
     }
 }
