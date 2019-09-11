@@ -17,6 +17,8 @@ public class CharacterMovement : MonoBehaviour
     private float moveVectorScale = 100.0f;
     private float maxMoveVectorLength = 1.0f, distTravelled, stepLength;
 
+    private Rigidbody rb;
+
     void Start()
     {
         UnfreezePlayer();
@@ -33,9 +35,11 @@ public class CharacterMovement : MonoBehaviour
         stepLength = 1;
         
         oldCharPos = transform.position;
+
+        rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!playerFrozen && GameMaster.instance.GetCanPlay())
 
@@ -55,7 +59,9 @@ public class CharacterMovement : MonoBehaviour
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotStep);
                 if (Vector3.Distance(transform.position, goalPos) > moveThreshold)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
+                    rb.AddForce(direction*moveStep*moveVectorScale*Time.deltaTime);
+                    //rb.MovePosition(Vector3.MoveTowards(transform.position, goalPos, moveStep));
+                    //transform.position = Vector3.MoveTowards(transform.position, goalPos, moveStep);
                 }
             }
 
