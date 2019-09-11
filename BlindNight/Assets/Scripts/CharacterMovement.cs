@@ -77,6 +77,11 @@ public class CharacterMovement : MonoBehaviour
                 AkSoundEngine.PostEvent("Play_Footstep_Surface", gameObject);
             }
         }
+        else
+        {
+            newDir = new Vector3(0, 0, 0);
+            anim.SetFloat(animWalk, Mathf.Clamp(newDir.magnitude * 100, 0.0000f, 1.0f));
+        }
     }
 
     void MoveWithNewJoystick()
