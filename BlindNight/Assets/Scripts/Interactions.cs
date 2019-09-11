@@ -10,7 +10,11 @@ public class Interactions : MonoBehaviour
     private Vector3 clickPos, hitCollider;
     private float interactThreshold, interactThresholdOS, interactStep, slideSpeed, unitSize, arrowDisplaceX, arrowDisplaceY, arrowDisplaceZ;
     private bool canMove;
+    // private bool objectPressedBool = false;
+    private bool[] arrowBool;
     GameObject otherObject;
+
+    public bool arrowInteractionSwitcher = false;
     public GameObject arrow;
 
     public float arrowDeleteDelay = 0.6f;
@@ -45,7 +49,14 @@ public class Interactions : MonoBehaviour
     {
         getPressPosInteractable();
         //HandleInteraction();
-
+        /* if (hitCollider != null)
+        {
+            if (Vector3.Distance(transform.position, hitCollider) > 2)
+            {
+                InstantDestroyArrows();
+                objectPressedBool = false;
+            }
+        } */
     }
 
 
@@ -70,16 +81,51 @@ public class Interactions : MonoBehaviour
         otherObject = hit.collider.gameObject;
         //Debug.Log("Item has been pressed " + hit.collider.name); 
 
+        if (hit.collider.tag != "interactable" && hit.collider.tag != "arrow")
+        {
+            Debug.Log("Destroyed Arrows");
+            InstantDestroyArrows();
+        }
+
         // Check if interactable object has been moved to, and what direction you're in.
         if (hit.collider.tag == "interactable" /* && Vector3.Distance(transform.position, otherObject) < 1 */)
         {
-            Debug.Log("Entered box click");
+            // objectPressedBool = true;
+            // Debug.Log("Entered box click");
             // LockMovement();
             objectClicked = hit.collider.gameObject;
             InstantDestroyArrows();
-            SpawnArrows();
 
+            if (arrowInteractionSwitcher)
+            {
+                OldSpawnArrows();
+            }
+            else
+            {
+                bool[] arrowBool = new bool[2];
+                arrowBool = _ISC.IsHorizontal(otherObject);
 
+                if (arrowBool[1] == true)
+                {
+
+                    if (arrowBool[0] == true)
+                    {
+                        _moveObject.CheckNorthSouth(objectClicked);
+                    }
+
+                    else
+                    {
+                        _moveObject.CheckWestEast(objectClicked);
+                    }
+
+                }
+                else
+                {
+
+                    Debug.Log("Out of bounds");
+                }
+            }
+            
         }
 
         if (hit.collider.tag == "arrow")
@@ -88,7 +134,7 @@ public class Interactions : MonoBehaviour
             arrowClicked = hit.collider.gameObject;
 
 
-            /*             if(hit.collider.tag == "northArrow") {
+            /*          if(hit.collider.tag == "northArrow") {
                             Debug.Log("North arrow clicked");
                         }
                         if(hit.collider.tag == "southArrow") {
@@ -106,25 +152,25 @@ public class Interactions : MonoBehaviour
                 case "northArrow":
 
                     //Debug.Log("North Arrow Clicked");
-                    _moveObject.MoveNorth(objectClicked);
+                    _moveObject.MoveNorth(objectClicked, arrowInteractionSwitcher);
                     DestroyArrows(hit.collider.gameObject);
                     break;
 
                 case "southArrow":
                     //Debug.Log("South Arrow Clicked");
-                    _moveObject.MoveSouth(objectClicked);
+                    _moveObject.MoveSouth(objectClicked, arrowInteractionSwitcher);
                     DestroyArrows(hit.collider.gameObject);
                     break;
 
                 case "eastArrow":
                     //Debug.Log("East Arrow Clicked");
-                    _moveObject.MoveEast(objectClicked);
+                    _moveObject.MoveEast(objectClicked, arrowInteractionSwitcher);
                     DestroyArrows(hit.collider.gameObject);
                     break;
 
                 case "westArrow":
                     //Debug.Log("West Arrow Clicked");
-                    _moveObject.MoveWest(objectClicked);
+                    _moveObject.MoveWest(objectClicked, arrowInteractionSwitcher);
                     DestroyArrows(hit.collider.gameObject);
                     break;
                 default:
@@ -185,33 +231,38 @@ public class Interactions : MonoBehaviour
 
         } */
 
-    public void SpawnArrows()
+    public void SpawnArrows(bool[] arrowEnableBool)
     {
-        bool[] arrowBool = new bool[2];
-        arrowBool = _ISC.IsHorizontal(otherObject);
 
-        if (arrowBool[1] == true)
+        if (arrowEnableBool[0] == true)
         {
-
-            if (arrowBool[0] == false)
+            if (arrowEnableBool[1] == false)
             {
-                //Debug.Log("Entered Spawn arrow horizontal");
                 //Up arrow
                 GameObject upArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z + arrowDisplaceZ), Quaternion.identity);
                 upArrow.name = "westArrow";
+
+            }
+            if (arrowEnableBool[2] == false)
+            {
                 //Down arrow (rotate by 180)
                 GameObject downArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z - arrowDisplaceZ), Quaternion.identity);
                 downArrow.transform.eulerAngles = new Vector3(0, 180, 0);//rotation = new Quaternion(downArrow.transform.rotation.x, 270, downArrow.transform.rotation.z, downArrow.transform.rotation.w);
                 downArrow.name = "eastArrow";
             }
 
-            else
+        }
+        else
+        {
+            if (arrowEnableBool[1] == false)
             {
-                //Debug.Log("Entered Spawn arrow vertical");
                 // Right arrow (rotate 90)
                 GameObject rightArrow = Instantiate(arrow, new Vector3(hitCollider.x + arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 rightArrow.transform.eulerAngles = new Vector3(0, 90, 0);
                 rightArrow.name = "northArrow";
+            }
+            if (arrowEnableBool[2] == false)
+            {
                 // Left arrow (rotate 270)
                 GameObject leftArrow = Instantiate(arrow, new Vector3(hitCollider.x - arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
                 leftArrow.transform.eulerAngles = new Vector3(0, 270, 0);
@@ -219,13 +270,41 @@ public class Interactions : MonoBehaviour
             }
 
         }
-        else
+
+    }
+
+    private void OldSpawnArrows()
+    {
+        bool[] arrowBool = new bool[2];
+        arrowBool = _ISC.IsHorizontal(otherObject);
+
+        if (arrowBool[1] == true)
         {
+            if (arrowBool[0] == false)
+            {
+                //Up arrow
+                GameObject upArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z + arrowDisplaceZ), Quaternion.identity);
+                upArrow.name = "westArrow";
+                //Down arrow (rotate by 180)
+                GameObject downArrow = Instantiate(arrow, new Vector3(hitCollider.x, hitCollider.y + arrowDisplaceY, hitCollider.z - arrowDisplaceZ), Quaternion.identity);
+                downArrow.transform.eulerAngles = new Vector3(0, 180, 0);//rotation = new Quaternion(downArrow.transform.rotation.x, 270, downArrow.transform.rotation.z, downArrow.transform.rotation.w);
+                downArrow.name = "eastArrow";
 
-            Debug.Log("Out of bounds");
+            }
+            else
+            {
+                // Right arrow (rotate 90)
+                GameObject rightArrow = Instantiate(arrow, new Vector3(hitCollider.x + arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
+                rightArrow.transform.eulerAngles = new Vector3(0, 90, 0);
+                rightArrow.name = "northArrow";
+
+                // Left arrow (rotate 270)
+                GameObject leftArrow = Instantiate(arrow, new Vector3(hitCollider.x - arrowDisplaceX, hitCollider.y + arrowDisplaceY, hitCollider.z), Quaternion.identity);
+                leftArrow.transform.eulerAngles = new Vector3(0, 270, 0);
+                leftArrow.name = "southArrow";
+            }
+
         }
-
-
 
     }
 
@@ -260,6 +339,11 @@ public class Interactions : MonoBehaviour
             //Debug.Log("There are " + arrowList[i] + " Arrows left");
 
         }
+    }
+
+    IEnumerator DelayedCreateArrows()
+    {
+        yield return new WaitForSeconds(1f);
     }
 
 }
