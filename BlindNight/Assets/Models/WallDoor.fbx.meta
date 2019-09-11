@@ -117,11 +117,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.001|Text.001Action
-      takeName: Armature.001|Text.001Action
+      name: Armature.001|DoorOpenCutscene
+      takeName: Armature.001|DoorOpenCutscene
       internalID: -3205559798837814561
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 1638
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

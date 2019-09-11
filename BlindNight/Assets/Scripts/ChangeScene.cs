@@ -14,6 +14,9 @@ public class ChangeScene : MonoBehaviour
 
     void Start()
     {
+        if(PlayerPrefs.GetString("savedLevel") == "") {
+            PlayerPrefs.SetString("savedLevel", "Level 0");
+        }
         player = FindObjectOfType<CharacterMovement>();
         anim = GetComponent<Animator>();
         fadeAnim = GameObject.Find("BlackFade").GetComponent<Animator>();
@@ -29,6 +32,9 @@ public class ChangeScene : MonoBehaviour
     {
         anim.SetTrigger("DoorOpened");
         sceneToLoad = "Level " + sceneNum.ToString();
+
+        PlayerPrefs.SetString("savedLevel", sceneToLoad);
+
         AkSoundEngine.PostEvent("Play_Door_Open", gameObject);
         player.FreezePlayer();
     }
@@ -49,4 +55,13 @@ public class ChangeScene : MonoBehaviour
     {
         sceneToLoad = sceneName;
     }
+
+
+    public void LoadSavedScene() {
+        string savedLevel = PlayerPrefs.GetString("savedLevel");
+        SceneManager.LoadScene(savedLevel, LoadSceneMode.Single);
+
+    }
+
+
 }

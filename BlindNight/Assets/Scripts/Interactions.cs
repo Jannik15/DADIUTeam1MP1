@@ -81,7 +81,7 @@ public class Interactions : MonoBehaviour
         otherObject = hit.collider.gameObject;
         //Debug.Log("Item has been pressed " + hit.collider.name); 
 
-        if (hit.collider.tag != "interactable" && arrowInteractionSwitcher == false)
+        if (hit.collider.tag != "interactable" && hit.collider.tag != "arrow")
         {
             Debug.Log("Destroyed Arrows");
             InstantDestroyArrows();
