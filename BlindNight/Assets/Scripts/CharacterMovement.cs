@@ -6,7 +6,9 @@ public class CharacterMovement : MonoBehaviour
 {
     private float playerMoveSpeed, moveThreshold, moveStep, playerRotateSpeed, rotStep;
 
-    private Vector3 goalPos, oldCharPos;
+    private Animator anim;
+    private Rigidbody rb;
+    private Vector3 goalPos, oldCharPos, newDir;
 
     private Vector2 mousePos;
     private Vector2 targetMousePos;
@@ -17,8 +19,12 @@ public class CharacterMovement : MonoBehaviour
     private float moveVectorScale = 100.0f;
     private float maxMoveVectorLength = 1.0f, distTravelled, stepLength;
 
+    private readonly int animWalk = Animator.StringToHash("Walk");
+
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody>();
         UnfreezePlayer();
         playerMoveSpeed = 2;
         moveStep = playerMoveSpeed * Time.deltaTime;
@@ -37,6 +43,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(newDir.magnitude);
         if (!playerFrozen)
         {
             if (GameMaster.instance.GetWalkType() == 2)
@@ -79,9 +86,9 @@ public class CharacterMovement : MonoBehaviour
                 return;
             }
             joystickActive = true;
-            GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
-            JoystickUI.transform.position = mousePos;
-            JoystickUI.SetActive(true);
+            //GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
+            //JoystickUI.transform.position = mousePos;
+            //JoystickUI.SetActive(true);
         }
         if (Input.GetMouseButton(0))
         {
@@ -94,8 +101,10 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             joystickActive = false;
-            GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI").SetActive(false);
+            newDir = new Vector3(0, 0, 0);
+            //GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI").SetActive(false);
         }
+        anim.SetFloat(animWalk, Mathf.Clamp(newDir.magnitude * 100, 0.0000f, 1.0f));
     }
 
     void MoveWithJoystickVector(Vector2 direction)
@@ -117,7 +126,7 @@ public class CharacterMovement : MonoBehaviour
         newPos.z += turnedDirection.y * playerMoveSpeed * Time.deltaTime;
 
         // look towards new position
-        Vector3 newDir = newPos - transform.position;
+        newDir = newPos - transform.position;
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(newDir), rotStep);
 
         // move to new position
