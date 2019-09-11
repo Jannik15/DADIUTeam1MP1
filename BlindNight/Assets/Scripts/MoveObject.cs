@@ -42,6 +42,7 @@ public class MoveObject : MonoBehaviour
 
             obj.transform.position = direction;
             player.transform.position = pDirection;
+            AkSoundEngine.PostEvent("Play_Moving_Object", gameObject);
         }
         else
         {
@@ -49,7 +50,7 @@ public class MoveObject : MonoBehaviour
 
             if (Mathf.Sign(playerToObjectDirection.x) == -1)
             {
-                tempMoveLength = moveLength * 2;
+                tempMoveLength = moveLength * 1.5f;
             }
 
             Vector3 direction = new Vector3(obj.transform.position.x + tempMoveLength, obj.transform.position.y, obj.transform.position.z);
@@ -71,6 +72,7 @@ public class MoveObject : MonoBehaviour
 
             obj.transform.position = direction;
             player.transform.position = pDirection;
+            AkSoundEngine.PostEvent("Play_Moving_Object", gameObject);
         }
         else
         {
@@ -78,7 +80,7 @@ public class MoveObject : MonoBehaviour
 
             if (Mathf.Sign(playerToObjectDirection.x) == +1)
             {
-                tempMoveLength = moveLength * 2;
+                tempMoveLength = moveLength * 1.5f;
             }
 
             Vector3 direction = new Vector3(obj.transform.position.x - tempMoveLength, obj.transform.position.y, obj.transform.position.z);
@@ -101,6 +103,7 @@ public class MoveObject : MonoBehaviour
 
             obj.transform.position = direction;
             player.transform.position = pDirection;
+            AkSoundEngine.PostEvent("Play_Moving_Object", gameObject);
         }
         else
         {
@@ -108,7 +111,7 @@ public class MoveObject : MonoBehaviour
 
             if (Mathf.Sign(playerToObjectDirection.z) == -1)
             {
-                tempMoveLength = moveLength * 2;
+                tempMoveLength = moveLength * 1.5f;
             }
 
             Vector3 direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + tempMoveLength);
@@ -130,6 +133,7 @@ public class MoveObject : MonoBehaviour
 
             obj.transform.position = direction;
             player.transform.position = pDirection;
+            AkSoundEngine.PostEvent("Play_Moving_Object", gameObject);
         }
         else
         {
@@ -137,7 +141,7 @@ public class MoveObject : MonoBehaviour
 
             if (Mathf.Sign(playerToObjectDirection.z) == 1)
             {
-                tempMoveLength = moveLength * 2;
+                tempMoveLength = moveLength * 1.5f;
             }
 
             Vector3 direction = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - tempMoveLength);
@@ -155,12 +159,12 @@ public class MoveObject : MonoBehaviour
         Debug.Log("Checking North South!");
         Vector3 playerToObjectDirection = obj.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
         Vector3 direction1 = new Vector3(obj.transform.position.x + moveLength, obj.transform.position.y, obj.transform.position.z);
-        Vector3 direction2 = new Vector3(obj.transform.position.x - moveLength * 2, obj.transform.position.y, obj.transform.position.z);
+        Vector3 direction2 = new Vector3(obj.transform.position.x - moveLength * 1.5f, obj.transform.position.y, obj.transform.position.z);
         Vector3 pDirection = new Vector3(player.transform.position.x - moveLength, player.transform.position.y, player.transform.position.z);
 
         if (Mathf.Sign(playerToObjectDirection.x) == -1)
         {
-            direction1 = new Vector3(obj.transform.position.x + moveLength * 2, obj.transform.position.y, obj.transform.position.z);
+            direction1 = new Vector3(obj.transform.position.x + moveLength * 1.5f, obj.transform.position.y, obj.transform.position.z);
             direction2 = new Vector3(obj.transform.position.x - moveLength, obj.transform.position.y, obj.transform.position.z);
             pDirection = new Vector3(player.transform.position.x + moveLength, player.transform.position.y, player.transform.position.z);
         }
@@ -174,15 +178,15 @@ public class MoveObject : MonoBehaviour
     {
         Debug.Log("Checking West East!");
         Vector3 playerToObjectDirection = obj.gameObject.transform.position - player.gameObject.transform.position;  // Calculates the direction vector
-        Vector3 direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength);
-        Vector3 direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength * 2);
-        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + moveLength);
+        Vector3 direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength);
+        Vector3 direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength * 1.5f);
+        Vector3 pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - moveLength);
 
-        if (Mathf.Sign(playerToObjectDirection.x) == -1)
+        if (Mathf.Sign(playerToObjectDirection.z) == -1)
         {
-            direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength * 2);
-            direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength);
-            pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - moveLength);
+            direction1 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - moveLength * 1.5f);
+            direction2 = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + moveLength);
+            pDirection = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + moveLength);
         }
 
         moveCollisionCheckerInit(direction1, direction2, obj);
