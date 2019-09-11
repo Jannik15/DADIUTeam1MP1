@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d093fffb4c316c43bdfebdf5e20acec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrowInteractionSwitcher: 0
   arrow: {fileID: 8956223838464343976, guid: 5b95a5139461cbc4680bff72c5b00a18, type: 3}
   arrowDeleteDelay: 0.6
 --- !u!114 &2947560058367736513
@@ -261,7 +262,7 @@ MonoBehaviour:
     by the system. Also the 'MoveCollisionCheckerObject' prefab must be located in
     the resources folder!
   moveLength: 2
-  colliderSizeModifier: 0
+  colliderSizeModifier: -0.4
 --- !u!1001 &5190396480754643172
 PrefabInstance:
   m_ObjectHideFlags: 0
