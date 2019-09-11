@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMaster : MonoBehaviour
 {
@@ -9,10 +10,17 @@ public class GameMaster : MonoBehaviour
     private int walkType = 4;
     private bool canPlay = false;
     private bool menuUp = true;
+    private bool frontMenuUp = true;
     private string lang = "EN";
 
     private int musicLevel = 70;
     private int sfxLevel = 70;
+
+    private TextAsset csvFile;
+    private char lineSeperator = '\n';
+    private char fieldSeperator = ';';
+
+    private string[] lines;
 
     public void Awake()
     {
@@ -21,6 +29,7 @@ public class GameMaster : MonoBehaviour
 
     void Start()
     {
+        LoadCSV();
         if (menuUp)
         {
             ShowFrontMenu(true);
@@ -85,6 +94,7 @@ public class GameMaster : MonoBehaviour
     {
         lang = language;
         Debug.Log("Language set to " + lang);
+        TranslateMenu();
     }
 
     public string GetLanguage()
@@ -116,6 +126,60 @@ public class GameMaster : MonoBehaviour
         GameObject SettingsBtn = FindObjectFromParentName("Canvas", "SettingsBtn");
         SettingsBtn.SetActive(!show);
         canPlay = !menuUp;
+
+        if (menuUp)
+        {
+            frontMenuUp = !FindObjectFromParentObject(Menu, "Options").activeSelf;
+            //TranslateMenu();
+        }
+    }
+
+    public void TranslateMenu()
+    {
+        if (frontMenuUp)
+        {
+            TranslateMenuFront();
+        } else
+        {
+            TranslateMenuOptions();
+        }
+    }
+
+    public void TranslateMenuFront()
+    {
+        Debug.Log("Translate front menu");
+
+        GameObject Menu = FindObjectFromParentName("Canvas", "Menu");
+        if (!Menu) return;
+
+        GameObject FrontMenu = FindObjectFromParentObject(Menu, "FrontMenu");
+        if (!FrontMenu) return;
+    }
+
+    public void TranslateMenuOptions()
+    {
+        Debug.Log("Translate options");
+
+        GameObject Menu = FindObjectFromParentName("Canvas", "Menu");
+        if (!Menu) return;
+
+        GameObject OptionsMenu = FindObjectFromParentObject(Menu, "Options");
+        if (!OptionsMenu) return;
+
+        OptionsMenu.GetComponentInChildren<Text>();
+        Debug.Log(OptionsMenu);
+
+        /*GameObject TutorialText01 = FindObjectFromParentObject(OptionsMenu, "hold and drag");
+        if (TutorialText01)
+        {
+            Debug.Log("Changing text");
+            //TutorialText01.GetComponent<Text>().text = "hello";
+            //TutorialText01.Text = "yo";
+            //TutorialText01.SetActive(false);
+        } else
+        {
+            Debug.Log("Tutorial text does not exist");
+        }*/
     }
 
     public void ShowFrontMenu(bool show)
@@ -167,5 +231,40 @@ public class GameMaster : MonoBehaviour
             }
         }
         return obj;
+    }
+
+    public void LoadCSV()
+    {
+        csvFile = Resources.Load<TextAsset>("languageFile");
+        lines = csvFile.text.Split(lineSeperator);
+
+        Debug.Log(GetStringFromKey("sumtin"));
+    }
+
+    public string GetStringFromKey(string key)
+    {
+        int index = 0;
+
+        switch (GameMaster.instance.GetLanguage())
+        {
+            case "EN":
+                index = 1;
+                break;
+            case "DK":
+                index = 2;
+                break;
+            default:
+                return key;
+        }
+
+        for (int i = 0; i < lines.Length; i++)
+        {
+            string[] txt = lines[i].Split(fieldSeperator);
+            if (txt[0] == key)
+            {
+                return txt[index];
+            }
+        }
+        return key;
     }
 }

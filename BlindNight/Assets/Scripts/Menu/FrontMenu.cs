@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class FrontMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool reloadedOnFirstFrame = false;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (!reloadedOnFirstFrame)
+        {
+            GameMaster.instance.ShowFrontMenu(false);
+            GameMaster.instance.ShowFrontMenu(true);
+            reloadedOnFirstFrame = true;
+        }
     }
 
     public void ShowOptions()
@@ -42,5 +42,12 @@ public class FrontMenu : MonoBehaviour
     public void SetLanguage(string language)
     {
         GameMaster.instance.SetLanguage(language);
+        GameMaster.instance.ShowOptionsMenu(false);
+        GameMaster.instance.ShowOptionsMenu(true);
+    }
+
+    public void TranslateThis()
+    {
+        //Debug.Log("TRANSLATE THIS");
     }
 }
