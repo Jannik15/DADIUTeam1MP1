@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AA9332B7-5AFE-4897-865E-7CC64A6354D9}" SchemaVersion="94">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{AA9332B7-5AFE-4897-865E-7CC64A6354D9}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Master" ID="{ED5A0739-CC55-4073-A258-4560D32DDFB8}">
+					<ObjectList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						<ObjectRef Name="Music" ID="{2408E1D0-26E5-444C-834D-81AE99379E45}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						<ObjectRef Name="Player" ID="{A8680D50-9CCD-470E-81E1-858CBF06FB3B}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						<ObjectRef Name="Ambient" ID="{3FD76EA3-6C8F-4F59-83FD-60AEF49AD69F}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						<ObjectRef Name="UI" ID="{D71DCFE4-E7E8-4B0C-B539-743D8C53BE0E}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						<ObjectRef Name="Objects" ID="{E7C53D93-BE37-4767-9CCB-E28CFCD6D4E0}" WorkUnitID="{33234D8F-E4FE-4D0C-9CF8-EF9BA9E373EF}"/>
+						<ObjectRef Name="Flashlight_Switch" ID="{8BBAE703-2D47-4E17-B9D1-9DD281AD6C0B}" WorkUnitID="{A879E883-0082-4356-90D4-98D568C6B345}"/>
+						<ObjectRef Name="Flashlight_Electricity" ID="{171BE73D-F2A0-45FA-89A4-3498E74F106F}" WorkUnitID="{A879E883-0082-4356-90D4-98D568C6B345}"/>
+						<ObjectRef Name="Door" ID="{78BDE5A8-0948-4AF3-AD54-ED5A380E00D8}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+						<ObjectRef Name="Moving_Object" ID="{0F5B93E7-49BC-41E8-B7FE-442CE4875962}" WorkUnitID="{8BCCAD69-25E2-4928-8AD4-5D4AF5FBCBEF}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

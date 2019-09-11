@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4056684167" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
+			<ShortName>Master</ShortName>
+			<Path>Master.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1166635208" Name="Play_Button3_Click" ObjectPath="\Events\Default Work Unit\UI\Play_Button3_Click" DurationType="OneShot" DurationMin="0.407499" DurationMax="0.553774"/>
+				<Event Id="2292458263" Name="Play_Door_Close" ObjectPath="\Events\Default Work Unit\Objects\Door\Play_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.843849" DurationMax="2.262191"/>
+				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\Default Work Unit\Objects\Door\Play_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.826095" DurationMax="4.270799"/>
+				<Event Id="4064524182" Name="Play_Flashlight_On_Off" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_On_Off" DurationType="OneShot" DurationMin="0.790204" DurationMax="0.900915"/>
+				<Event Id="784840363" Name="Play_Flashlight_Switch" ObjectPath="\Events\Default Work Unit\Player\Play_Flashlight_Switch" DurationType="OneShot" DurationMin="3.398754" DurationMax="3.421784"/>
+				<Event Id="709824872" Name="Play_Footstep_Surface" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Surface" DurationType="OneShot" DurationMin="0.232926" DurationMax="0.402056"/>
+				<Event Id="2145787553" Name="Play_Move_Negative" ObjectPath="\Events\Default Work Unit\Objects\Play_Move_Negative" DurationType="OneShot" DurationMin="0.719308" DurationMax="0.808329"/>
+				<Event Id="3847524746" Name="Play_Moving_Object" ObjectPath="\Events\Default Work Unit\Objects\Play_Moving_Object" DurationType="OneShot" DurationMin="1.199916" DurationMax="1.489437"/>
+				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\Ambience\Play_Presence" DurationType="Infinite"/>
+				<Event Id="2736697007" Name="Play_Room" ObjectPath="\Events\Music\General\Play_Room" DurationType="Infinite"/>
+				<Event Id="919644948" Name="Play_Room_Wind" ObjectPath="\Events\Default Work Unit\Ambience\Play_Room_Wind" DurationType="Infinite"/>
+				<Event Id="1410513580" Name="Play_Wall_Hit_Blend" ObjectPath="\Events\Default Work Unit\Objects\Play_Wall_Hit_Blend" DurationType="OneShot" DurationMin="1.101979" DurationMax="1.785873"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="5177747" Language="SFX">
+					<ShortName>220197__gameaudio__click-basic.wav</ShortName>
+					<Path>SFX\220197__gameaudio__click-basic_5216A38E.wem</Path>
+				</File>
+				<File Id="29292564" Language="SFX">
+					<ShortName>341612__pureaudioninja__electricity-4.wav</ShortName>
+					<Path>SFX\341612__pureaudioninja__electricity-4_E40D6CE4.wem</Path>
+				</File>
+				<File Id="63531734" Language="SFX">
+					<ShortName>360731__klankbeeld__roomtoneapartment-day160924-0973.wav</ShortName>
+					<Path>SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem</Path>
+				</File>
+				<File Id="68146147" Language="SFX">
+					<ShortName>Wall Hit.wav</ShortName>
+					<Path>SFX\Wall Hit_10C4C929.wem</Path>
+				</File>
+				<File Id="130944352" Language="SFX">
+					<ShortName>Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520.wav</ShortName>
+					<Path>SFX\Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520_DE6713B8.wem</Path>
+				</File>
+				<File Id="310584922" Language="SFX">
+					<ShortName>Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520 1.wav</ShortName>
+					<Path>SFX\Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520 1_8351FAF4.wem</Path>
+				</File>
+				<File Id="322987836" Language="SFX">
+					<ShortName>footstep_wood_4.wav</ShortName>
+					<Path>SFX\footstep_wood_4_10C4C929.wem</Path>
+				</File>
+				<File Id="343902678" Language="SFX">
+					<ShortName>Harp &amp; Vibraphone BHCT-3-Main Loop_2_8L.wav</ShortName>
+					<Path>SFX\Harp &amp; Vibraphone BHCT-3-Main Loop_2_8L_730067A1.wem</Path>
+				</File>
+				<File Id="419815528" Language="SFX">
+					<ShortName>CreekyWood_Barefoot_Sneaking.wav</ShortName>
+					<Path>SFX\CreekyWood_Barefoot_Sneaking_62B7F068.wem</Path>
+				</File>
+				<File Id="428273513" Language="SFX">
+					<ShortName>5-Main Loop_2variation_8L-Thrill Human Fear Ambience.wav</ShortName>
+					<Path>SFX\5-Main Loop_2variation_8L-Thrill Human Fear Ambience_730067A1.wem</Path>
+				</File>
+				<File Id="431542660" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Harp.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Harp_730067A1.wem</Path>
+				</File>
+				<File Id="485333703" Language="SFX">
+					<ShortName>5-Main Loop_2variation_8L-Sketch Piano #1.wav</ShortName>
+					<Path>SFX\5-Main Loop_2variation_8L-Sketch Piano #1_730067A1.wem</Path>
+				</File>
+				<File Id="492451462" Language="SFX">
+					<ShortName>1-Main Loop_8L_PEX-Harp &amp; Vibraphone BHCT.wav</ShortName>
+					<Path>SFX\1-Main Loop_8L_PEX-Harp &amp; Vibraphone BHCT_730067A1.wem</Path>
+				</File>
+				<File Id="493506798" Language="SFX">
+					<ShortName>1-Main Loop_8L_PEX-Harp.wav</ShortName>
+					<Path>SFX\1-Main Loop_8L_PEX-Harp_730067A1.wem</Path>
+				</File>
+				<File Id="502447257" Language="SFX">
+					<ShortName>221649__abbahoot__squeaky-door-opening.wav</ShortName>
+					<Path>SFX\221649__abbahoot__squeaky-door-opening_E7E4E9FD.wem</Path>
+				</File>
+				<File Id="602352373" Language="SFX">
+					<ShortName>Analog Dreams-2-Minimalistic Loop_4L_PEX.wav</ShortName>
+					<Path>SFX\Analog Dreams-2-Minimalistic Loop_4L_PEX_730067A1.wem</Path>
+				</File>
+				<File Id="604692420" Language="SFX">
+					<ShortName>footstep_wood_6.wav</ShortName>
+					<Path>SFX\footstep_wood_6_10C4C929.wem</Path>
+				</File>
+				<File Id="607259975" Language="SFX">
+					<ShortName>5-Main Loop_2variation_8L-Harp &amp; Vibraphone BHCT.wav</ShortName>
+					<Path>SFX\5-Main Loop_2variation_8L-Harp &amp; Vibraphone BHCT_730067A1.wem</Path>
+				</File>
+				<File Id="670319688" Language="SFX">
+					<ShortName>Electricity, Electro Magnetic Interference 05 SND37279.wav</ShortName>
+					<Path>SFX\Electricity, Electro Magnetic Interference 05 SND37279_61451C3F.wem</Path>
+				</File>
+				<File Id="684900672" Language="SFX">
+					<ShortName>Thrill Human Fear Ambience-3-Main Loop_2_8L.wav</ShortName>
+					<Path>SFX\Thrill Human Fear Ambience-3-Main Loop_2_8L_730067A1.wem</Path>
+				</File>
+				<File Id="685953157" Language="SFX">
+					<ShortName>1-Main Loop_8L_PEX-Analog Dreams.wav</ShortName>
+					<Path>SFX\1-Main Loop_8L_PEX-Analog Dreams_730067A1.wem</Path>
+				</File>
+				<File Id="688856799" Language="SFX">
+					<ShortName>Wall Hit_1-002.wav</ShortName>
+					<Path>SFX\Wall Hit_1-002_853EA47A.wem</Path>
+				</File>
+				<File Id="731430948" Language="SFX">
+					<ShortName>435845__dersuperanton__flashlight-click.wav</ShortName>
+					<Path>SFX\435845__dersuperanton__flashlight-click_00CA792D.wem</Path>
+				</File>
+				<File Id="733116318" Language="SFX">
+					<ShortName>1-Main Loop_8L_PEX-Cymbal Chimes Ambi.wav</ShortName>
+					<Path>SFX\1-Main Loop_8L_PEX-Cymbal Chimes Ambi_730067A1.wem</Path>
+				</File>
+				<File Id="740690019" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience_730067A1.wem</Path>
+				</File>
+				<File Id="746412993" Language="SFX">
+					<ShortName>1-Main Loop_8L_PEX-Thrill Human Fear Ambience.wav</ShortName>
+					<Path>SFX\1-Main Loop_8L_PEX-Thrill Human Fear Ambience_730067A1.wem</Path>
+				</File>
+				<File Id="804085548" Language="SFX">
+					<ShortName>1-Main Loop_8L_PEX-Clarinets &amp; Flutes BHCT.wav</ShortName>
+					<Path>SFX\1-Main Loop_8L_PEX-Clarinets &amp; Flutes BHCT_730067A1.wem</Path>
+				</File>
+				<File Id="818197218" Language="SFX">
+					<ShortName>90936__robinhood76__01497-brawling-2.wav</ShortName>
+					<Path>SFX\90936__robinhood76__01497-brawling-2_9BB76D43.wem</Path>
+				</File>
+				<File Id="824121568" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_1_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_1_WAV_730067A1.wem</Path>
+				</File>
+				<File Id="845153691" Language="SFX">
+					<ShortName>footstep_wood_2.wav</ShortName>
+					<Path>SFX\footstep_wood_2_10C4C929.wem</Path>
+				</File>
+				<File Id="846937253" Language="SFX">
+					<ShortName>435845__dersuperanton__flashlight-click.wav</ShortName>
+					<Path>SFX\435845__dersuperanton__flashlight-click_6006C544.wem</Path>
+				</File>
+				<File Id="853566693" Language="SFX">
+					<ShortName>footstep_wood_5.wav</ShortName>
+					<Path>SFX\footstep_wood_5_10C4C929.wem</Path>
+				</File>
+				<File Id="862097836" Language="SFX">
+					<ShortName>Recorder.wav</ShortName>
+					<Path>SFX\Recorder_713D898E.wem</Path>
+				</File>
+				<File Id="899857496" Language="SFX">
+					<ShortName>Recorder.wav</ShortName>
+					<Path>SFX\Recorder_742FDA71.wem</Path>
+				</File>
+				<File Id="903314442" Language="SFX">
+					<ShortName>Sketch Piano #1-3-Main Loop_2_8L.wav</ShortName>
+					<Path>SFX\Sketch Piano #1-3-Main Loop_2_8L_730067A1.wem</Path>
+				</File>
+				<File Id="919922742" Language="SFX">
+					<ShortName>1-Main Loop_8L_PEX-Crystaline Brass Sting.wav</ShortName>
+					<Path>SFX\1-Main Loop_8L_PEX-Crystaline Brass Sting_730067A1.wem</Path>
+				</File>
+				<File Id="934544696" Language="SFX">
+					<ShortName>90936__robinhood76__01497-brawling-2.wav</ShortName>
+					<Path>SFX\90936__robinhood76__01497-brawling-2_220E57BD.wem</Path>
+				</File>
+				<File Id="934824615" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_3_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_3_WAV_730067A1.wem</Path>
+				</File>
+				<File Id="934853728" Language="SFX">
+					<ShortName>Wall Hit_1-003.wav</ShortName>
+					<Path>SFX\Wall Hit_1-003_19EB7501.wem</Path>
+				</File>
+				<File Id="951053429" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_2_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_2_WAV_730067A1.wem</Path>
+				</File>
+				<File Id="978907180" Language="SFX">
+					<ShortName>2-Minimalistic Loop_4L_PEX-Piano_4_WAV.wav</ShortName>
+					<Path>SFX\2-Minimalistic Loop_4L_PEX-Piano_4_WAV_730067A1.wem</Path>
+				</File>
+				<File Id="1032422741" Language="SFX">
+					<ShortName>CreekyWood_Barefoot_Sneaking.wav</ShortName>
+					<Path>SFX\CreekyWood_Barefoot_Sneaking_501E2519.wem</Path>
+				</File>
+				<File Id="1042308158" Language="SFX">
+					<ShortName>footstep_wood_3.wav</ShortName>
+					<Path>SFX\footstep_wood_3_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

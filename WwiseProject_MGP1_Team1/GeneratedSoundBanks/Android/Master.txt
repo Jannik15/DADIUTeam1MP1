@@ -1,0 +1,82 @@
+Event	ID	Name			Wwise Object Path	Notes
+	709824872	Play_Footstep_Surface			\Default Work Unit\Player\Play_Footstep_Surface	
+	784840363	Play_Flashlight_Switch			\Default Work Unit\Player\Play_Flashlight_Switch	
+	919644948	Play_Room_Wind			\Default Work Unit\Ambience\Play_Room_Wind	
+	1166635208	Play_Button3_Click			\Default Work Unit\UI\Play_Button3_Click	
+	1410513580	Play_Wall_Hit_Blend			\Default Work Unit\Objects\Play_Wall_Hit_Blend	
+	1660008929	Play_Door_Open			\Default Work Unit\Objects\Door\Play_Door_Open	
+	2145787553	Play_Move_Negative			\Default Work Unit\Objects\Play_Move_Negative	
+	2292458263	Play_Door_Close			\Default Work Unit\Objects\Door\Play_Door_Close	
+	2736697007	Play_Room			\Music\General\Play_Room	
+	3847524746	Play_Moving_Object			\Default Work Unit\Objects\Play_Moving_Object	
+	4064524182	Play_Flashlight_On_Off			\Default Work Unit\Player\Play_Flashlight_On_Off	
+	4155730121	Play_Presence			\Default Work Unit\Ambience\Play_Presence	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4064446173	Surface_Type			\Default Work Unit\Surface_Type	
+
+Switch	ID	Name	Switch Group			Notes
+	712161697	Rug	Surface_Type			
+	2058049674	Wood	Surface_Type			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2106907484	Music_Regions			\MusicStates\Music_Regions	
+
+State	ID	Name	State Group			Notes
+	0	None	Music_Regions			
+	1359360137	Room1	Music_Regions			
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	471397066	Pitch_UP_door			\Default Work Unit\Pitch_UP_door	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2394809124	Very_Slow_Modulation	Wwise Tremolo			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	3214314	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Wind_Howling\SoundSeed Air Wind	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	5177747	Button3_Click	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\220197__gameaudio__click-basic_5216A38E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\Button3_Click		24092
+	29292564	Flashlight_Electricity	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\341612__pureaudioninja__electricity-4_E40D6CE4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_Switch\Flashlight_Electricity		310644
+	63531734	Room_Tone	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\360731__klankbeeld__roomtoneapartment-day160924-0973_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Room_Tone		5778888
+	68146147	WallHit_1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Wall Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall_Hits\WallHit_1		288064
+	130944352	Door_Close	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520_DE6713B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Door_Close\Door_Close		198980
+	310584922	Door_Close_Shut	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Door, Wood, Entrance, Open, Close, Soft, Perspective SND1520 1_8351FAF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Door_Close\Door_Close_Shut		96638
+	322987836	footstep_wood_4	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_4		42996
+	343902678	Harp & Vibraphone BHCT-3-Main Loop_2_8L	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Harp & Vibraphone BHCT-3-Main Loop_2_8L_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop\Harp & Vibraphone BHCT-3-Main Loop_2_8L		615215
+	419815528	Squecky_Presence	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\CreekyWood_Barefoot_Sneaking_62B7F068.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Presence\Squecky_Presence		378420
+	428273513	5-Main Loop_2variation_8L-Thrill Human Fear Ambience	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\5-Main Loop_2variation_8L-Thrill Human Fear Ambience_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop_Variation\5-Main Loop_2variation_8L-Thrill Human Fear Ambience		683450
+	431542660	2-Minimalistic Loop_4L_PEX-Harp	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\2-Minimalistic Loop_4L_PEX-Harp_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\2-Minimalistic Loop_4L_PEX-Harp		224659
+	485333703	5-Main Loop_2variation_8L-Sketch Piano #1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\5-Main Loop_2variation_8L-Sketch Piano #1_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop_Variation\5-Main Loop_2variation_8L-Sketch Piano #1		725969
+	492451462	1-Main Loop_8L_PEX-Harp & Vibraphone BHCT	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\1-Main Loop_8L_PEX-Harp & Vibraphone BHCT_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Harp & Vibraphone BHCT		415406
+	493506798	1-Main Loop_8L_PEX-Harp	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\1-Main Loop_8L_PEX-Harp_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Harp		302751
+	502447257	Opening_Squeak1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\221649__abbahoot__squeaky-door-opening_E7E4E9FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Door\Door_Open\Opening_Squeak\Opening_Squeak1		780844
+	602352373	Analog Dreams-2-Minimalistic Loop_4L_PEX	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Analog Dreams-2-Minimalistic Loop_4L_PEX_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\Analog Dreams-2-Minimalistic Loop_4L_PEX		411277
+	604692420	footstep_wood_6	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_6		53840
+	607259975	5-Main Loop_2variation_8L-Harp & Vibraphone BHCT	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\5-Main Loop_2variation_8L-Harp & Vibraphone BHCT_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop_Variation\5-Main Loop_2variation_8L-Harp & Vibraphone BHCT		592336
+	670319688	Electricity_Disturbance	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Electricity, Electro Magnetic Interference 05 SND37279_61451C3F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_Regions\Room_Wind\Electricity_Disturbance		2346112
+	684900672	Thrill Human Fear Ambience-3-Main Loop_2_8L	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Thrill Human Fear Ambience-3-Main Loop_2_8L_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop\Thrill Human Fear Ambience-3-Main Loop_2_8L		686791
+	685953157	1-Main Loop_8L_PEX-Analog Dreams	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\1-Main Loop_8L_PEX-Analog Dreams_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Analog Dreams		604862
+	688856799	Wall Hit_Deep	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Wall Hit_1-002_853EA47A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall Hit_Deep		181800
+	731430948	Flashlight_Switch	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\435845__dersuperanton__flashlight-click_00CA792D.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_Switch\Flashlight_Switch		44596
+	733116318	1-Main Loop_8L_PEX-Cymbal Chimes Ambi	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\1-Main Loop_8L_PEX-Cymbal Chimes Ambi_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Cymbal Chimes Ambi		112377
+	740690019	2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\2-Minimalistic Loop_4L_PEX-Thrill Human Fear Ambience		365322
+	746412993	1-Main Loop_8L_PEX-Thrill Human Fear Ambience	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\1-Main Loop_8L_PEX-Thrill Human Fear Ambience_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Thrill Human Fear Ambience		625897
+	804085548	1-Main Loop_8L_PEX-Clarinets & Flutes BHCT	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\1-Main Loop_8L_PEX-Clarinets & Flutes BHCT_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Clarinets & Flutes BHCT		277033
+	818197218	Move_Scrape_Wood_1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\90936__robinhood76__01497-brawling-2_9BB76D43.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Move_Object\Moving_Object\Move_Scrape_Wood_1		244356
+	824121568	2-Minimalistic Loop_4L_PEX-Sketch Piano #1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\2-Minimalistic Loop_4L_PEX-Piano_1_WAV_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\2-Minimalistic Loop_4L_PEX-Sketch Piano #1		110281
+	845153691	footstep_wood_2	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_2		58712
+	846937253	Flashlight_On_Off	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\435845__dersuperanton__flashlight-click_6006C544.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Flashlight\Flashlight_On_Off		107100
+	853566693	footstep_wood_5	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_5		57600
+	862097836	Move_Negative_High	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Recorder_713D898E.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Move_Object\Move_Negative\Move_Negative_High		44204
+	899857496	Move_Negative_Low	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Recorder_742FDA71.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Move_Object\Move_Negative\Move_Negative_Low		126600
+	903314442	Sketch Piano #1-3-Main Loop_2_8L	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Sketch Piano #1-3-Main Loop_2_8L_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\B_Loop\Sketch Piano #1-3-Main Loop_2_8L		636956
+	919922742	1-Main Loop_8L_PEX-Crystaline Brass Sting	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\1-Main Loop_8L_PEX-Crystaline Brass Sting_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\A_Loop\1-Main Loop_8L_PEX-Crystaline Brass Sting		198146
+	934544696	Move_Scrape_Wood	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\90936__robinhood76__01497-brawling-2_220E57BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Move_Object\Moving_Object\Move_Scrape_Wood		234516
+	934824615	2-Minimalistic Loop_4L_PEX-Sketch Piano #1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\2-Minimalistic Loop_4L_PEX-Piano_3_WAV_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\2-Minimalistic Loop_4L_PEX-Sketch Piano #1		107048
+	934853728	WallHit_3	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\Wall Hit_1-003_19EB7501.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\Wall_Hit_Blend\Wall_Hits\WallHit_3		208012
+	951053429	2-Minimalistic Loop_4L_PEX-Sketch Piano #1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\2-Minimalistic Loop_4L_PEX-Piano_2_WAV_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\2-Minimalistic Loop_4L_PEX-Sketch Piano #1		101275
+	978907180	2-Minimalistic Loop_4L_PEX-Sketch Piano #1	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\2-Minimalistic Loop_4L_PEX-Piano_4_WAV_730067A1.wem		\Interactive Music Hierarchy\Music\Music_Regions\Room\Minimalistic_Loop\2-Minimalistic Loop_4L_PEX-Sketch Piano #1		127011
+	1032422741	Squecky_Presence_01	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\CreekyWood_Barefoot_Sneaking_501E2519.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Presence\Squecky_Presence_01		702728
+	1042308158	footstep_wood_3	C:\Users\jonas\Documents\GitHub\DADIUTeam1MP1\WwiseProject_MGP1_Team1\.cache\Android\SFX\footstep_wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Footstep_Surface\Footstep_Wood\footstep_wood_3		56056
+
