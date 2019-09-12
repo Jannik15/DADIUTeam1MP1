@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 1475864734}
   - component: {fileID: 1475864733}
   m_Layer: 5
-  m_Name: Canvas2
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   - {fileID: 3121602602701896212}
   - {fileID: 4277730221854136023}
   - {fileID: 5717641111681030392}
-  timestampJumpTuner: 3
+  timestampJumpThreshold: 1
 --- !u!1 &21606830037232686
 GameObject:
   m_ObjectHideFlags: 0

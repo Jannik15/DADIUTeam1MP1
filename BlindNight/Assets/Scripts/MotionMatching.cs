@@ -19,7 +19,8 @@ public class MotionMatching : MonoBehaviour
     MMPose currentPose;
     GameObject player;
 
-    public int timestampJumpTuner = 4;
+    [Tooltip("In seconds")]
+    public int timestampJumpThreshold = 3;
 
     void Start()
     {
@@ -55,7 +56,7 @@ public class MotionMatching : MonoBehaviour
         currentPose = new MMPose(tempPose, currentPoseIndex, currentPoseState);
 
         MMPose bestPose = new MMPose(new Pose[rig.Length], 0, "");
-        float bestDiff = 9999999999;
+        float bestDiff = 9999999;
 
         /// We compare all the poses to the current pose, to find the best position for each joint, and store these in a candidate pose
         MMPose candidatePose = new MMPose(new Pose[rig.Length], 0, "");
@@ -82,7 +83,7 @@ public class MotionMatching : MonoBehaviour
                 {
                     // if (candidatePose.GetPoseIndex() == )
 
-                    if (csvData.GetTimestamps()[i] > csvData.GetTimestamps()[currentPose.GetPoseIndex()] + timestampJumpTuner)
+                    if (csvData.GetTimestamps()[i] > csvData.GetTimestamps()[currentPose.GetPoseIndex()] + timestampJumpThreshold)
                     {
                         bestPose = candidatePose;
                         bestDiff = diff;
@@ -91,10 +92,14 @@ public class MotionMatching : MonoBehaviour
             }
         }
 
+        // Find current player direction from movement
+        Vector3 mov = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        Quaternion playerDirection = Quaternion.LookRotation(mov);
+
         // Apply best pose to rig
-        for(int i = 0; i < rig.Length; i++)
+        for (int i = 0; i < rig.Length; i++)
         {
-            rig[i].rotation = bestPose.GetJointTransform(i).rotation;
+            rig[i].rotation = playerDirection * bestPose.GetJointTransform(i).rotation; // new best pose relative to the current player direction
         }
         currentPoseIndex = bestPose.GetPoseIndex();
         currentPoseState = bestPose.GetPoseState();
@@ -102,9 +107,7 @@ public class MotionMatching : MonoBehaviour
 
     private void LateUpdate()
     {
-        /* Vector3 localVelocity = transform.InverseTransformDirection(player.GetComponent<Rigidbody>().velocity);
-        Quaternion rotation = Quaternion.Euler(localVelocity.x, localVelocity.y, localVelocity.z);
-        player.transform.rotation = rotation; */
+
         // AutoplayAnimation();
         MMUpdate();
     }
