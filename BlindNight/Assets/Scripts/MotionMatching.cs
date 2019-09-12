@@ -16,6 +16,7 @@ public class MotionMatching : MonoBehaviour
     bool status = false;
     int currentPoseIndex = 0;
     string currentPoseState = "Idle";
+    MMPose currentPose;
 
     void Start()
     {
@@ -33,17 +34,18 @@ public class MotionMatching : MonoBehaviour
             }
             allPoses.Add(new MMPose(tempPose, i, csvData.GetStates()[i]));
         }
+        currentPose = allPoses[0];
+        currentPoseIndex = currentPose.GetPoseIndex();
+        currentPoseState = currentPose.GetPoseState();
     }
 
     void MMUpdate()
     {
         /// Determine the current pose based on the rig rotations and current pose index
-        MMPose currentPose;
         Pose[] tempPose = new Pose[rig.Length];
         for (int i = 0; i < rig.Length; i++)
         {
             tempPose[i] = new Pose(rig[i].position, rig[i].rotation);
-            //currentPose[i] = new Pose(csvData.GetPositions()[i][currentPoseIndex], csvData.GetQuaternions()[i][currentPoseIndex]);
         }
         currentPose = new MMPose(tempPose, currentPoseIndex, currentPoseState);
 
@@ -51,19 +53,20 @@ public class MotionMatching : MonoBehaviour
         float bestDiff = 9999999999;
 
         /// We compare all the poses to the current pose, to find the best position for each joint, and store these in a candidate pose
+        MMPose candidatePose = new MMPose(new Pose[rig.Length], 0, "");
         for (int i = 0; i < allPoses.Count; i++)
         {
-            MMPose candidatePose = new MMPose(new Pose[rig.Length], 0, "");
             candidatePose = allPoses[i];
 
             /// Must not be the same pose
             if (candidatePose.GetPoseIndex() == currentPose.GetPoseIndex())
+            {
                 continue;
+            }
 
             /// Compare pose difference between quaternions - just take the one closest to the current
             
             float diff = 0;
-            //Debug.Log(movement.currentState + " == " + candidatePose.GetPoseState());
             if (movement.currentState == candidatePose.GetPoseState())
             {
                 for (int j = 0; j < rig.Length; j++)
@@ -73,6 +76,7 @@ public class MotionMatching : MonoBehaviour
                 if (diff < bestDiff)
                 {
                     bestPose = candidatePose;
+                    bestDiff = diff;
                 }
             }
         }
@@ -88,7 +92,8 @@ public class MotionMatching : MonoBehaviour
 
     private void LateUpdate()
     {
-        MMUpdate();
+        AutoplayAnimation();
+        //MMUpdate();
     }
 
     private void AutoplayAnimation()

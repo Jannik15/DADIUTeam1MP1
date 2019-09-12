@@ -7,13 +7,21 @@ public class TrajectoryTest : MonoBehaviour
     [HideInInspector] public Vector3 dir;
     public int trajectoryGizmosCount;
     public float speed, segmentScale;
-    public string currentState;
+    private string[] states =
+    {
+        "Idle",
+        "Transition",
+        "Movement",
+        "TurnLeft",
+        "TurnRight"
+    };
+    [HideInInspector] public string currentState;
 
-    public GameObject leftFootCollider, rightFootCollider;
+    //public GameObject leftFootCollider, rightFootCollider;
 
     void Start()
     {
-
+        currentState = states[0];
     }
 
     // Update is called once per frame
@@ -21,13 +29,17 @@ public class TrajectoryTest : MonoBehaviour
     {
         dir = new Vector3(Input.GetAxis("Horizontal") * speed, 0, Input.GetAxis("Vertical") * speed);
         transform.position = transform.position + dir * Time.deltaTime;
+        if (dir.magnitude > 0.00f)
+            currentState = states[2];
+        else
+            currentState = states[0];
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(leftFootCollider.transform.position, 0.05f);
-        Gizmos.DrawWireSphere(rightFootCollider.transform.position, 0.05f);
+        //Gizmos.DrawWireSphere(leftFootCollider.transform.position, 0.05f);
+        //Gizmos.DrawWireSphere(rightFootCollider.transform.position, 0.05f);
 
         Gizmos.color = Color.green;
         //float j =

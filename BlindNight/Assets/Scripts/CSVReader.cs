@@ -12,9 +12,7 @@ public class CSVReader : MonoBehaviour
 
     // public  CSVfile;
 
-    private int labelAmount;
-    private int quaternionAmount;
-    private int positionAmount;
+    private int labelAmount, quaternionAmount, positionAmount, joints = 26;
     private string[] labelValues;
 
     List<Quaternion>[] quaternionDatabase;
@@ -27,35 +25,27 @@ public class CSVReader : MonoBehaviour
         ReadCSV();
     }
 
-    void Start()
-    {
-        // Debug.Log(fileFullPath);    // Show path in log
-        // ReadCSV();
-    }
-
     private void QuaternionInit()
     {
-        quaternionAmount = ((labelAmount - 1) * 4 / 7) * 1 / 4; // Calculate amount of quaternions in CSV file
-        //  Debug.Log(labelAmount);
-        //  Debug.Log(quaternionAmount);
+        quaternionAmount = joints;//((labelAmount - 1) * 4 / 7) * 1 / 4; // Calculate amount of quaternions in CSV file
         quaternionDatabase = new List<Quaternion>[quaternionAmount];
 
 
-        for (int q = 0; q < quaternionAmount; q++)
+        for (int i = 0; i < quaternionAmount; i++)
         {
-            quaternionDatabase[q] = new List<Quaternion>();
+            quaternionDatabase[i] = new List<Quaternion>();
         }
 
     }
 
     private void PositionInit()
     {
-        positionAmount = ((labelAmount - 1) * 3 / 7) * 1 / 3; // Calculate amount of position vectors in CSV file
+        positionAmount = joints; // Calculate amount of position vectors in CSV file
         positionDatabase = new List<Vector3>[positionAmount];
 
-        for (int q = 0; q < positionAmount; q++)
+        for (int i = 0; i < positionAmount; i++)
         {
-            positionDatabase[q] = new List<Vector3>();
+            positionDatabase[i] = new List<Vector3>();
         }
 
     }
@@ -63,18 +53,15 @@ public class CSVReader : MonoBehaviour
     private List<Quaternion>[] QuaternionCreator(float[] data)
     {
         int n = 0;
-
-        for (int i = 4; i < labelValues.Length; i += 7)   // Quaternion starts from position 4
+        for (int i = 0; i < labelValues.Length; i++)
         {
-
-            Quaternion tempQuaternion = new Quaternion(data[i], data[i + 1], data[i + 2], data[i + 3]);
-            // Debug.Log(data[i] + " " + data[i + 1] + " " + data[i + 2] + " " + data[i + 3]);  // For debugging (very performance heavy)
-            quaternionDatabase[n].Add(tempQuaternion);
-
-            n++;
+            if (labelValues[i].Contains("_Q_x"))
+            {
+                Quaternion tempQuaternion = new Quaternion(data[i], data[i + 1], data[i + 2], data[i + 3]);
+                quaternionDatabase[n].Add(tempQuaternion);
+                n++;
+            }
         }
-        // Debug.Log(quaternionDatabase[1][1]);
-
         return quaternionDatabase;
     }
 
@@ -82,17 +69,16 @@ public class CSVReader : MonoBehaviour
     private List<Vector3>[] PositionCreator(float[] data)
     {
         int n = 0;
-
-        for (int i = 1; i < labelValues.Length; i += 7)   // Vector starts from position 1
+        for (int i = 0; i < labelValues.Length; i++)   // Vector starts from position 1
         {
-
-            Vector3 tempPosition = new Vector3(data[i], data[i + 1], data[i + 2]);
-            // Debug.Log(data[i] + " " + data[i + 1] + " " + data[i + 2]);  // For debugging (very performance heavy)
-            positionDatabase[n].Add(tempPosition);
-
-            n++;
+            if (labelValues[i].Contains("_P_x"))
+            {
+                Vector3 tempPosition = new Vector3(data[i], data[i + 1], data[i + 2]);
+                // Debug.Log(data[i] + " " + data[i + 1] + " " + data[i + 2]);  // For debugging (very performance heavy)
+                positionDatabase[n].Add(tempPosition);
+                n++;
+            }
         }
-
         return positionDatabase;
     }
 
@@ -108,10 +94,8 @@ public class CSVReader : MonoBehaviour
 
     public void ReadCSV()
     {
-
         if (CSVPath != null || CSVPath != "")
         {
-
             fileFullPath = CSVPath;
             StreamReader strReader = new StreamReader(fileFullPath);
 
@@ -147,14 +131,13 @@ public class CSVReader : MonoBehaviour
                 else
                 {
                     string[] tempDataValues = dataString.Split(',');
-                    // Debug.Log(tempDataValues[15]);
 
                     float[] dataValues = new float[tempDataValues.Length];
                     string stateValues = "";
                     for (int i = 0; i < dataValues.Length; i++)
                     {
-                        if (i == dataValues.Length)
-                            stateValues = tempDataValues[i].ToString();
+                        if (i == dataValues.Length - 1)
+                            stateValues = tempDataValues[i];
                         else
                             dataValues[i] = float.Parse(tempDataValues[i], CultureInfo.InvariantCulture.NumberFormat);
 
@@ -165,17 +148,11 @@ public class CSVReader : MonoBehaviour
                     PositionCreator(dataValues);
                     StateCreator(stateValues);
                     Timestamp(dataValues[0]);
-
-                    // Ignore below, just for debugging:
-                    // Debug.Log(QuaternionCreator(dataValues)[0][0]);
-                    // Debug.Log(QuaternionCreator(dataValues)[2][0]);
-                    // Debug.Log(dataValues[12]);
                 }
 
             }
             Debug.Log("Motion Matching: pre-process completed!");
-            IndexHelper(7);     //// <- USE the index helper to find the label for a selected index in the CSV
-            // Debug.Log(quaternionDatabase[7][10]);
+            //IndexHelper(7);     //// <- USE the index helper to find the label for a selected index in the CSV
 
         } else
         {
