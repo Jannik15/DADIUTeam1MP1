@@ -162,6 +162,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flashlight
       objectReference: {fileID: 0}
+    - target: {fileID: 1535458161989802870, guid: 8072542a7820b0d44b93f3c290a69cac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1535458161989802871, guid: 8072542a7820b0d44b93f3c290a69cac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -435,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4199718209e120e418b83df5a45fe6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CSVPath: Assets/Resources/MotionMatchingData/InitialTestData.csv
+  CSVPath: Assets/Resources/MotionMatchingData/motionFlashlightLocomotion.csv
 --- !u!1 &696833056
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696833056}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0.335, y: 3.798, z: -0.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -643,12 +648,12 @@ GameObject:
   - component: {fileID: 1475864734}
   - component: {fileID: 1475864733}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1475864733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +784,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 671c2a3972bbca844a06f40e3811e00b, type: 2}
+  - {fileID: 2100000, guid: ba277fe8041c99c45991dbd47c886d48, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1060,8 +1065,6 @@ MonoBehaviour:
   speed: 2
   segmentScale: 100
   currentState: 
-  leftFootCollider: {fileID: 910970247}
-  rightFootCollider: {fileID: 1841285407}
 --- !u!114 &2060622543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,6 +1104,7 @@ MonoBehaviour:
   - {fileID: 3121602602701896212}
   - {fileID: 4277730221854136023}
   - {fileID: 5717641111681030392}
+  timestampJumpTuner: 3
 --- !u!1 &21606830037232686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1824,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172667688305605}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 357641806f449114b8bdaef7344ea013, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 1
@@ -2112,7 +2116,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 357641806f449114b8bdaef7344ea013, type: 3}
+  - {fileID: 2100000, guid: 463c58b5627e05f4ab59d26b0cf68703, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3300,13 +3304,30 @@ GameObject:
   - component: {fileID: 3166231814526180524}
   - component: {fileID: 2060622542}
   - component: {fileID: 2060622543}
+  - component: {fileID: 8296172667688305606}
   m_Layer: 0
   m_Name: Detective
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8296172667688305606
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172667688305605}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &8363813914705678579
 GameObject:
   m_ObjectHideFlags: 0

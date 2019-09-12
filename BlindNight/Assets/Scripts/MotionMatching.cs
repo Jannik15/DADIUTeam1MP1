@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MotionMatching : MonoBehaviour
 {
-    /* What is a pose?
+    /* What is a pose? (idle, walk, run?)
      * Pose = Each joint transform at a given timestep in the animation
      */
     
@@ -17,12 +17,16 @@ public class MotionMatching : MonoBehaviour
     int currentPoseIndex = 0;
     string currentPoseState = "Idle";
     MMPose currentPose;
+    GameObject player;
+
+    public int timestampJumpTuner = 4;
 
     void Start()
     {
         movement = GetComponent<TrajectoryTest>();
         csvData = FindObjectOfType<CSVReader>();
         allPoses = new List<MMPose>();
+        player = GameObject.FindGameObjectWithTag("Player");
 
         /// Populate the list allPoses with all poses in the datasheet
         for (int i = 0; i < csvData.GetQuaternions()[0].Count; i++)
@@ -41,6 +45,7 @@ public class MotionMatching : MonoBehaviour
 
     void MMUpdate()
     {
+
         /// Determine the current pose based on the rig rotations and current pose index
         Pose[] tempPose = new Pose[rig.Length];
         for (int i = 0; i < rig.Length; i++)
@@ -75,8 +80,13 @@ public class MotionMatching : MonoBehaviour
                 }
                 if (diff < bestDiff)
                 {
-                    bestPose = candidatePose;
-                    bestDiff = diff;
+                    // if (candidatePose.GetPoseIndex() == )
+
+                    if (csvData.GetTimestamps()[i] > csvData.GetTimestamps()[currentPose.GetPoseIndex()] + timestampJumpTuner)
+                    {
+                        bestPose = candidatePose;
+                        bestDiff = diff;
+                    }
                 }
             }
         }
@@ -92,8 +102,11 @@ public class MotionMatching : MonoBehaviour
 
     private void LateUpdate()
     {
-        AutoplayAnimation();
-        //MMUpdate();
+        /* Vector3 localVelocity = transform.InverseTransformDirection(player.GetComponent<Rigidbody>().velocity);
+        Quaternion rotation = Quaternion.Euler(localVelocity.x, localVelocity.y, localVelocity.z);
+        player.transform.rotation = rotation; */
+        // AutoplayAnimation();
+        MMUpdate();
     }
 
     private void AutoplayAnimation()
