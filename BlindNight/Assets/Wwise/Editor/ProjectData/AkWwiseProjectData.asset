@@ -168,8 +168,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Objects\Door\Play_Door_Open
       maxAttenuation: 100
-      maxDuration: 3.270799
-      minDuration: 2.826095
+      maxDuration: 4.270799
+      minDuration: 3.826095
     - name: Play_Flashlight_On_Off
       guid: a7da93d59f7c4c49a0843f7f54cd2fcc
       id: 4064524182

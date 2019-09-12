@@ -448,7 +448,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
@@ -538,7 +537,6 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>

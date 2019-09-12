@@ -108,7 +108,7 @@
 						<CurrentStateRef Name="Room1" ID="{5537F364-AE60-413D-BAFC-4DF93E9D5095}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Wood" ID="{F863F732-84D8-49B9-91A4-3C95BBCA611C}"/>
+						<CurrentSwitchRef Name="Rug" ID="{8AF74075-CF98-4440-8FAB-0EDA3BC96D83}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
