@@ -156,11 +156,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 189920694}
     m_Modifications:
-    - target: {fileID: 7151998351066283178, guid: 62ce10b0877a1df4bbe011e90f38fa18,
-        type: 3}
-      propertyPath: m_Name
-      value: LightRays
-      objectReference: {fileID: 0}
     - target: {fileID: 1333659813614038949, guid: 62ce10b0877a1df4bbe011e90f38fa18,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -220,6 +215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -0.46078974
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151998351066283178, guid: 62ce10b0877a1df4bbe011e90f38fa18,
+        type: 3}
+      propertyPath: m_Name
+      value: LightRays
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ce10b0877a1df4bbe011e90f38fa18, type: 3}
@@ -2002,11 +2002,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7948380285961258897, guid: 5e9af80120f0b44479ea52ee045960c4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6028932298029237538, guid: 5e9af80120f0b44479ea52ee045960c4,
         type: 3}
       propertyPath: m_Name
@@ -2016,6 +2011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948380285961258897, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9043614930162567375, guid: 5e9af80120f0b44479ea52ee045960c4,
         type: 3}
@@ -2176,6 +2176,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894884888668215730, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.5420699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894884888668215730, guid: 5e9af80120f0b44479ea52ee045960c4,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.22896504
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9af80120f0b44479ea52ee045960c4, type: 3}

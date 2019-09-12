@@ -11,7 +11,7 @@ public class MoveObject : MonoBehaviour
     public float moveLength = 2f;
     float tempMoveLength;
     [Tooltip("Modifier if collision checker is too small/large (in case of false positives)")]
-    public float colliderSizeModifier = -0.2f;
+    public float colliderSizeModifier = -0.4f;
 
     private float delayTime = 0.15f;
 

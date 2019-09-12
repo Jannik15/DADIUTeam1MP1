@@ -94,9 +94,9 @@ public class CharacterMovement : MonoBehaviour
                 return;
             }
             joystickActive = true;
-            //GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
-            //JoystickUI.transform.position = mousePos;
-            //JoystickUI.SetActive(true);
+            GameObject JoystickUI = GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI");
+            JoystickUI.transform.position = mousePos;
+            JoystickUI.SetActive(true);
         }
         if (Input.GetMouseButton(0))
         {
@@ -110,7 +110,7 @@ public class CharacterMovement : MonoBehaviour
         {
             joystickActive = false;
             newDir = new Vector3(0, 0, 0);
-            //GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI").SetActive(false);
+            GameMaster.instance.FindObjectFromParentName("Canvas", "JoystickUI").SetActive(false);
         }
         anim.SetFloat(animWalk, Mathf.Clamp(newDir.magnitude * 100, 0.0000f, 1.0f));
     }

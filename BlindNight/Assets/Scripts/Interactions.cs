@@ -23,6 +23,8 @@ public class Interactions : MonoBehaviour
     InteractionsSideChecker _ISC;
     private GameObject[] arrowList;
     private MoveObject _moveObject;
+
+    private Rigidbody thisRigidBody;
     // Start is called before the first frame update
 
     // Handle interaction with items when the player clicks on them. 
@@ -42,6 +44,8 @@ public class Interactions : MonoBehaviour
         arrowDisplaceZ = 1f;
         _ISC = GetComponent<InteractionsSideChecker>();
         _moveObject = GetComponent<MoveObject>();
+
+        thisRigidBody = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -81,7 +85,7 @@ public class Interactions : MonoBehaviour
         otherObject = hit.collider.gameObject;
         //Debug.Log("Item has been pressed " + hit.collider.name); 
 
-        if (hit.collider.tag != "interactable" && hit.collider.tag != "arrow")
+        if (hit.collider.tag != "interactable" && hit.collider.tag != "arrow" || thisRigidBody.velocity.x > 0.2f || thisRigidBody.velocity.z > 0.2f)
         {
             Debug.Log("Destroyed Arrows");
             InstantDestroyArrows();
@@ -153,25 +157,37 @@ public class Interactions : MonoBehaviour
 
                     //Debug.Log("North Arrow Clicked");
                     _moveObject.MoveNorth(objectClicked, arrowInteractionSwitcher);
-                    DestroyArrows(hit.collider.gameObject);
+                    if (arrowInteractionSwitcher)
+                        DestroyArrows(hit.collider.gameObject);
+                    else
+                        InstantDestroyArrows();
                     break;
 
                 case "southArrow":
                     //Debug.Log("South Arrow Clicked");
                     _moveObject.MoveSouth(objectClicked, arrowInteractionSwitcher);
-                    DestroyArrows(hit.collider.gameObject);
+                    if (arrowInteractionSwitcher)
+                        DestroyArrows(hit.collider.gameObject);
+                    else
+                        InstantDestroyArrows();
                     break;
 
                 case "eastArrow":
                     //Debug.Log("East Arrow Clicked");
                     _moveObject.MoveEast(objectClicked, arrowInteractionSwitcher);
-                    DestroyArrows(hit.collider.gameObject);
+                    if (arrowInteractionSwitcher)
+                        DestroyArrows(hit.collider.gameObject);
+                    else
+                        InstantDestroyArrows();
                     break;
 
                 case "westArrow":
                     //Debug.Log("West Arrow Clicked");
                     _moveObject.MoveWest(objectClicked, arrowInteractionSwitcher);
-                    DestroyArrows(hit.collider.gameObject);
+                    if (arrowInteractionSwitcher)
+                        DestroyArrows(hit.collider.gameObject);
+                    else
+                        InstantDestroyArrows();
                     break;
                 default:
                     //Debug.Log("Name doesn't exist");
