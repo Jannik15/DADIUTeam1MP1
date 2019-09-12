@@ -77,24 +77,23 @@ public class MotionMatching : MonoBehaviour
             {
                 for (int j = 0; j < rig.Length; j++)
                 {
-                    diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, candidatePose.GetJointTransform(j).rotation);
+                    diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, candidatePose.GetJointTransform(j).rotation);   // Need other way to evaluate diff? (joint position diffs also?) YYY
                 }
-                if (diff < bestDiff)
+                if (csvData.GetTimestamps()[i] > csvData.GetTimestamps()[currentPose.GetPoseIndex()] + timestampJumpThreshold && diff < bestDiff)
                 {
-                    // if (candidatePose.GetPoseIndex() == )
+                    bestPose = candidatePose;
+                    bestDiff = diff;
 
-                    if (csvData.GetTimestamps()[i] > csvData.GetTimestamps()[currentPose.GetPoseIndex()] + timestampJumpThreshold)
-                    {
-                        bestPose = candidatePose;
-                        bestDiff = diff;
-                    }
                 }
+                
             }
         }
 
+        Debug.Log(bestPose.GetPoseIndex() + " " + bestPose.GetPoseState());
+
         // Find current player direction from movement
-        Vector3 mov = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-        Quaternion playerDirection = Quaternion.LookRotation(mov);
+        Vector3 mov = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        Quaternion playerDirection = Quaternion.LookRotation(mov, Vector3.up);
 
         // Apply best pose to rig
         for (int i = 0; i < rig.Length; i++)
