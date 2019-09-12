@@ -8,6 +8,7 @@ TagManager:
   - MoveCollider
   - arrow
   - SceneChange
+  - InteractionIndicator
   layers:
   - Default
   - TransparentFX
