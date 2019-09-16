@@ -8,6 +8,8 @@ public class MotionMatching : MonoBehaviour
     /* What is a pose? (idle, walk, run?)
      * Pose = Each joint transform at a given timestep in the animation
      */
+    [Range(0.1f, 5.0f)]
+    public float responsivity = 1.0f;
     
     public Transform[] rig;
     TrajectoryTest movement;    // Movement script reference
@@ -20,7 +22,7 @@ public class MotionMatching : MonoBehaviour
     GameObject player;
 
     [Tooltip("In seconds")]
-    public int timestampJumpThreshold = 3;
+    public float timestampJumpThreshold = 5f;
 
     void Start()
     {
@@ -46,6 +48,9 @@ public class MotionMatching : MonoBehaviour
 
     void MMUpdate()
     {
+        // Find current player direction from movement
+        Vector3 mov = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        Quaternion playerDirection = Quaternion.LookRotation(mov, Vector3.up);
 
         /// Determine the current pose based on the rig rotations and current pose index
         Pose[] tempPose = new Pose[rig.Length];
@@ -62,6 +67,7 @@ public class MotionMatching : MonoBehaviour
         MMPose candidatePose = new MMPose(new Pose[rig.Length], 0, "");
         for (int i = 0; i < allPoses.Count; i++)
         {
+            // allPoses[i] = new MMPose(allPoses[i].GetPose(), allPoses[i].GetPoseIndex(), allPoses[i].GetPoseState());
             candidatePose = allPoses[i];
 
             /// Must not be the same pose
@@ -75,25 +81,21 @@ public class MotionMatching : MonoBehaviour
             float diff = 0;
             if (movement.currentState == candidatePose.GetPoseState())
             {
-                for (int j = 0; j < rig.Length; j++)
-                {
-                    diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, candidatePose.GetJointTransform(j).rotation);   // Need other way to evaluate diff? (joint position diffs also?) YYY
-                }
-                if (csvData.GetTimestamps()[i] > csvData.GetTimestamps()[currentPose.GetPoseIndex()] + timestampJumpThreshold && diff < bestDiff)
-                {
-                    bestPose = candidatePose;
-                    bestDiff = diff;
 
+                diff = ComputeCost(candidatePose, playerDirection);
+
+                if (csvData.GetTimestamps()[i] > csvData.GetTimestamps()[currentPose.GetPoseIndex()] + timestampJumpThreshold)
+                {
+                    if (diff < bestDiff)
+                    {
+                        bestPose = candidatePose;
+                        bestDiff = diff;
+                    }
                 }
-                
             }
         }
 
         Debug.Log(bestPose.GetPoseIndex() + " " + bestPose.GetPoseState());
-
-        // Find current player direction from movement
-        Vector3 mov = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-        Quaternion playerDirection = Quaternion.LookRotation(mov, Vector3.up);
 
         // Apply best pose to rig
         for (int i = 0; i < rig.Length; i++)
@@ -109,6 +111,21 @@ public class MotionMatching : MonoBehaviour
 
         // AutoplayAnimation();
         MMUpdate();
+    }
+
+    private float ComputeCost(MMPose candidatePose, Quaternion playerDirection)
+    {
+        float diff = 0;
+        for (int j = 0; j < rig.Length; j++)
+        {
+            diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, playerDirection * candidatePose.GetJointTransform(j).rotation);
+        }
+
+        /*
+        float animDirectionDist = Vector3.Distance(player.transform.position, csvData.GetPositions()[0][currentPose.GetPoseIndex()]);
+        diff += responsivity * animDirectionDist; */
+
+        return diff;
     }
 
     private void AutoplayAnimation()
