@@ -23,6 +23,7 @@ public class MotionMatching : MonoBehaviour
 
     [Tooltip("In seconds")]
     public float timestampJumpThreshold = 5f;
+    public int trajectorySteps = 20;
 
     void Start()
     {
@@ -95,7 +96,7 @@ public class MotionMatching : MonoBehaviour
             }
         }
 
-        Debug.Log(bestPose.GetPoseIndex() + " " + bestPose.GetPoseState());
+        Debug.Log(bestPose.GetPoseIndex() + " " + bestPose.GetPoseState() + " " + currentPose.GetPoseIndex());
 
         // Apply best pose to rig
         for (int i = 0; i < rig.Length; i++)
@@ -116,14 +117,27 @@ public class MotionMatching : MonoBehaviour
     private float ComputeCost(MMPose candidatePose, Quaternion playerDirection)
     {
         float diff = 0;
+        
         for (int j = 0; j < rig.Length; j++)
         {
             diff += Quaternion.Angle(currentPose.GetJointTransform(j).rotation, playerDirection * candidatePose.GetJointTransform(j).rotation);
         }
 
-        /*
-        float animDirectionDist = Vector3.Distance(player.transform.position, csvData.GetPositions()[0][currentPose.GetPoseIndex()]);
-        diff += responsivity * animDirectionDist; */
+        
+        if (currentPose.GetPoseIndex() + trajectorySteps < allPoses.Count - 1)
+        {
+            if (currentPose.GetPoseState() == allPoses[currentPose.GetPoseIndex() + trajectorySteps].GetPoseState())
+            {
+                float animDirectionDist = Vector3.Distance(player.transform.position, csvData.GetPositions()[0][currentPose.GetPoseIndex() + trajectorySteps]);
+                diff += responsivity * animDirectionDist;
+            }
+
+        }
+        else
+        {
+
+        }
+
 
         return diff;
     }
